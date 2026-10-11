@@ -1,0 +1,31 @@
+# Environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets — never commit keys
+.env
+.env.local
+*.key
+
+# Local agent state (memory DB, run artifacts, transcripts)
+.byteanalyst/
+artifacts/
+*.db
+*.sqlite
+*.sqlite3
+
+# Agent workspace metadata
+.freebuff/
+
+# OS noise
+.DS_Store
+Thumbs.db

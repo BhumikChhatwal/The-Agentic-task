@@ -1,0 +1,1801 @@
+ticket_id,created_at,channel,priority,region,resolution_hours,first_response_minutes,csat_score,agent_notes,source_system
+T000001,2024-07-09 06:12:00,portal,urgent,North,1.82,48.0,,customer reported a login error,ticketing_v2
+T000002,2024-09-26 07:27:00,email,urgent,South,2.1,58.0,2.0,billing question about invoice,ticketing_v2
+T000003,2024-03-20 12:58:00,phone,low,North,7.53,149.0,1.0,password reset could not be completed,ticketing_v2
+T000004,2024-10-30 12:38:00,chat,low,West,11.53,161.0,3.0,billing question about invoice,ticketing_v2
+T000005,2024-11-10 16:08:00,phone,low,North,13.61,389.0,,asked how to export data,ticketing_v2
+T000006,2024-09-04 03:49:00,email,low,West,39.33,384.0,4.0,billing question about invoice,ticketing_v2
+T000007,2024-04-04 03:49:00,phone,urgent,West,0.93,24.0,,asked how to export data,ticketing_v2
+T000008,2024-01-26 10:36:00,portal,medium,South,2.07,58.0,,requested a refund for a damaged item,ticketing_v2
+T000009,2024-11-27 04:43:00,email,low,East,29.18,793.0,5.0,password reset could not be completed,ticketing_v2
+T000010,2024-12-04 13:48:00,chat,high,North,1.96,44.0,,requested a refund for a damaged item,ticketing_v2
+T000011,2024-08-20 21:40:00,email,high,South,1.32,18.0,,requested a refund for a damaged item,ticketing_v2
+T000012,2024-08-11 13:51:00,chat,medium,East,7.86,102.0,5.0,customer reported a login error,ticketing_v2
+T000013,2024-08-22 03:33:00,phone,low,North,9.67,48.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000014,2024-02-06 13:52:00,chat,medium,South,3.31,69.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000015,2024-01-26 23:13:00,phone,low,East,21.13,397.0,,billing question about invoice,ticketing_v2
+T000016,2024-05-08 01:03:00,chat,low,West,11.84,34.0,2.0,customer reported a login error,ticketing_v2
+T000017,2024-06-21 09:53:00,portal,urgent,North,3.43,19.0,5.0,customer reported a login error,ticketing_v2
+T000018,2024-01-31 20:49:00,email,high,West,4.08,22.0,,requested a refund for a damaged item,ticketing_v2
+T000019,2024-07-28 02:19:00,email,low,South,15.36,414.0,3.0,asked how to export data,ticketing_v2
+T000020,2024-11-07 00:47:00,email,medium,East,9.35,187.0,,password reset could not be completed,ticketing_v2
+T000021,2024-06-09 05:03:00,phone,low,West,22.32,659.0,4.0,billing question about invoice,ticketing_v2
+T000022,2024-05-02 04:11:00,chat,high,East,3.47,34.0,3.0,password reset could not be completed,ticketing_v2
+T000023,2024-01-07 07:17:00,email,medium,South,12.4,358.0,5.0,asked how to export data,ticketing_v2
+T000024,2024-10-27 23:20:00,email,medium,South,7.33,152.0,,customer reported a login error,ticketing_v2
+T000025,2024-11-24 11:39:00,chat,medium,South,15.95,389.0,,password reset could not be completed,ticketing_v2
+T000026,2024-08-08 22:08:00,email,medium,North,4.53,23.0,,customer reported a login error,ticketing_v2
+T000027,2024-06-03 11:41:00,phone,medium,North,21.93,362.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000028,2024-11-13 04:25:00,email,high,North,4.13,15.0,,asked how to export data,ticketing_v2
+T000029,2024-05-28 19:41:00,chat,medium,East,8.19,230.0,1.0,asked how to export data,ticketing_v2
+T000030,2024-02-27 23:46:00,email,medium,North,23.61,89.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000031,2024-04-13 09:22:00,phone,urgent,North,1.78,31.0,3.0,asked how to export data,ticketing_v2
+T000032,2024-04-03 19:05:00,portal,low,East,6.41,165.0,2.0,billing question about invoice,ticketing_v2
+T000033,2024-04-20 09:36:00,phone,medium,East,160.83142067732106,3606.0,,asked how to export data,ticketing_v2
+T000034,2024-02-27 13:01:00,phone,low,North,21.23,97.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000035,2024-03-30 05:08:00,email,medium,North,4.83,87.0,5.0,billing question about invoice,ticketing_v2
+T000036,2024-08-09 01:29:00,email,medium,North,2.44,52.0,3.0,billing question about invoice,ticketing_v2
+T000037,2024-09-14 05:26:00,chat,medium,South,12.01,70.0,,password reset could not be completed,ticketing_v2
+T000038,2024-04-15 06:26:00,portal,medium,North,20.14,84.0,5.0,customer reported a login error,ticketing_v2
+T000039,2024-07-05 18:13:00,email,high,South,0.98,13.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000040,2024-05-24 15:47:00,email,urgent,West,2.24,33.0,,password reset could not be completed,ticketing_v2
+T000041,2024-12-15 07:08:00,email,high,South,6.34,58.0,2.0,customer reported a login error,ticketing_v2
+T000042,2024-07-21 13:29:00,email,medium,West,3.97,67.0,,requested a refund for a damaged item,ticketing_v2
+T000043,2024-10-14 07:34:00,email,low,North,54.38,960.0,,asked how to export data,ticketing_v2
+T000044,2024-04-14 10:48:00,email,high,East,2.89,84.0,,asked how to export data,ticketing_v2
+T000045,2024-04-02 12:01:00,phone,medium,West,10.88,288.0,4.0,asked how to export data,ticketing_v2
+T000046,2024-09-02 03:32:00,portal,high,South,6.21,67.0,,customer reported a login error,ticketing_v2
+T000047,2024-10-17 11:31:00,phone,medium,North,12.74,345.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000048,2024-10-25 18:43:00,email,medium,East,20.85,167.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000049,2024-05-29 17:28:00,portal,medium,East,9.71,69.0,4.0,password reset could not be completed,ticketing_v2
+T000050,2024-01-26 22:10:00,chat,low,North,157.89,4393.0,4.0,customer reported a login error,ticketing_v2
+T000051,2024-05-04 17:46:00,portal,low,North,22.33,186.0,5.0,password reset could not be completed,ticketing_v2
+T000052,2024-10-29 09:36:00,chat,high,South,3.35,17.0,,billing question about invoice,ticketing_v2
+T000053,2024-08-18 04:39:00,portal,low,South,20.42,208.0,,asked how to export data,ticketing_v2
+T000054,2024-10-27 16:43:00,email,medium,West,10.02,137.0,4.0,billing question about invoice,ticketing_v2
+T000055,2024-06-01 21:54:00,chat,low,South,31.28,225.0,,password reset could not be completed,ticketing_v2
+T000056,2024-07-04 16:56:00,chat,low,West,15.57,155.0,4.0,asked how to export data,ticketing_v2
+T000057,2024-07-13 12:28:00,email,low,North,50.49,1053.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000058,2024-12-06 23:52:00,chat,medium,North,105.54396812365555,1309.0,,requested a refund for a damaged item,ticketing_v2
+T000059,2024-10-26 03:47:00,email,low,East,5.74,56.0,,password reset could not be completed,ticketing_v2
+T000060,2024-01-05 21:37:00,chat,medium,South,17.45,72.0,,asked how to export data,ticketing_v2
+T000061,2024-01-10 00:57:00,phone,low,West,30.54,532.0,,password reset could not be completed,ticketing_v2
+T000062,2024-02-27 05:41:00,portal,high,North,0.42,4.0,,billing question about invoice,ticketing_v2
+T000063,2024-12-24 03:40:00,email,medium,North,6.15,118.0,2.0,billing question about invoice,ticketing_v2
+T000064,2024-10-10 21:00:00,chat,low,North,39.82,751.0,,customer reported a login error,ticketing_v2
+T000065,2024-05-12 13:23:00,phone,low,East,7.49,105.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000066,2024-10-22 07:49:00,chat,high,East,2.15,53.0,4.0,customer reported a login error,ticketing_v2
+T000067,2024-05-17 03:56:00,chat,high,East,32.92,937.0,2.0,asked how to export data,ticketing_v2
+T000068,2024-12-07 00:49:00,chat,urgent,West,4.75,20.0,3.0,password reset could not be completed,ticketing_v2
+T000069,2024-02-18 08:04:00,email,low,West,12.09,200.0,1.0,customer reported a login error,ticketing_v2
+T000070,2024-07-07 14:40:00,chat,low,North,22.96,682.0,,customer reported a login error,ticketing_v2
+T000071,2024-10-06 04:13:00,chat,low,North,65.26,1933.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000072,2024-11-01 19:52:00,chat,medium,East,16.31,321.0,,password reset could not be completed,ticketing_v2
+T000073,2024-06-14 17:30:00,portal,medium,West,5.81,89.0,,requested a refund for a damaged item,ticketing_v2
+T000074,2024-10-27 19:24:00,email,high,West,5.5,20.0,,requested a refund for a damaged item,ticketing_v2
+T000075,2024-10-15 04:49:00,email,low,South,30.35,202.0,4.0,password reset could not be completed,ticketing_v2
+T000076,2024-12-06 00:57:00,email,low,South,85.01,1175.0,2.0,billing question about invoice,ticketing_v2
+T000077,2024-08-03 08:39:00,chat,low,North,17.87,443.0,,customer reported a login error,ticketing_v2
+T000078,2024-02-27 16:12:00,email,urgent,East,1.29,25.0,2.0,billing question about invoice,ticketing_v2
+T000079,2024-09-09 16:40:00,phone,high,East,6.71,62.0,,requested a refund for a damaged item,ticketing_v2
+T000080,2024-02-11 07:01:00,chat,high,West,3.24,62.0,,requested a refund for a damaged item,ticketing_v2
+T000081,2024-11-02 03:49:00,chat,medium,North,6.44,91.0,3.0,asked how to export data,ticketing_v2
+T000082,2024-07-16 00:45:00,chat,urgent,East,2.16,59.0,1.0,billing question about invoice,ticketing_v2
+T000083,2024-06-08 12:25:00,email,low,South,22.34,434.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000084,2024-04-07 15:53:00,email,low,West,37.94,485.0,5.0,customer reported a login error,ticketing_v2
+T000085,2024-05-26 04:32:00,phone,low,West,8.6,162.0,,requested a refund for a damaged item,ticketing_v2
+T000086,2024-07-18 17:33:00,phone,medium,West,5.23,7.0,4.0,password reset could not be completed,ticketing_v2
+T000087,2024-02-05 20:36:00,phone,low,East,10.9,168.0,4.0,billing question about invoice,ticketing_v2
+T000088,2024-09-05 03:01:00,email,medium,South,61.12,792.0,,billing question about invoice,ticketing_v2
+T000089,2024-03-22 05:48:00,email,high,East,4.41,25.0,4.0,customer reported a login error,ticketing_v2
+T000090,2024-06-22 20:15:00,email,medium,East,3.39,43.0,5.0,asked how to export data,ticketing_v2
+T000091,2024-09-16 12:50:00,chat,urgent,East,1.33,27.0,,password reset could not be completed,ticketing_v2
+T000092,2024-03-29 18:49:00,chat,medium,North,8.31,169.0,5.0,password reset could not be completed,ticketing_v2
+T000093,2024-10-13 01:17:00,phone,medium,East,12.88,216.0,,password reset could not be completed,ticketing_v2
+T000094,2024-02-04 06:22:00,portal,low,South,42.74,1180.0,5.0,billing question about invoice,ticketing_v2
+T000095,2024-12-09 10:18:00,chat,medium,South,28.34,759.0,3.0,customer reported a login error,ticketing_v2
+T000096,2024-06-30 05:35:00,phone,high,East,8.32,219.0,4.0,billing question about invoice,ticketing_v2
+T000097,2024-07-12 04:39:00,phone,high,East,5.1,128.0,,requested a refund for a damaged item,ticketing_v2
+T000098,2024-08-04 07:31:00,email,low,East,9.24,85.0,4.0,asked how to export data,ticketing_v2
+T000099,2024-05-31 05:17:00,portal,low,South,9.49,23.0,,asked how to export data,ticketing_v2
+T000100,2024-10-30 03:47:00,portal,medium,South,13.55,248.0,,billing question about invoice,ticketing_v2
+T000101,2024-11-26 00:15:00,email,low,North,11.37,276.0,,requested a refund for a damaged item,ticketing_v2
+T000102,2024-12-06 06:07:00,chat,urgent,North,0.59,10.0,5.0,billing question about invoice,ticketing_v2
+T000103,2024-12-16 13:05:00,email,medium,West,21.92,410.0,,password reset could not be completed,ticketing_v2
+T000104,2024-03-29 17:57:00,chat,low,North,21.34,450.0,1.0,asked how to export data,ticketing_v2
+T000105,2024-02-20 10:01:00,phone,medium,East,7.32,202.0,,billing question about invoice,ticketing_v2
+T000106,2024-07-30 19:25:00,email,low,South,16.16,296.0,,billing question about invoice,ticketing_v2
+T000107,2024-06-18 18:40:00,phone,low,West,12.51,124.0,,password reset could not be completed,ticketing_v2
+T000108,2024-05-09 10:10:00,chat,medium,East,8.2,69.0,,asked how to export data,ticketing_v2
+T000109,2024-12-30 00:16:00,email,medium,East,4.79,143.0,1.0,customer reported a login error,ticketing_v2
+T000110,2024-09-30 07:39:00,email,medium,West,8.87,228.0,4.0,customer reported a login error,ticketing_v2
+T000111,2024-12-28 13:15:00,email,low,East,26.32,475.0,4.0,asked how to export data,ticketing_v2
+T000112,2024-01-04 04:12:00,chat,medium,West,24.77,534.0,,password reset could not be completed,ticketing_v2
+T000113,2024-12-02 04:52:00,chat,high,South,8.8,77.0,3.0,customer reported a login error,ticketing_v2
+T000114,2024-09-21 00:20:00,email,medium,North,6.18,75.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000115,2024-08-16 11:26:00,email,medium,East,8.66,228.0,,customer reported a login error,ticketing_v2
+T000116,2024-06-14 22:11:00,email,low,East,55.1,1546.0,,customer reported a login error,ticketing_v2
+T000117,2024-09-20 19:31:00,email,high,West,1.9,52.0,4.0,password reset could not be completed,ticketing_v2
+T000118,2024-02-08 07:34:00,phone,low,East,27.98,238.0,3.0,customer reported a login error,ticketing_v2
+T000119,2024-03-21 16:33:00,phone,medium,North,155.9855540657197,2988.0,,password reset could not be completed,ticketing_v2
+T000120,2024-08-14 17:28:00,phone,medium,East,6.34,68.0,3.0,password reset could not be completed,ticketing_v2
+T000121,2024-01-24 19:36:00,chat,high,East,8.96,125.0,1.0,asked how to export data,ticketing_v2
+T000122,2024-02-24 22:14:00,chat,medium,South,2.86,42.0,4.0,asked how to export data,ticketing_v2
+T000123,2024-06-25 01:39:00,email,medium,East,3.1,86.0,3.0,billing question about invoice,ticketing_v2
+T000124,2024-01-10 07:56:00,portal,medium,South,6.68,194.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000125,2024-01-10 19:31:00,portal,medium,West,8.79,11.0,,password reset could not be completed,ticketing_v2
+T000126,2024-12-23 06:27:00,email,medium,East,5.8,67.0,2.0,password reset could not be completed,ticketing_v2
+T000127,2024-07-22 15:45:00,email,medium,North,7.55,208.0,4.0,password reset could not be completed,ticketing_v2
+T000128,2024-10-03 16:23:00,phone,low,East,24.36,263.0,,customer reported a login error,ticketing_v2
+T000129,2024-03-07 03:09:00,portal,high,North,4.65,68.0,,password reset could not be completed,ticketing_v2
+T000130,2024-04-30 23:30:00,email,medium,South,8.55,56.0,,asked how to export data,ticketing_v2
+T000131,2024-03-07 16:06:00,phone,low,West,27.6,733.0,4.0,password reset could not be completed,ticketing_v2
+T000132,2024-12-09 16:40:00,portal,high,North,2.63,66.0,5.0,password reset could not be completed,ticketing_v2
+T000133,2024-01-11 22:27:00,chat,low,South,7.37,143.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000134,2024-09-23 12:05:00,email,low,South,41.9,996.0,,asked how to export data,ticketing_v2
+T000135,2024-09-08 02:13:00,chat,medium,West,19.64,515.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000136,2024-04-05 16:28:00,email,high,West,11.72,100.0,2.0,asked how to export data,ticketing_v2
+T000137,2024-11-05 06:31:00,email,low,West,39.55,380.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000138,2024-09-15 23:26:00,email,medium,South,14.65,311.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000139,2024-11-19 07:15:00,phone,low,West,67.03,1857.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000140,2024-12-09 14:58:00,email,low,West,2.27,44.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000141,2024-01-27 12:34:00,phone,medium,East,7.2,56.0,,asked how to export data,ticketing_v2
+T000142,2024-11-29 10:32:00,email,high,South,6.9,14.0,4.0,customer reported a login error,ticketing_v2
+T000143,2024-06-09 02:53:00,email,high,South,11.01,161.0,,asked how to export data,ticketing_v2
+T000144,2024-08-30 09:43:00,portal,medium,East,9.02,56.0,,billing question about invoice,ticketing_v2
+T000145,2024-06-04 01:50:00,chat,low,South,499.1556285978868,7534.0,,password reset could not be completed,ticketing_v2
+T000146,2024-12-09 22:23:00,email,low,East,9.87,223.0,,billing question about invoice,ticketing_v2
+T000147,2024-05-24 21:21:00,chat,medium,North,14.64,434.0,4.0,password reset could not be completed,ticketing_v2
+T000148,2024-07-24 19:45:00,chat,low,South,13.38,310.0,,billing question about invoice,ticketing_v2
+T000149,2024-07-02 06:21:00,email,urgent,East,0.87,22.0,,billing question about invoice,ticketing_v2
+T000150,2024-06-26 06:59:00,chat,high,North,2.98,69.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000151,2024-04-22 17:45:00,email,low,West,14.76,227.0,,customer reported a login error,ticketing_v2
+T000152,2024-01-29 09:49:00,portal,high,South,0.91,22.0,2.0,password reset could not be completed,ticketing_v2
+T000153,2024-03-24 16:33:00,chat,high,East,1.05,4.0,5.0,password reset could not be completed,ticketing_v2
+T000154,2024-08-17 18:18:00,portal,medium,West,20.11,109.0,,customer reported a login error,ticketing_v2
+T000155,2024-02-01 04:10:00,email,high,South,4.16,98.0,,billing question about invoice,ticketing_v2
+T000156,2024-12-05 02:33:00,email,medium,South,15.61,102.0,,requested a refund for a damaged item,ticketing_v2
+T000157,2024-03-22 05:38:00,phone,low,North,17.16,227.0,,password reset could not be completed,ticketing_v2
+T000158,2024-07-21 22:48:00,chat,medium,North,1.75,36.0,2.0,password reset could not be completed,ticketing_v2
+T000159,2024-01-25 13:14:00,phone,medium,West,6.94,91.0,5.0,asked how to export data,ticketing_v2
+T000160,2024-03-18 06:57:00,chat,medium,South,5.1,61.0,3.0,asked how to export data,ticketing_v2
+T000161,2024-11-01 02:39:00,chat,low,West,14.73,178.0,4.0,password reset could not be completed,ticketing_v2
+T000162,2024-12-29 00:30:00,portal,low,East,14.98,449.0,2.0,password reset could not be completed,ticketing_v2
+T000163,2024-07-12 12:43:00,email,high,West,12.93,246.0,5.0,billing question about invoice,ticketing_v2
+T000164,2024-02-15 04:55:00,email,high,South,4.1,7.0,4.0,password reset could not be completed,ticketing_v2
+T000165,2024-06-05 22:08:00,email,low,South,6.75,92.0,5.0,billing question about invoice,ticketing_v2
+T000166,2024-04-22 12:53:00,portal,high,North,1.78,47.0,4.0,customer reported a login error,ticketing_v2
+T000167,2024-01-23 02:48:00,chat,urgent,East,0.55,10.0,,asked how to export data,ticketing_v2
+T000168,2024-05-31 04:22:00,email,high,South,4.49,10.0,4.0,customer reported a login error,ticketing_v2
+T000169,2024-06-29 02:36:00,email,high,West,1.95,48.0,,password reset could not be completed,ticketing_v2
+T000170,2024-08-25 17:43:00,chat,medium,South,6.81,52.0,,billing question about invoice,ticketing_v2
+T000171,2024-08-05 18:46:00,email,medium,North,10.4,63.0,4.0,billing question about invoice,ticketing_v2
+T000172,2024-05-02 17:19:00,chat,high,North,1.76,25.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000173,2024-06-24 09:51:00,chat,medium,West,9.4,186.0,,asked how to export data,ticketing_v2
+T000174,2024-01-19 01:45:00,email,medium,North,6.31,129.0,5.0,password reset could not be completed,ticketing_v2
+T000175,2024-02-15 02:18:00,email,low,South,59.59,345.0,3.0,billing question about invoice,ticketing_v2
+T000176,2024-08-04 08:03:00,phone,medium,South,2.06,60.0,3.0,asked how to export data,ticketing_v2
+T000177,2024-05-27 15:32:00,email,high,South,3.66,102.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000178,2024-07-23 19:26:00,email,high,South,2.58,51.0,,requested a refund for a damaged item,ticketing_v2
+T000179,2024-09-29 17:01:00,email,medium,East,7.35,107.0,,requested a refund for a damaged item,ticketing_v2
+T000180,2024-08-20 16:58:00,chat,medium,North,2.32,42.0,3.0,customer reported a login error,ticketing_v2
+T000181,2024-11-27 23:15:00,email,urgent,North,0.97,18.0,,requested a refund for a damaged item,ticketing_v2
+T000182,2024-05-17 14:19:00,email,medium,West,22.82,616.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000183,2024-09-19 01:22:00,email,medium,West,40.94,992.0,4.0,asked how to export data,ticketing_v2
+T000184,2024-06-29 18:15:00,chat,medium,West,201.68096361750602,4825.0,,password reset could not be completed,ticketing_v2
+T000185,2024-07-28 19:48:00,email,low,South,17.54,409.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000186,2024-12-22 15:54:00,chat,low,North,14.22,50.0,,requested a refund for a damaged item,ticketing_v2
+T000187,2024-03-13 19:46:00,email,medium,West,2.1,37.0,,password reset could not be completed,ticketing_v2
+T000188,2024-04-08 02:11:00,email,medium,South,1.73,36.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000189,2024-08-29 10:21:00,chat,medium,East,7.7,167.0,4.0,billing question about invoice,ticketing_v2
+T000190,2024-11-15 16:23:00,chat,high,West,1.56,13.0,,billing question about invoice,ticketing_v2
+T000191,2024-04-14 01:16:00,email,medium,South,27.84,543.0,,billing question about invoice,ticketing_v2
+T000192,2024-05-15 17:42:00,email,medium,East,13.6,405.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000193,2024-07-28 09:54:00,phone,medium,North,8.88,30.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000194,2024-05-16 07:05:00,chat,low,East,46.47,704.0,3.0,billing question about invoice,ticketing_v2
+T000195,2024-03-28 02:16:00,email,medium,East,19.4,65.0,3.0,customer reported a login error,ticketing_v2
+T000196,2024-08-01 02:20:00,chat,low,West,14.72,341.0,,requested a refund for a damaged item,ticketing_v2
+T000197,2024-07-09 15:46:00,email,low,South,16.82,296.0,4.0,customer reported a login error,ticketing_v2
+T000198,2024-01-01 14:36:00,email,low,West,38.83,54.0,3.0,asked how to export data,ticketing_v2
+T000199,2024-03-02 00:58:00,chat,low,South,54.8,396.0,5.0,billing question about invoice,ticketing_v2
+T000200,2024-04-02 10:43:00,chat,high,West,4.53,37.0,,billing question about invoice,ticketing_v2
+T000201,2024-10-12 20:09:00,portal,medium,East,2.48,13.0,5.0,password reset could not be completed,ticketing_v2
+T000202,2024-06-26 11:39:00,phone,medium,East,14.47,240.0,3.0,password reset could not be completed,ticketing_v2
+T000203,2024-09-19 01:23:00,chat,medium,East,15.5,32.0,4.0,customer reported a login error,ticketing_v2
+T000204,2024-02-09 19:58:00,chat,high,North,14.53,25.0,4.0,billing question about invoice,ticketing_v2
+T000205,2024-07-29 18:49:00,chat,low,North,22.81,200.0,,password reset could not be completed,ticketing_v2
+T000206,2024-09-10 19:13:00,email,medium,West,56.39,696.0,5.0,billing question about invoice,ticketing_v2
+T000207,2024-12-24 08:25:00,email,low,West,60.51,829.0,,requested a refund for a damaged item,ticketing_v2
+T000208,2024-07-13 09:11:00,email,medium,North,10.09,128.0,,asked how to export data,ticketing_v2
+T000209,2024-04-15 15:07:00,phone,high,East,2.41,21.0,,requested a refund for a damaged item,ticketing_v2
+T000210,2024-12-23 20:52:00,email,medium,East,4.54,8.0,,billing question about invoice,ticketing_v2
+T000211,2024-07-22 04:54:00,chat,medium,South,3.45,48.0,1.0,customer reported a login error,ticketing_v2
+T000212,2024-06-11 00:59:00,email,low,North,18.61,37.0,4.0,password reset could not be completed,ticketing_v2
+T000213,2024-06-07 23:10:00,chat,medium,South,7.2,203.0,2.0,billing question about invoice,ticketing_v2
+T000214,2024-01-20 12:36:00,phone,medium,West,3.14,18.0,2.0,asked how to export data,ticketing_v2
+T000215,2024-10-06 07:31:00,email,medium,West,24.04,405.0,,customer reported a login error,ticketing_v2
+T000216,2024-07-27 14:54:00,chat,low,South,12.13,180.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000217,2024-05-08 03:31:00,portal,low,West,4.38,33.0,4.0,customer reported a login error,ticketing_v2
+T000218,2024-06-09 04:37:00,chat,low,West,16.86,85.0,3.0,password reset could not be completed,ticketing_v2
+T000219,2024-09-25 10:47:00,email,high,East,16.84,438.0,2.0,customer reported a login error,ticketing_v2
+T000220,2024-12-16 08:36:00,email,high,West,29.79,850.0,5.0,customer reported a login error,ticketing_v2
+T000221,2024-01-20 02:06:00,email,low,North,8.96,171.0,4.0,customer reported a login error,ticketing_v2
+T000222,2024-01-04 00:11:00,email,medium,South,3.33,42.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000223,2024-06-28 14:46:00,email,medium,West,19.34,258.0,,billing question about invoice,ticketing_v2
+T000224,2024-11-27 06:41:00,portal,low,East,21.47,403.0,,password reset could not be completed,ticketing_v2
+T000225,2024-02-17 13:22:00,email,medium,South,5.35,87.0,,password reset could not be completed,ticketing_v2
+T000226,2024-10-15 18:29:00,email,high,South,7.71,226.0,,asked how to export data,ticketing_v2
+T000227,2024-12-08 04:16:00,phone,high,North,3.19,92.0,4.0,customer reported a login error,ticketing_v2
+T000228,2024-12-05 23:45:00,chat,low,East,26.68,610.0,4.0,password reset could not be completed,ticketing_v2
+T000229,2024-11-27 14:13:00,chat,medium,East,334.9157823022876,498.0,,customer reported a login error,ticketing_v2
+T000230,2024-07-06 05:15:00,chat,urgent,West,3.47,99.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000231,2024-11-17 05:57:00,portal,urgent,West,1.45,8.0,5.0,customer reported a login error,ticketing_v2
+T000232,2024-04-27 15:05:00,phone,high,East,1.28,29.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000233,2024-06-07 04:45:00,phone,low,East,23.78,234.0,4.0,customer reported a login error,ticketing_v2
+T000234,2024-10-22 15:40:00,email,urgent,North,1.43,35.0,4.0,customer reported a login error,ticketing_v2
+T000235,2024-06-06 07:27:00,chat,low,East,7.76,24.0,5.0,password reset could not be completed,ticketing_v2
+T000236,2024-11-06 12:13:00,email,low,West,14.16,379.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000237,2024-09-24 16:10:00,email,medium,East,3.36,59.0,4.0,asked how to export data,ticketing_v2
+T000238,2024-05-01 16:28:00,phone,low,West,19.95,483.0,4.0,billing question about invoice,ticketing_v2
+T000239,2024-07-11 08:56:00,chat,high,North,1.74,6.0,4.0,billing question about invoice,ticketing_v2
+T000240,2024-05-29 18:44:00,chat,medium,South,5.96,43.0,,asked how to export data,ticketing_v2
+T000241,2024-03-26 10:27:00,email,urgent,South,0.43,1.0,4.0,customer reported a login error,ticketing_v2
+T000242,2024-08-05 07:03:00,portal,medium,East,13.52,274.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000243,2024-04-11 10:36:00,email,low,North,39.57,678.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000244,2024-02-14 05:46:00,phone,medium,South,6.49,168.0,,billing question about invoice,ticketing_v2
+T000245,2024-02-28 16:49:00,chat,low,North,30.25,122.0,,password reset could not be completed,ticketing_v2
+T000246,2024-05-09 04:32:00,phone,medium,North,9.97,285.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000247,2024-03-14 23:58:00,email,low,North,36.77,221.0,,password reset could not be completed,ticketing_v2
+T000248,2024-04-07 23:03:00,email,urgent,East,0.6,6.0,4.0,customer reported a login error,ticketing_v2
+T000249,2024-01-25 22:37:00,chat,medium,East,9.16,87.0,,billing question about invoice,ticketing_v2
+T000250,2024-12-01 11:22:00,chat,urgent,East,1.07,30.0,5.0,password reset could not be completed,ticketing_v2
+T000251,2024-11-23 16:36:00,chat,low,South,30.68,229.0,4.0,customer reported a login error,ticketing_v2
+T000252,2024-05-09 08:02:00,email,low,East,4.82,127.0,1.0,password reset could not be completed,ticketing_v2
+T000253,2024-04-20 23:02:00,email,low,North,33.57,705.0,1.0,asked how to export data,ticketing_v2
+T000254,2024-05-24 01:37:00,email,low,South,68.18,1891.0,4.0,billing question about invoice,ticketing_v2
+T000255,2024-11-26 10:40:00,portal,low,South,19.76,140.0,,password reset could not be completed,ticketing_v2
+T000256,2024-06-13 10:18:00,email,medium,West,23.5,536.0,3.0,customer reported a login error,ticketing_v2
+T000257,2024-03-09 18:30:00,portal,medium,North,8.86,166.0,,customer reported a login error,ticketing_v2
+T000258,2024-11-28 10:35:00,chat,low,South,8.07,69.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000259,2024-08-17 16:12:00,chat,high,West,5.44,82.0,3.0,password reset could not be completed,ticketing_v2
+T000260,2024-03-07 04:48:00,email,high,West,5.37,86.0,4.0,billing question about invoice,ticketing_v2
+T000261,2024-07-25 12:27:00,chat,low,East,74.24,1415.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000262,2024-02-26 03:07:00,email,urgent,South,1.91,32.0,,billing question about invoice,ticketing_v2
+T000263,2024-09-13 05:35:00,chat,medium,South,6.57,82.0,5.0,billing question about invoice,ticketing_v2
+T000264,2024-10-18 00:06:00,email,low,West,33.02,441.0,5.0,asked how to export data,ticketing_v2
+T000265,2024-08-18 14:10:00,chat,low,West,6.17,106.0,,password reset could not be completed,ticketing_v2
+T000266,2024-03-17 03:42:00,chat,medium,West,14.98,35.0,,password reset could not be completed,ticketing_v2
+T000267,2024-11-19 16:38:00,chat,medium,South,4.63,63.0,,asked how to export data,ticketing_v2
+T000268,2024-03-10 09:15:00,chat,medium,North,17.27,427.0,,asked how to export data,ticketing_v2
+T000269,2024-12-02 23:10:00,email,low,West,15.99,158.0,2.0,billing question about invoice,ticketing_v2
+T000270,2024-01-31 01:55:00,email,low,South,14.95,332.0,,password reset could not be completed,ticketing_v2
+T000271,2024-11-25 03:41:00,chat,low,East,53.0,895.0,5.0,billing question about invoice,ticketing_v2
+T000272,2024-02-29 00:44:00,email,low,West,15.05,39.0,,customer reported a login error,ticketing_v2
+T000273,2024-08-30 18:02:00,chat,low,North,5.28,74.0,,requested a refund for a damaged item,ticketing_v2
+T000274,2024-07-11 08:23:00,email,high,North,14.37,383.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000275,2024-06-24 08:08:00,phone,low,South,816.9371741592344,19262.0,,requested a refund for a damaged item,ticketing_v2
+T000276,2024-09-30 00:44:00,email,urgent,East,1.1,9.0,5.0,asked how to export data,ticketing_v2
+T000277,2024-04-17 10:55:00,email,medium,West,10.38,102.0,4.0,password reset could not be completed,ticketing_v2
+T000278,2024-01-28 16:24:00,portal,medium,North,24.49,543.0,4.0,billing question about invoice,ticketing_v2
+T000279,2024-03-20 00:32:00,phone,low,North,12.95,384.0,,password reset could not be completed,ticketing_v2
+T000280,2024-08-23 12:42:00,chat,medium,East,11.54,127.0,2.0,password reset could not be completed,ticketing_v2
+T000281,2024-03-03 22:20:00,email,high,West,2.94,69.0,,password reset could not be completed,ticketing_v2
+T000282,2024-06-17 08:38:00,phone,medium,North,15.33,458.0,2.0,password reset could not be completed,ticketing_v2
+T000283,2024-11-07 04:51:00,email,low,South,25.82,238.0,,asked how to export data,ticketing_v2
+T000284,2024-12-09 15:53:00,email,low,West,38.08,1021.0,2.0,customer reported a login error,ticketing_v2
+T000285,2024-11-21 04:14:00,email,medium,South,9.59,253.0,,password reset could not be completed,ticketing_v2
+T000286,2024-09-30 12:43:00,portal,high,West,2.08,41.0,3.0,customer reported a login error,ticketing_v2
+T000287,2024-05-25 09:49:00,phone,low,North,13.24,161.0,,password reset could not be completed,ticketing_v2
+T000288,2024-01-01 05:02:00,email,medium,West,12.39,270.0,3.0,billing question about invoice,ticketing_v2
+T000289,2024-10-03 16:22:00,email,high,South,20.5,210.0,,customer reported a login error,ticketing_v2
+T000290,2024-05-09 08:46:00,email,medium,North,13.86,290.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000291,2024-02-17 03:15:00,portal,low,South,33.36,621.0,,requested a refund for a damaged item,ticketing_v2
+T000292,2024-02-04 14:51:00,chat,low,West,32.15,438.0,1.0,password reset could not be completed,ticketing_v2
+T000293,2024-06-02 14:32:00,chat,high,East,2.39,7.0,,customer reported a login error,ticketing_v2
+T000294,2024-04-17 19:02:00,chat,medium,North,14.88,166.0,1.0,customer reported a login error,ticketing_v2
+T000295,2024-12-26 07:14:00,phone,low,West,9.6,130.0,,password reset could not be completed,ticketing_v2
+T000296,2024-05-29 09:11:00,chat,urgent,East,1.66,38.0,,billing question about invoice,ticketing_v2
+T000297,2024-09-22 16:41:00,portal,medium,East,4.59,68.0,,requested a refund for a damaged item,ticketing_v2
+T000298,2024-01-31 23:28:00,chat,low,South,29.69,203.0,4.0,customer reported a login error,ticketing_v2
+T000299,2024-01-18 12:16:00,phone,medium,North,23.93,97.0,1.0,asked how to export data,ticketing_v2
+T000300,2024-03-05 21:18:00,chat,medium,West,14.19,210.0,,requested a refund for a damaged item,ticketing_v2
+T000301,2024-08-21 19:38:00,email,high,South,3.25,76.0,,customer reported a login error,ticketing_v2
+T000302,2024-10-14 03:18:00,email,medium,North,7.23,173.0,4.0,password reset could not be completed,ticketing_v2
+T000303,2024-07-09 03:23:00,chat,low,West,14.61,294.0,5.0,billing question about invoice,ticketing_v2
+T000304,2024-04-21 07:00:00,email,high,West,2.12,14.0,5.0,password reset could not be completed,ticketing_v2
+T000305,2024-01-15 12:24:00,chat,high,West,3.48,12.0,1.0,asked how to export data,ticketing_v2
+T000306,2024-05-03 08:28:00,email,medium,North,3.1,21.0,,billing question about invoice,ticketing_v2
+T000307,2024-07-26 20:58:00,email,low,West,11.05,259.0,,asked how to export data,ticketing_v2
+T000308,2024-02-17 19:42:00,chat,medium,North,1.76,32.0,4.0,password reset could not be completed,ticketing_v2
+T000309,2024-01-24 09:21:00,phone,low,South,15.46,65.0,,asked how to export data,ticketing_v2
+T000310,2024-05-18 07:47:00,email,high,East,13.43,79.0,,password reset could not be completed,ticketing_v2
+T000311,2024-07-21 03:08:00,portal,high,East,6.2,83.0,,password reset could not be completed,ticketing_v2
+T000312,2024-01-23 02:50:00,chat,low,South,95.54,930.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000313,2024-07-28 06:09:00,email,low,West,19.28,338.0,2.0,customer reported a login error,ticketing_v2
+T000314,2024-05-24 21:02:00,chat,medium,West,2.52,35.0,,billing question about invoice,ticketing_v2
+T000315,2024-07-08 04:37:00,chat,high,West,1.84,19.0,3.0,billing question about invoice,ticketing_v2
+T000316,2024-12-26 14:08:00,email,medium,East,16.16,122.0,,customer reported a login error,ticketing_v2
+T000317,2024-09-30 08:46:00,email,high,South,0.86,3.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000318,2024-03-13 20:46:00,chat,low,East,10.68,121.0,5.0,billing question about invoice,ticketing_v2
+T000319,2024-10-12 04:51:00,portal,urgent,West,0.57,7.0,4.0,customer reported a login error,ticketing_v2
+T000320,2024-07-09 00:33:00,email,high,North,1.79,29.0,4.0,password reset could not be completed,ticketing_v2
+T000321,2024-09-18 17:28:00,chat,low,North,817.6923591552576,8292.0,,password reset could not be completed,ticketing_v2
+T000322,2024-10-21 00:23:00,email,low,East,28.33,348.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000323,2024-10-20 22:15:00,phone,medium,South,9.92,272.0,,customer reported a login error,ticketing_v2
+T000324,2024-10-10 03:32:00,phone,high,North,3.5,45.0,,requested a refund for a damaged item,ticketing_v2
+T000325,2024-10-16 04:12:00,email,medium,West,9.02,217.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000326,2024-03-27 17:20:00,email,high,East,2.68,12.0,,billing question about invoice,ticketing_v2
+T000327,2024-12-19 05:24:00,chat,high,West,3.07,86.0,4.0,password reset could not be completed,ticketing_v2
+T000328,2024-09-17 12:48:00,chat,medium,West,55.85,403.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000329,2024-12-04 01:40:00,email,low,West,20.15,318.0,4.0,asked how to export data,ticketing_v2
+T000330,2024-09-14 09:40:00,chat,high,North,3.05,42.0,3.0,asked how to export data,ticketing_v2
+T000331,2024-09-07 18:24:00,phone,medium,North,11.47,320.0,2.0,asked how to export data,ticketing_v2
+T000332,2024-05-18 06:14:00,phone,medium,South,7.33,113.0,4.0,customer reported a login error,ticketing_v2
+T000333,2024-08-10 09:01:00,email,low,North,216.5615301662646,5319.0,4.0,billing question about invoice,ticketing_v2
+T000334,2024-03-14 10:30:00,chat,medium,South,16.59,367.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000335,2024-11-20 14:25:00,chat,medium,North,7.53,81.0,,password reset could not be completed,ticketing_v2
+T000336,2024-05-28 00:12:00,chat,low,East,19.64,357.0,,password reset could not be completed,ticketing_v2
+T000337,2024-03-09 12:15:00,portal,high,South,2.51,53.0,1.0,billing question about invoice,ticketing_v2
+T000338,2024-02-27 06:35:00,email,low,West,51.62,739.0,3.0,customer reported a login error,ticketing_v2
+T000339,2024-10-02 15:16:00,chat,low,South,10.61,115.0,4.0,asked how to export data,ticketing_v2
+T000340,2024-04-01 15:02:00,phone,low,East,29.46,337.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000341,2024-02-22 12:48:00,chat,low,North,27.38,354.0,,password reset could not be completed,ticketing_v2
+T000342,2024-02-19 20:32:00,portal,medium,North,11.47,211.0,,customer reported a login error,ticketing_v2
+T000343,2024-02-02 08:17:00,email,high,South,7.48,59.0,3.0,asked how to export data,ticketing_v2
+T000344,2024-09-29 11:27:00,email,low,East,30.68,508.0,,customer reported a login error,ticketing_v2
+T000345,2024-03-05 06:10:00,email,medium,South,344.99236733912596,1937.0,,billing question about invoice,ticketing_v2
+T000346,2024-12-07 17:34:00,email,medium,South,36.08,724.0,,requested a refund for a damaged item,ticketing_v2
+T000347,2024-02-04 03:08:00,chat,low,South,29.67,227.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000348,2024-02-22 14:58:00,email,high,North,3.88,10.0,,customer reported a login error,ticketing_v2
+T000349,2024-05-01 22:21:00,phone,low,West,57.07,478.0,,billing question about invoice,ticketing_v2
+T000350,2024-06-29 10:39:00,email,high,West,4.57,37.0,2.0,password reset could not be completed,ticketing_v2
+T000351,2024-06-04 19:32:00,phone,high,West,3.38,75.0,3.0,asked how to export data,ticketing_v2
+T000352,2024-09-26 19:25:00,email,medium,North,2.98,14.0,1.0,billing question about invoice,ticketing_v2
+T000353,2024-11-21 10:51:00,chat,low,South,5.57,67.0,4.0,customer reported a login error,ticketing_v2
+T000354,2024-01-03 04:29:00,email,medium,East,4.67,66.0,,customer reported a login error,ticketing_v2
+T000355,2024-02-12 09:12:00,email,low,South,9.18,177.0,4.0,customer reported a login error,ticketing_v2
+T000356,2024-02-09 03:46:00,email,high,East,2.23,18.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000357,2024-11-14 00:26:00,portal,high,West,1.97,26.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000358,2024-10-07 08:13:00,email,medium,South,24.26,222.0,,requested a refund for a damaged item,ticketing_v2
+T000359,2024-09-07 23:17:00,chat,high,West,2.73,26.0,1.0,billing question about invoice,ticketing_v2
+T000360,2024-01-21 15:12:00,email,low,South,6.82,95.0,3.0,asked how to export data,ticketing_v2
+T000361,2024-03-27 02:21:00,phone,low,South,8.01,106.0,3.0,password reset could not be completed,ticketing_v2
+T000362,2024-08-29 19:23:00,phone,medium,West,10.14,106.0,5.0,password reset could not be completed,ticketing_v2
+T000363,2024-09-08 15:35:00,chat,medium,South,2.13,48.0,,billing question about invoice,ticketing_v2
+T000364,2024-03-02 10:57:00,email,medium,West,3.17,42.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000365,2024-06-17 08:33:00,email,high,West,3.48,46.0,,billing question about invoice,ticketing_v2
+T000366,2024-05-24 17:29:00,phone,low,North,86.17,1033.0,,requested a refund for a damaged item,ticketing_v2
+T000367,2024-11-21 16:27:00,email,low,South,19.31,575.0,,password reset could not be completed,ticketing_v2
+T000368,2024-02-19 08:43:00,email,low,South,28.06,192.0,,password reset could not be completed,ticketing_v2
+T000369,2024-12-17 10:14:00,phone,medium,North,1232.0811409352486,9879.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000370,2024-08-31 02:52:00,email,high,East,6.25,104.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000371,2024-01-10 16:27:00,email,low,North,11.41,82.0,4.0,password reset could not be completed,ticketing_v2
+T000372,2024-07-26 01:31:00,email,low,East,18.23,398.0,,requested a refund for a damaged item,ticketing_v2
+T000373,2024-04-30 02:26:00,email,medium,East,1.92,12.0,4.0,password reset could not be completed,ticketing_v2
+T000374,2024-02-17 08:52:00,chat,low,North,12.86,90.0,4.0,asked how to export data,ticketing_v2
+T000375,2024-05-28 12:30:00,chat,medium,West,4.58,99.0,3.0,customer reported a login error,ticketing_v2
+T000376,2024-01-01 05:46:00,email,low,East,41.84,254.0,4.0,password reset could not be completed,ticketing_v2
+T000377,2024-02-29 17:06:00,portal,medium,West,10.02,140.0,2.0,asked how to export data,ticketing_v2
+T000378,2024-09-08 08:02:00,email,high,South,26.03,353.0,5.0,asked how to export data,ticketing_v2
+T000379,2024-08-11 19:56:00,chat,medium,South,19.54,444.0,4.0,asked how to export data,ticketing_v2
+T000380,2024-10-31 10:05:00,chat,medium,West,3.36,57.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000381,2024-06-04 03:09:00,email,urgent,West,0.34,5.0,,billing question about invoice,ticketing_v2
+T000382,2024-10-09 09:30:00,email,medium,North,7.95,101.0,5.0,asked how to export data,ticketing_v2
+T000383,2024-06-20 18:23:00,phone,low,East,26.68,386.0,,requested a refund for a damaged item,ticketing_v2
+T000384,2024-12-28 05:38:00,portal,high,West,18.2,421.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000385,2024-02-04 08:20:00,email,high,South,2.73,55.0,,billing question about invoice,ticketing_v2
+T000386,2024-04-02 02:09:00,email,medium,North,9.31,238.0,,password reset could not be completed,ticketing_v2
+T000387,2024-03-27 15:05:00,email,low,East,12.91,113.0,1.0,customer reported a login error,ticketing_v2
+T000388,2024-08-01 10:49:00,phone,urgent,East,4.44,106.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000389,2024-12-09 08:30:00,email,high,North,169.82722078653785,1750.0,5.0,asked how to export data,ticketing_v2
+T000390,2024-01-22 19:05:00,phone,medium,South,19.28,217.0,1.0,asked how to export data,ticketing_v2
+T000391,2024-05-09 13:13:00,email,medium,East,7.74,210.0,1.0,password reset could not be completed,ticketing_v2
+T000392,2024-01-30 05:40:00,chat,high,West,2.99,70.0,,requested a refund for a damaged item,ticketing_v2
+T000393,2024-09-21 09:28:00,chat,high,North,2.68,16.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000394,2024-09-25 02:53:00,email,high,East,8.57,73.0,,requested a refund for a damaged item,ticketing_v2
+T000395,2024-10-19 02:44:00,email,urgent,West,0.57,15.0,4.0,billing question about invoice,ticketing_v2
+T000396,2024-04-28 20:09:00,email,low,West,26.91,63.0,4.0,billing question about invoice,ticketing_v2
+T000397,2024-02-11 17:53:00,email,low,East,20.9,463.0,3.0,password reset could not be completed,ticketing_v2
+T000398,2024-07-31 18:18:00,chat,low,North,7.12,50.0,,asked how to export data,ticketing_v2
+T000399,2024-01-12 23:46:00,phone,low,East,17.24,191.0,,asked how to export data,ticketing_v2
+T000400,2024-01-31 13:25:00,portal,medium,East,4.87,41.0,,customer reported a login error,ticketing_v2
+T000401,2024-03-24 14:57:00,chat,low,East,26.95,709.0,,billing question about invoice,ticketing_v2
+T000402,2024-06-17 16:22:00,email,low,West,19.15,475.0,,asked how to export data,ticketing_v2
+T000403,2024-09-28 01:07:00,portal,low,North,1297.6061942376523,19911.0,,customer reported a login error,ticketing_v2
+T000404,2024-05-04 00:27:00,phone,medium,North,13.76,30.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000405,2024-02-15 11:02:00,email,low,South,18.59,360.0,,billing question about invoice,ticketing_v2
+T000406,2024-05-23 07:37:00,chat,low,West,8.54,79.0,4.0,password reset could not be completed,ticketing_v2
+T000407,2024-07-17 00:50:00,portal,low,North,41.05,1047.0,2.0,customer reported a login error,ticketing_v2
+T000408,2024-10-24 14:02:00,email,high,South,5.33,118.0,,asked how to export data,ticketing_v2
+T000409,2024-09-26 11:01:00,portal,high,South,4.65,35.0,,requested a refund for a damaged item,ticketing_v2
+T000410,2024-03-24 16:26:00,email,high,South,7.04,50.0,2.0,password reset could not be completed,ticketing_v2
+T000411,2024-08-06 07:21:00,chat,urgent,North,0.38,10.0,5.0,asked how to export data,ticketing_v2
+T000412,2024-03-31 10:25:00,email,high,North,4.07,15.0,,requested a refund for a damaged item,ticketing_v2
+T000413,2024-10-28 15:50:00,email,high,North,6.03,153.0,,password reset could not be completed,ticketing_v2
+T000414,2024-08-14 08:32:00,email,high,West,7.89,74.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000415,2024-01-15 19:10:00,chat,medium,North,10.52,239.0,5.0,billing question about invoice,ticketing_v2
+T000416,2024-07-25 09:29:00,phone,high,West,13.87,177.0,4.0,asked how to export data,ticketing_v2
+T000417,2024-12-08 22:58:00,email,medium,East,3.6,87.0,,customer reported a login error,ticketing_v2
+T000418,2024-02-01 01:02:00,chat,medium,East,23.95,405.0,5.0,asked how to export data,ticketing_v2
+T000419,2024-04-29 04:31:00,email,high,South,6.52,146.0,,requested a refund for a damaged item,ticketing_v2
+T000420,2024-06-29 22:54:00,chat,medium,South,21.11,217.0,,billing question about invoice,ticketing_v2
+T000421,2024-10-01 08:18:00,email,low,South,29.91,249.0,1.0,password reset could not be completed,ticketing_v2
+T000422,2024-04-06 17:34:00,email,medium,South,7.43,166.0,2.0,password reset could not be completed,ticketing_v2
+T000423,2024-11-19 11:52:00,email,low,North,2.96,52.0,,asked how to export data,ticketing_v2
+T000424,2024-12-25 06:36:00,email,medium,North,2.46,23.0,4.0,password reset could not be completed,ticketing_v2
+T000425,2024-10-06 14:50:00,chat,medium,North,6.75,142.0,,asked how to export data,ticketing_v2
+T000426,2024-09-01 15:49:00,phone,medium,East,5.99,93.0,3.0,asked how to export data,ticketing_v2
+T000427,2024-05-13 15:17:00,chat,urgent,West,0.75,13.0,2.0,asked how to export data,ticketing_v2
+T000428,2024-12-10 16:36:00,chat,medium,North,8.53,220.0,4.0,billing question about invoice,ticketing_v2
+T000429,2024-03-26 17:57:00,email,medium,East,19.57,353.0,1.0,asked how to export data,ticketing_v2
+T000430,2024-03-21 00:34:00,phone,medium,East,9.19,70.0,5.0,asked how to export data,ticketing_v2
+T000431,2024-06-20 22:47:00,phone,high,East,5.3,82.0,,asked how to export data,ticketing_v2
+T000432,2024-05-02 16:34:00,chat,low,West,10.19,256.0,,asked how to export data,ticketing_v2
+T000433,2024-09-14 00:27:00,chat,medium,North,6.5,25.0,,billing question about invoice,ticketing_v2
+T000434,2024-10-28 20:27:00,email,medium,East,5.4,14.0,3.0,password reset could not be completed,ticketing_v2
+T000435,2024-11-13 14:33:00,email,high,South,4.77,38.0,5.0,billing question about invoice,ticketing_v2
+T000436,2024-05-29 15:04:00,phone,medium,North,3.56,65.0,,requested a refund for a damaged item,ticketing_v2
+T000437,2024-03-21 21:42:00,chat,high,West,4.66,26.0,2.0,password reset could not be completed,ticketing_v2
+T000438,2024-04-25 19:38:00,portal,medium,South,49.59,114.0,,billing question about invoice,ticketing_v2
+T000439,2024-07-18 18:29:00,portal,medium,North,5.46,18.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000440,2024-04-11 15:44:00,phone,low,West,23.08,661.0,4.0,asked how to export data,ticketing_v2
+T000441,2024-02-14 21:33:00,portal,medium,East,8.29,227.0,,password reset could not be completed,ticketing_v2
+T000442,2024-01-15 18:24:00,email,medium,North,28.22,583.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000443,2024-10-21 09:15:00,email,low,West,2.83,37.0,5.0,billing question about invoice,ticketing_v2
+T000444,2024-08-12 04:20:00,email,low,East,17.46,196.0,3.0,billing question about invoice,ticketing_v2
+T000445,2024-04-26 20:34:00,email,low,South,10.43,209.0,,customer reported a login error,ticketing_v2
+T000446,2024-11-26 07:01:00,portal,medium,South,35.3,451.0,3.0,asked how to export data,ticketing_v2
+T000447,2024-03-13 00:50:00,email,medium,West,4.9,134.0,1.0,customer reported a login error,ticketing_v2
+T000448,2024-08-20 06:31:00,phone,medium,North,4.34,25.0,,password reset could not be completed,ticketing_v2
+T000449,2024-02-11 13:08:00,phone,medium,South,20.59,117.0,5.0,customer reported a login error,ticketing_v2
+T000450,2024-12-07 10:29:00,chat,high,South,3.02,78.0,,billing question about invoice,ticketing_v2
+T000451,2024-08-08 08:55:00,email,high,South,7.42,178.0,3.0,billing question about invoice,ticketing_v2
+T000452,2024-12-13 23:12:00,email,low,North,14.67,363.0,4.0,password reset could not be completed,ticketing_v2
+T000453,2024-01-06 02:39:00,phone,medium,East,1.08,27.0,4.0,customer reported a login error,ticketing_v2
+T000454,2024-03-16 08:22:00,email,low,West,48.96,662.0,1.0,customer reported a login error,ticketing_v2
+T000455,2024-04-24 21:02:00,email,high,East,1.98,13.0,4.0,asked how to export data,ticketing_v2
+T000456,2024-06-13 16:53:00,chat,medium,East,12.26,225.0,,requested a refund for a damaged item,ticketing_v2
+T000457,2024-07-04 04:34:00,email,low,East,6.76,107.0,,asked how to export data,ticketing_v2
+T000458,2024-07-17 18:34:00,email,high,West,7.23,138.0,1.0,billing question about invoice,ticketing_v2
+T000459,2024-04-18 06:12:00,email,low,South,36.85,361.0,4.0,password reset could not be completed,ticketing_v2
+T000460,2024-02-03 07:23:00,chat,low,West,17.14,269.0,4.0,billing question about invoice,ticketing_v2
+T000461,2024-03-22 13:08:00,chat,low,East,119.4,1266.0,,requested a refund for a damaged item,ticketing_v2
+T000462,2024-02-05 07:28:00,email,high,North,4.6,13.0,1.0,password reset could not be completed,ticketing_v2
+T000463,2024-06-02 09:40:00,email,medium,West,19.44,340.0,3.0,password reset could not be completed,ticketing_v2
+T000464,2024-07-03 11:25:00,portal,medium,North,15.63,371.0,5.0,asked how to export data,ticketing_v2
+T000465,2024-04-06 20:49:00,phone,low,West,15.87,138.0,1.0,billing question about invoice,ticketing_v2
+T000466,2024-12-16 02:22:00,portal,medium,South,10.58,31.0,5.0,billing question about invoice,ticketing_v2
+T000467,2024-06-15 02:40:00,chat,medium,North,13.76,190.0,3.0,password reset could not be completed,ticketing_v2
+T000468,2024-06-28 15:07:00,portal,low,South,40.75,617.0,2.0,asked how to export data,ticketing_v2
+T000469,2024-11-12 10:05:00,email,medium,East,19.11,393.0,2.0,password reset could not be completed,ticketing_v2
+T000470,2024-02-23 06:32:00,phone,low,North,16.45,362.0,5.0,customer reported a login error,ticketing_v2
+T000471,2024-01-22 14:46:00,phone,medium,South,4.62,106.0,2.0,customer reported a login error,ticketing_v2
+T000472,2024-05-02 23:07:00,email,low,West,55.28,361.0,,billing question about invoice,ticketing_v2
+T000473,2024-10-19 04:14:00,email,low,South,15.97,78.0,3.0,customer reported a login error,ticketing_v2
+T000474,2024-11-01 15:10:00,portal,medium,East,20.91,315.0,,customer reported a login error,ticketing_v2
+T000475,2024-04-01 00:57:00,chat,medium,North,5.75,22.0,,customer reported a login error,ticketing_v2
+T000476,2024-11-28 08:24:00,email,low,South,10.0,278.0,4.0,asked how to export data,ticketing_v2
+T000477,2024-02-26 13:46:00,phone,medium,North,14.12,332.0,,customer reported a login error,ticketing_v2
+T000478,2024-10-14 01:56:00,phone,medium,South,3.09,46.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000479,2024-12-27 07:58:00,email,high,West,2.71,24.0,,customer reported a login error,ticketing_v2
+T000480,2024-12-06 04:50:00,chat,high,South,10.98,233.0,,asked how to export data,ticketing_v2
+T000481,2024-04-17 04:50:00,email,urgent,East,0.7,18.0,1.0,customer reported a login error,ticketing_v2
+T000482,2024-02-27 22:17:00,email,medium,East,7.56,66.0,4.0,asked how to export data,ticketing_v2
+T000483,2024-03-20 22:26:00,chat,high,West,2.44,33.0,,billing question about invoice,ticketing_v2
+T000484,2024-07-27 22:40:00,chat,high,East,1.41,36.0,4.0,asked how to export data,ticketing_v2
+T000485,2024-05-26 04:32:00,phone,low,North,15.85,83.0,,password reset could not be completed,ticketing_v2
+T000486,2024-09-19 14:43:00,email,high,North,8.03,94.0,5.0,customer reported a login error,ticketing_v2
+T000487,2024-04-05 02:48:00,phone,medium,East,14.49,401.0,,requested a refund for a damaged item,ticketing_v2
+T000488,2024-03-24 05:27:00,chat,high,East,1.86,53.0,3.0,password reset could not be completed,ticketing_v2
+T000489,2024-09-23 01:33:00,email,urgent,South,1.17,15.0,,asked how to export data,ticketing_v2
+T000490,2024-09-07 03:34:00,chat,low,North,44.06,1077.0,3.0,billing question about invoice,ticketing_v2
+T000491,2024-03-18 01:30:00,email,medium,North,11.83,39.0,,requested a refund for a damaged item,ticketing_v2
+T000492,2024-04-03 04:10:00,email,low,South,40.72,849.0,,asked how to export data,ticketing_v2
+T000493,2024-04-20 22:08:00,portal,low,West,30.77,605.0,3.0,customer reported a login error,ticketing_v2
+T000494,2024-03-06 23:19:00,chat,medium,East,2.19,53.0,3.0,asked how to export data,ticketing_v2
+T000495,2024-02-20 23:06:00,chat,medium,South,8.72,167.0,,customer reported a login error,ticketing_v2
+T000496,2024-08-13 01:30:00,email,low,West,95.7,1471.0,5.0,password reset could not be completed,ticketing_v2
+T000497,2024-09-05 12:38:00,email,low,East,50.03,628.0,,billing question about invoice,ticketing_v2
+T000498,2024-03-02 01:32:00,email,medium,West,4.1,95.0,1.0,asked how to export data,ticketing_v2
+T000499,2024-09-26 21:46:00,phone,medium,North,3.47,91.0,5.0,asked how to export data,ticketing_v2
+T000500,2024-12-12 20:21:00,email,medium,West,21.94,305.0,2.0,billing question about invoice,ticketing_v2
+T000501,2024-03-24 01:23:00,phone,urgent,North,1.47,31.0,,requested a refund for a damaged item,ticketing_v2
+T000502,2024-11-14 20:15:00,phone,low,East,27.56,608.0,4.0,billing question about invoice,ticketing_v2
+T000503,2024-12-29 10:38:00,email,medium,West,6.57,75.0,5.0,customer reported a login error,ticketing_v2
+T000504,2024-06-26 10:10:00,email,medium,South,11.94,304.0,4.0,billing question about invoice,ticketing_v2
+T000505,2024-12-03 16:48:00,chat,medium,South,7.5,115.0,2.0,billing question about invoice,ticketing_v2
+T000506,2024-08-17 05:50:00,email,low,North,33.71,779.0,4.0,billing question about invoice,ticketing_v2
+T000507,2024-10-21 18:06:00,email,low,South,72.42,1171.0,5.0,billing question about invoice,ticketing_v2
+T000508,2024-02-05 05:37:00,phone,medium,South,12.6,205.0,,customer reported a login error,ticketing_v2
+T000509,2024-01-25 13:18:00,chat,high,East,4.89,120.0,4.0,password reset could not be completed,ticketing_v2
+T000510,2024-09-19 17:29:00,portal,medium,North,1.76,3.0,4.0,customer reported a login error,ticketing_v2
+T000511,2024-08-23 16:02:00,email,high,North,5.67,39.0,4.0,customer reported a login error,ticketing_v2
+T000512,2024-05-02 16:32:00,portal,medium,East,9.12,31.0,,billing question about invoice,ticketing_v2
+T000513,2024-11-11 16:49:00,chat,medium,West,5.8,163.0,,billing question about invoice,ticketing_v2
+T000514,2024-09-03 08:58:00,chat,low,West,13.85,190.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000515,2024-05-18 11:27:00,chat,medium,North,5.25,36.0,1.0,asked how to export data,ticketing_v2
+T000516,2024-04-26 10:23:00,chat,medium,South,5.81,45.0,,asked how to export data,ticketing_v2
+T000517,2024-06-02 20:37:00,email,medium,West,1.64,26.0,,requested a refund for a damaged item,ticketing_v2
+T000518,2024-09-27 11:19:00,email,low,South,25.72,86.0,3.0,customer reported a login error,ticketing_v2
+T000519,2024-11-23 13:50:00,phone,low,North,88.54,1546.0,5.0,customer reported a login error,ticketing_v2
+T000520,2024-04-19 17:43:00,portal,low,North,5.24,109.0,,asked how to export data,ticketing_v2
+T000521,2024-03-14 14:33:00,chat,medium,South,9.88,107.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000522,2024-06-20 11:32:00,email,urgent,West,0.36,8.0,,customer reported a login error,ticketing_v2
+T000523,2024-03-07 06:17:00,phone,medium,West,14.49,310.0,,customer reported a login error,ticketing_v2
+T000524,2024-08-17 06:28:00,portal,medium,South,9.84,259.0,2.0,asked how to export data,ticketing_v2
+T000525,2024-11-21 02:14:00,portal,high,East,9.47,196.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000526,2024-07-13 19:26:00,chat,medium,East,8.68,120.0,,requested a refund for a damaged item,ticketing_v2
+T000527,2024-01-06 10:15:00,email,high,West,5.96,136.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000528,2024-07-10 01:52:00,chat,low,West,13.77,24.0,4.0,customer reported a login error,ticketing_v2
+T000529,2024-11-08 21:04:00,email,low,East,33.21,575.0,4.0,customer reported a login error,ticketing_v2
+T000530,2024-05-11 00:45:00,phone,medium,West,4.67,120.0,2.0,asked how to export data,ticketing_v2
+T000531,2024-10-10 11:51:00,email,high,South,7.44,11.0,4.0,asked how to export data,ticketing_v2
+T000532,2024-07-18 22:54:00,chat,medium,North,12.06,111.0,,customer reported a login error,ticketing_v2
+T000533,2024-08-17 04:59:00,chat,high,West,3.69,10.0,,requested a refund for a damaged item,ticketing_v2
+T000534,2024-05-22 15:56:00,portal,low,East,17.98,290.0,,billing question about invoice,ticketing_v2
+T000535,2024-06-18 03:48:00,portal,high,North,9.98,153.0,2.0,password reset could not be completed,ticketing_v2
+T000536,2024-05-06 21:31:00,portal,urgent,East,2.22,63.0,5.0,asked how to export data,ticketing_v2
+T000537,2024-05-11 14:54:00,chat,medium,South,7.12,122.0,4.0,asked how to export data,ticketing_v2
+T000538,2024-12-22 18:58:00,email,low,West,19.0,291.0,,customer reported a login error,ticketing_v2
+T000539,2024-08-12 22:57:00,email,medium,South,13.75,232.0,2.0,billing question about invoice,ticketing_v2
+T000540,2024-10-16 02:03:00,phone,high,South,7.26,175.0,3.0,password reset could not be completed,ticketing_v2
+T000541,2024-12-13 21:06:00,chat,medium,South,10.95,92.0,4.0,customer reported a login error,ticketing_v2
+T000542,2024-03-05 15:35:00,portal,low,South,36.18,594.0,1.0,password reset could not be completed,ticketing_v2
+T000543,2024-09-07 01:31:00,email,low,East,8.02,210.0,,password reset could not be completed,ticketing_v2
+T000544,2024-06-24 18:37:00,email,high,South,2.63,44.0,3.0,customer reported a login error,ticketing_v2
+T000545,2024-06-09 10:06:00,chat,medium,North,7.33,68.0,1.0,customer reported a login error,ticketing_v2
+T000546,2024-09-07 02:57:00,phone,high,West,7.27,216.0,,requested a refund for a damaged item,ticketing_v2
+T000547,2024-01-30 05:40:00,email,high,East,1.82,46.0,,customer reported a login error,ticketing_v2
+T000548,2024-02-24 17:31:00,email,low,East,1934.2606623194677,16442.0,,asked how to export data,ticketing_v2
+T000549,2024-12-19 01:53:00,email,high,North,4.88,94.0,,requested a refund for a damaged item,ticketing_v2
+T000550,2024-03-15 22:00:00,email,high,West,2.7,36.0,1.0,password reset could not be completed,ticketing_v2
+T000551,2024-09-08 14:55:00,email,urgent,North,0.68,14.0,,asked how to export data,ticketing_v2
+T000552,2024-05-03 22:30:00,portal,low,West,9.49,197.0,3.0,customer reported a login error,ticketing_v2
+T000553,2024-11-25 10:37:00,email,medium,West,2.88,29.0,4.0,asked how to export data,ticketing_v2
+T000554,2024-11-24 09:26:00,phone,medium,North,6.34,17.0,3.0,asked how to export data,ticketing_v2
+T000555,2024-04-10 16:11:00,phone,medium,East,12.09,348.0,,billing question about invoice,ticketing_v2
+T000556,2024-08-28 12:16:00,portal,high,West,7.08,93.0,,customer reported a login error,ticketing_v2
+T000557,2024-05-11 22:19:00,phone,medium,North,4.35,53.0,,password reset could not be completed,ticketing_v2
+T000558,2024-03-23 18:35:00,portal,low,East,20.67,346.0,3.0,billing question about invoice,ticketing_v2
+T000559,2024-03-08 03:49:00,email,medium,South,5.42,75.0,4.0,password reset could not be completed,ticketing_v2
+T000560,2024-02-11 19:38:00,email,low,North,45.29,127.0,2.0,password reset could not be completed,ticketing_v2
+T000561,2024-04-27 02:49:00,phone,urgent,North,1.92,33.0,,billing question about invoice,ticketing_v2
+T000562,2024-07-18 16:46:00,email,high,North,1.26,37.0,5.0,billing question about invoice,ticketing_v2
+T000563,2024-02-26 15:15:00,chat,high,North,5.75,85.0,4.0,customer reported a login error,ticketing_v2
+T000564,2024-09-03 03:51:00,email,low,South,6.7,139.0,,requested a refund for a damaged item,ticketing_v2
+T000565,2024-01-28 00:36:00,chat,low,West,9.67,221.0,1.0,customer reported a login error,ticketing_v2
+T000566,2024-07-25 06:00:00,email,medium,South,5.68,41.0,1.0,billing question about invoice,ticketing_v2
+T000567,2024-02-19 01:38:00,email,low,North,11.62,258.0,5.0,asked how to export data,ticketing_v2
+T000568,2024-11-11 03:46:00,email,high,South,13.49,300.0,,billing question about invoice,ticketing_v2
+T000569,2024-08-17 04:57:00,email,medium,North,1.79,21.0,2.0,asked how to export data,ticketing_v2
+T000570,2024-06-02 02:11:00,email,low,West,52.7,1550.0,3.0,billing question about invoice,ticketing_v2
+T000571,2024-11-20 00:12:00,chat,low,West,17.71,307.0,,asked how to export data,ticketing_v2
+T000572,2024-10-28 19:02:00,chat,low,South,36.77,510.0,3.0,asked how to export data,ticketing_v2
+T000573,2024-02-08 00:44:00,chat,medium,South,7.21,96.0,4.0,asked how to export data,ticketing_v2
+T000574,2024-01-09 11:03:00,chat,low,South,12.28,21.0,,requested a refund for a damaged item,ticketing_v2
+T000575,2024-01-30 11:57:00,email,medium,West,12.92,385.0,5.0,customer reported a login error,ticketing_v2
+T000576,2024-12-17 11:31:00,email,medium,South,3.95,18.0,5.0,password reset could not be completed,ticketing_v2
+T000577,2024-10-28 18:45:00,email,urgent,East,1.17,16.0,,requested a refund for a damaged item,ticketing_v2
+T000578,2024-03-15 15:46:00,chat,urgent,North,6.75,174.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000579,2024-07-23 20:37:00,email,low,East,2049.796430040946,22067.0,5.0,customer reported a login error,ticketing_v2
+T000580,2024-07-16 16:55:00,portal,low,South,17.46,71.0,,requested a refund for a damaged item,ticketing_v2
+T000581,2024-12-24 14:18:00,email,medium,East,11.5,32.0,5.0,billing question about invoice,ticketing_v2
+T000582,2024-05-03 01:00:00,email,medium,West,18.95,152.0,5.0,asked how to export data,ticketing_v2
+T000583,2024-10-18 12:58:00,email,low,East,23.58,94.0,,password reset could not be completed,ticketing_v2
+T000584,2024-05-25 21:45:00,portal,low,East,11.93,194.0,,requested a refund for a damaged item,ticketing_v2
+T000585,2024-02-14 13:35:00,email,medium,South,11.74,57.0,,asked how to export data,ticketing_v2
+T000586,2024-07-22 03:21:00,email,low,East,53.8,297.0,,requested a refund for a damaged item,ticketing_v2
+T000587,2024-08-28 15:26:00,chat,urgent,West,0.72,4.0,,billing question about invoice,ticketing_v2
+T000588,2024-09-02 09:33:00,chat,low,East,79.36,2205.0,,asked how to export data,ticketing_v2
+T000589,2024-08-23 15:29:00,chat,low,North,42.27,984.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000590,2024-01-06 18:22:00,phone,low,South,44.01,191.0,5.0,billing question about invoice,ticketing_v2
+T000591,2024-01-09 16:55:00,email,medium,North,13.44,126.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000592,2024-07-12 06:48:00,chat,medium,East,4.93,49.0,3.0,customer reported a login error,ticketing_v2
+T000593,2024-11-09 19:19:00,chat,medium,West,28.03,138.0,,requested a refund for a damaged item,ticketing_v2
+T000594,2024-10-13 14:11:00,email,high,South,3.04,49.0,2.0,asked how to export data,ticketing_v2
+T000595,2024-08-02 14:53:00,chat,urgent,North,0.48,9.0,,password reset could not be completed,ticketing_v2
+T000596,2024-10-22 12:58:00,email,low,West,33.68,907.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000597,2024-05-19 12:55:00,phone,low,South,8.61,46.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000598,2024-12-14 14:21:00,portal,medium,West,5.95,127.0,,password reset could not be completed,ticketing_v2
+T000599,2024-05-17 20:27:00,email,medium,West,4.45,104.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000600,2024-05-01 19:22:00,email,medium,South,12.92,302.0,4.0,billing question about invoice,ticketing_v2
+T000601,2024-03-20 10:39:00,portal,low,North,52.11,346.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000602,2024-06-27 00:40:00,email,low,East,17.6,374.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000603,2024-12-08 17:23:00,email,medium,West,254.87553854102345,5950.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000604,2024-07-29 08:59:00,chat,medium,West,12.46,221.0,1.0,password reset could not be completed,ticketing_v2
+T000605,2024-02-04 18:35:00,email,high,South,7.12,112.0,3.0,customer reported a login error,ticketing_v2
+T000606,2024-02-02 16:56:00,email,low,East,17.61,479.0,5.0,billing question about invoice,ticketing_v2
+T000607,2024-08-04 22:48:00,email,urgent,South,1.64,40.0,,billing question about invoice,ticketing_v2
+T000608,2024-07-02 18:16:00,email,medium,East,5.05,143.0,4.0,password reset could not be completed,ticketing_v2
+T000609,2024-05-18 02:52:00,email,medium,North,3.56,21.0,,password reset could not be completed,ticketing_v2
+T000610,2024-10-27 01:39:00,email,medium,North,8.91,161.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000611,2024-04-08 04:34:00,email,high,North,7.12,107.0,,password reset could not be completed,ticketing_v2
+T000612,2024-09-16 10:49:00,chat,low,East,15.26,358.0,,customer reported a login error,ticketing_v2
+T000613,2024-03-18 05:09:00,portal,medium,South,8.71,210.0,,asked how to export data,ticketing_v2
+T000614,2024-06-17 01:13:00,chat,medium,South,17.11,103.0,,asked how to export data,ticketing_v2
+T000615,2024-09-04 22:35:00,email,low,South,37.92,431.0,4.0,customer reported a login error,ticketing_v2
+T000616,2024-05-16 09:32:00,portal,low,West,10.83,311.0,,asked how to export data,ticketing_v2
+T000617,2024-05-09 11:28:00,email,low,East,21.94,131.0,,customer reported a login error,ticketing_v2
+T000618,2024-06-21 05:49:00,phone,medium,West,3.01,15.0,,requested a refund for a damaged item,ticketing_v2
+T000619,2024-03-28 18:34:00,chat,medium,East,5.61,14.0,5.0,asked how to export data,ticketing_v2
+T000620,2024-08-18 06:21:00,phone,low,South,46.05,553.0,,requested a refund for a damaged item,ticketing_v2
+T000621,2024-12-01 00:57:00,email,medium,South,3.48,102.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000622,2024-04-01 10:09:00,phone,high,South,1.75,21.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000623,2024-12-03 10:49:00,portal,medium,North,6.14,68.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000624,2024-10-29 23:29:00,email,low,East,58.79,1576.0,2.0,asked how to export data,ticketing_v2
+T000625,2024-04-20 21:46:00,portal,medium,North,9.36,212.0,1.0,password reset could not be completed,ticketing_v2
+T000626,2024-06-20 21:27:00,phone,low,East,6.25,153.0,,password reset could not be completed,ticketing_v2
+T000627,2024-09-26 17:26:00,email,urgent,South,1.56,16.0,,asked how to export data,ticketing_v2
+T000628,2024-08-09 18:15:00,phone,medium,West,8.1,163.0,,billing question about invoice,ticketing_v2
+T000629,2024-06-28 16:46:00,chat,low,East,41.96,1127.0,,asked how to export data,ticketing_v2
+T000630,2024-08-12 11:57:00,email,low,East,15.82,421.0,,billing question about invoice,ticketing_v2
+T000631,2024-06-25 03:46:00,email,high,West,1.83,21.0,,password reset could not be completed,ticketing_v2
+T000632,2024-10-01 05:51:00,email,high,East,9.91,175.0,3.0,password reset could not be completed,ticketing_v2
+T000633,2024-04-28 07:45:00,chat,urgent,East,1.62,10.0,,password reset could not be completed,ticketing_v2
+T000634,2024-01-02 23:15:00,chat,medium,South,7.79,173.0,,billing question about invoice,ticketing_v2
+T000635,2024-10-11 16:52:00,chat,urgent,East,1.45,7.0,,billing question about invoice,ticketing_v2
+T000636,2024-08-25 16:47:00,email,low,East,128.1,1678.0,4.0,password reset could not be completed,ticketing_v2
+T000637,2024-05-10 02:56:00,phone,medium,South,18.24,306.0,,requested a refund for a damaged item,ticketing_v2
+T000638,2024-04-24 19:38:00,chat,high,South,13.95,100.0,,requested a refund for a damaged item,ticketing_v2
+T000639,2024-11-16 04:17:00,phone,medium,North,13.49,352.0,,password reset could not be completed,ticketing_v2
+T000640,2024-04-20 03:24:00,chat,low,South,45.2,583.0,1.0,customer reported a login error,ticketing_v2
+T000641,2024-10-16 20:21:00,phone,high,North,5.35,157.0,,billing question about invoice,ticketing_v2
+T000642,2024-07-04 00:05:00,email,medium,North,10.07,131.0,5.0,password reset could not be completed,ticketing_v2
+T000643,2024-07-03 17:53:00,email,urgent,South,1.31,36.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000644,2024-02-09 22:11:00,email,low,South,11.92,183.0,5.0,customer reported a login error,ticketing_v2
+T000645,2024-08-24 03:31:00,chat,medium,South,8.11,136.0,1.0,asked how to export data,ticketing_v2
+T000646,2024-08-31 09:19:00,email,urgent,South,2.73,51.0,5.0,customer reported a login error,ticketing_v2
+T000647,2024-08-19 01:39:00,email,medium,North,9.91,34.0,4.0,asked how to export data,ticketing_v2
+T000648,2024-07-19 03:39:00,portal,medium,North,30.91,311.0,3.0,password reset could not be completed,ticketing_v2
+T000649,2024-06-27 14:49:00,phone,medium,South,12.81,191.0,2.0,password reset could not be completed,ticketing_v2
+T000650,2024-11-17 21:39:00,email,low,North,38.39,305.0,,requested a refund for a damaged item,ticketing_v2
+T000651,2024-02-16 12:04:00,portal,low,South,42.83,467.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000652,2024-05-23 09:28:00,email,high,South,5.28,154.0,,password reset could not be completed,ticketing_v2
+T000653,2024-04-13 11:02:00,chat,low,East,64.77,1000.0,,asked how to export data,ticketing_v2
+T000654,2024-09-16 17:06:00,chat,low,West,13.94,170.0,,password reset could not be completed,ticketing_v2
+T000655,2024-08-13 12:44:00,chat,low,West,27.25,128.0,5.0,password reset could not be completed,ticketing_v2
+T000656,2024-09-20 03:03:00,chat,low,South,73.95,1128.0,5.0,customer reported a login error,ticketing_v2
+T000657,2024-08-06 22:23:00,email,high,East,2.48,59.0,,password reset could not be completed,ticketing_v2
+T000658,2024-06-30 21:59:00,portal,high,East,3.52,100.0,,asked how to export data,ticketing_v2
+T000659,2024-07-09 22:08:00,chat,low,South,25.34,95.0,,asked how to export data,ticketing_v2
+T000660,2024-09-28 01:24:00,email,medium,East,272.86664569340945,5961.0,,customer reported a login error,ticketing_v2
+T000661,2024-08-31 15:34:00,email,high,West,8.91,45.0,,asked how to export data,ticketing_v2
+T000662,2024-12-18 11:33:00,email,medium,East,2.16,36.0,1.0,password reset could not be completed,ticketing_v2
+T000663,2024-04-13 17:46:00,chat,low,East,32.82,355.0,,password reset could not be completed,ticketing_v2
+T000664,2024-02-12 10:28:00,email,medium,North,4.02,108.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000665,2024-02-29 04:06:00,phone,medium,North,9.34,66.0,,requested a refund for a damaged item,ticketing_v2
+T000666,2024-07-31 07:47:00,phone,low,East,116.1,985.0,2.0,password reset could not be completed,ticketing_v2
+T000667,2024-04-22 09:57:00,phone,medium,North,10.28,303.0,,billing question about invoice,ticketing_v2
+T000668,2024-03-17 00:18:00,email,high,West,0.87,10.0,4.0,password reset could not be completed,ticketing_v2
+T000669,2024-06-01 03:58:00,email,low,South,10.36,42.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000670,2024-02-03 04:44:00,email,high,South,12.93,43.0,,password reset could not be completed,ticketing_v2
+T000671,2024-06-13 05:37:00,chat,low,East,28.36,149.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000672,2024-03-19 04:27:00,phone,medium,East,7.4,41.0,5.0,password reset could not be completed,ticketing_v2
+T000673,2024-09-27 03:11:00,chat,medium,West,16.93,502.0,,asked how to export data,ticketing_v2
+T000674,2024-04-29 14:16:00,phone,medium,North,3.32,73.0,1.0,password reset could not be completed,ticketing_v2
+T000675,2024-09-23 15:50:00,email,medium,North,8.02,103.0,5.0,asked how to export data,ticketing_v2
+T000676,2024-07-12 11:51:00,phone,low,North,16.55,456.0,2.0,customer reported a login error,ticketing_v2
+T000677,2024-02-04 11:22:00,phone,high,West,5.17,33.0,1.0,asked how to export data,ticketing_v2
+T000678,2024-06-26 23:26:00,email,medium,South,22.2,459.0,4.0,customer reported a login error,ticketing_v2
+T000679,2024-12-11 17:31:00,email,high,West,2.31,30.0,,asked how to export data,ticketing_v2
+T000680,2024-09-06 07:13:00,email,high,East,2.45,61.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000681,2024-03-30 19:53:00,chat,high,South,3.55,86.0,,password reset could not be completed,ticketing_v2
+T000682,2024-11-13 02:28:00,phone,medium,South,3.73,20.0,1.0,password reset could not be completed,ticketing_v2
+T000683,2024-12-08 23:46:00,portal,medium,North,13.11,311.0,,requested a refund for a damaged item,ticketing_v2
+T000684,2024-12-10 13:05:00,phone,high,West,6.4,162.0,,asked how to export data,ticketing_v2
+T000685,2024-10-22 00:36:00,email,high,East,8.7,238.0,,requested a refund for a damaged item,ticketing_v2
+T000686,2024-09-22 19:47:00,email,medium,West,17.26,476.0,,password reset could not be completed,ticketing_v2
+T000687,2024-05-30 18:33:00,email,low,South,20.0,57.0,4.0,customer reported a login error,ticketing_v2
+T000688,2024-09-24 08:46:00,email,low,South,11.71,297.0,,billing question about invoice,ticketing_v2
+T000689,2024-12-19 14:05:00,email,medium,South,12.81,311.0,5.0,password reset could not be completed,ticketing_v2
+T000690,2024-02-02 15:13:00,email,urgent,East,1.94,12.0,,password reset could not be completed,ticketing_v2
+T000691,2024-09-12 02:39:00,portal,low,West,9.73,264.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000692,2024-07-03 06:32:00,chat,urgent,West,6.23,48.0,,billing question about invoice,ticketing_v2
+T000693,2024-03-26 07:10:00,portal,high,South,1.19,15.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000694,2024-03-14 09:30:00,email,medium,West,571.7586260786198,5751.0,4.0,customer reported a login error,ticketing_v2
+T000695,2024-09-09 03:01:00,chat,medium,East,9.86,160.0,,asked how to export data,ticketing_v2
+T000696,2024-09-20 14:31:00,phone,low,West,32.83,441.0,4.0,password reset could not be completed,ticketing_v2
+T000697,2024-05-22 20:59:00,email,urgent,West,4.79,31.0,4.0,customer reported a login error,ticketing_v2
+T000698,2024-08-01 23:09:00,chat,medium,West,1.65,35.0,,password reset could not be completed,ticketing_v2
+T000699,2024-01-07 10:55:00,email,low,South,29.05,747.0,,billing question about invoice,ticketing_v2
+T000700,2024-01-26 17:29:00,portal,medium,East,3.9,91.0,5.0,password reset could not be completed,ticketing_v2
+T000701,2024-11-25 14:08:00,phone,low,South,25.61,276.0,,billing question about invoice,ticketing_v2
+T000702,2024-09-05 22:25:00,phone,medium,North,7.61,168.0,,customer reported a login error,ticketing_v2
+T000703,2024-07-29 10:33:00,phone,high,East,6.39,79.0,3.0,customer reported a login error,ticketing_v2
+T000704,2024-03-04 03:35:00,portal,medium,West,7.04,207.0,3.0,billing question about invoice,ticketing_v2
+T000705,2024-01-11 17:22:00,email,medium,South,7.89,34.0,,customer reported a login error,ticketing_v2
+T000706,2024-03-04 22:27:00,email,medium,West,9.17,270.0,4.0,asked how to export data,ticketing_v2
+T000707,2024-10-19 20:55:00,email,low,North,30.78,480.0,4.0,customer reported a login error,ticketing_v2
+T000708,2024-10-26 08:16:00,phone,low,North,34.7,123.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000709,2024-05-09 02:17:00,email,medium,South,8.5,125.0,5.0,billing question about invoice,ticketing_v2
+T000710,2024-08-30 00:49:00,chat,low,West,7.79,64.0,,asked how to export data,ticketing_v2
+T000711,2024-06-21 11:57:00,phone,low,North,39.36,738.0,,asked how to export data,ticketing_v2
+T000712,2024-03-10 04:57:00,chat,medium,East,12.64,185.0,,asked how to export data,ticketing_v2
+T000713,2024-02-14 17:53:00,email,high,South,5.71,35.0,,password reset could not be completed,ticketing_v2
+T000714,2024-03-24 02:15:00,chat,low,West,9.36,180.0,3.0,customer reported a login error,ticketing_v2
+T000715,2024-05-14 14:28:00,email,low,North,16.94,167.0,1.0,asked how to export data,ticketing_v2
+T000716,2024-09-15 17:16:00,email,medium,West,12.53,159.0,4.0,customer reported a login error,ticketing_v2
+T000717,2024-12-18 16:45:00,email,medium,North,13.04,213.0,4.0,customer reported a login error,ticketing_v2
+T000718,2024-06-15 05:22:00,email,low,East,18.55,333.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000719,2024-07-12 17:28:00,phone,medium,South,2.98,6.0,3.0,customer reported a login error,ticketing_v2
+T000720,2024-11-17 02:32:00,portal,low,East,31.71,533.0,4.0,asked how to export data,ticketing_v2
+T000721,2024-06-03 13:08:00,portal,low,East,38.44,418.0,3.0,password reset could not be completed,ticketing_v2
+T000722,2024-11-11 11:31:00,chat,low,West,10.29,74.0,4.0,customer reported a login error,ticketing_v2
+T000723,2024-08-30 17:04:00,email,medium,South,9.74,16.0,2.0,customer reported a login error,ticketing_v2
+T000724,2024-05-28 05:54:00,phone,medium,North,13.23,338.0,3.0,customer reported a login error,ticketing_v2
+T000725,2024-04-06 05:09:00,chat,low,South,11.29,123.0,5.0,customer reported a login error,ticketing_v2
+T000726,2024-09-30 18:28:00,email,low,South,18.88,317.0,4.0,customer reported a login error,ticketing_v2
+T000727,2024-08-13 16:48:00,phone,medium,East,5.78,59.0,,requested a refund for a damaged item,ticketing_v2
+T000728,2024-12-30 09:18:00,chat,medium,East,18.9,233.0,5.0,billing question about invoice,ticketing_v2
+T000729,2024-03-27 04:43:00,email,medium,South,21.8,333.0,2.0,customer reported a login error,ticketing_v2
+T000730,2024-08-16 23:12:00,chat,low,West,16.42,489.0,1.0,asked how to export data,ticketing_v2
+T000731,2024-10-23 05:32:00,portal,high,North,1.97,41.0,4.0,billing question about invoice,ticketing_v2
+T000732,2024-10-29 09:00:00,email,low,South,11.37,334.0,,requested a refund for a damaged item,ticketing_v2
+T000733,2024-07-05 00:34:00,chat,medium,South,4.56,121.0,4.0,asked how to export data,ticketing_v2
+T000734,2024-05-05 11:02:00,phone,low,East,17.73,237.0,3.0,asked how to export data,ticketing_v2
+T000735,2024-08-09 05:28:00,email,medium,East,2.97,19.0,,requested a refund for a damaged item,ticketing_v2
+T000736,2024-01-24 04:23:00,email,high,East,2.44,8.0,5.0,asked how to export data,ticketing_v2
+T000737,2024-03-06 12:11:00,portal,medium,North,10.55,157.0,,password reset could not be completed,ticketing_v2
+T000738,2024-09-07 19:51:00,chat,medium,South,5.66,149.0,2.0,password reset could not be completed,ticketing_v2
+T000739,2024-03-27 22:46:00,email,low,North,13.97,396.0,,password reset could not be completed,ticketing_v2
+T000740,2024-09-18 06:17:00,portal,high,East,7.7,71.0,,requested a refund for a damaged item,ticketing_v2
+T000741,2024-05-08 09:54:00,chat,medium,East,13.48,90.0,,customer reported a login error,ticketing_v2
+T000742,2024-05-27 21:21:00,email,medium,North,17.83,409.0,,requested a refund for a damaged item,ticketing_v2
+T000743,2024-05-23 02:52:00,chat,low,East,37.19,45.0,3.0,password reset could not be completed,ticketing_v2
+T000744,2024-12-01 16:57:00,phone,low,West,16.79,98.0,,customer reported a login error,ticketing_v2
+T000745,2024-10-23 02:32:00,chat,low,North,77.69,1926.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000746,2024-02-25 20:30:00,phone,low,North,15.49,272.0,,requested a refund for a damaged item,ticketing_v2
+T000747,2024-04-27 11:17:00,email,high,South,7.54,41.0,5.0,password reset could not be completed,ticketing_v2
+T000748,2024-07-09 10:36:00,chat,medium,South,4.89,116.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000749,2024-04-28 18:25:00,portal,medium,East,18.22,498.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000750,2024-02-14 16:50:00,chat,medium,South,22.76,129.0,,billing question about invoice,ticketing_v2
+T000751,2024-08-20 18:57:00,email,urgent,East,2.22,52.0,1.0,customer reported a login error,ticketing_v2
+T000752,2024-11-17 02:02:00,phone,medium,West,13.27,234.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000753,2024-10-21 10:43:00,portal,high,East,6.4,35.0,4.0,password reset could not be completed,ticketing_v2
+T000754,2024-03-24 18:55:00,email,medium,South,20.9,591.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000755,2024-02-06 23:00:00,portal,low,West,39.04,70.0,3.0,asked how to export data,ticketing_v2
+T000756,2024-01-07 11:03:00,portal,high,South,4.0,21.0,3.0,password reset could not be completed,ticketing_v2
+T000757,2024-02-08 02:09:00,email,medium,East,14.0,205.0,4.0,customer reported a login error,ticketing_v2
+T000758,2024-11-21 22:20:00,email,high,South,2.23,43.0,4.0,customer reported a login error,ticketing_v2
+T000759,2024-10-08 16:15:00,email,medium,East,5.75,90.0,,requested a refund for a damaged item,ticketing_v2
+T000760,2024-01-14 23:08:00,email,medium,West,8.65,174.0,,password reset could not be completed,ticketing_v2
+T000761,2024-04-11 15:32:00,email,low,East,38.75,433.0,,asked how to export data,ticketing_v2
+T000762,2024-04-04 02:19:00,email,medium,North,42.51,937.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000763,2024-06-10 18:39:00,chat,high,East,13.22,17.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000764,2024-07-07 12:10:00,chat,high,South,1.5,27.0,,customer reported a login error,ticketing_v2
+T000765,2024-11-03 10:38:00,phone,medium,West,9.04,229.0,,customer reported a login error,ticketing_v2
+T000766,2024-03-01 20:41:00,portal,medium,West,12.44,206.0,,customer reported a login error,ticketing_v2
+T000767,2024-09-13 07:38:00,email,low,East,34.4,783.0,,billing question about invoice,ticketing_v2
+T000768,2024-12-11 16:57:00,phone,low,West,5.96,64.0,3.0,password reset could not be completed,ticketing_v2
+T000769,2024-04-07 10:34:00,portal,medium,South,18.6,500.0,3.0,password reset could not be completed,ticketing_v2
+T000770,2024-11-19 09:52:00,phone,medium,North,18.33,113.0,4.0,billing question about invoice,ticketing_v2
+T000771,2024-06-25 16:31:00,chat,high,West,9.94,45.0,4.0,customer reported a login error,ticketing_v2
+T000772,2024-01-06 23:43:00,email,low,East,98.09,2346.0,2.0,billing question about invoice,ticketing_v2
+T000773,2024-05-18 11:36:00,email,low,West,14.72,158.0,4.0,billing question about invoice,ticketing_v2
+T000774,2024-09-08 07:28:00,phone,medium,South,8.37,158.0,1.0,asked how to export data,ticketing_v2
+T000775,2024-05-27 18:26:00,chat,medium,East,15.52,431.0,,requested a refund for a damaged item,ticketing_v2
+T000776,2024-03-23 08:25:00,email,medium,North,25.79,356.0,5.0,password reset could not be completed,ticketing_v2
+T000777,2024-03-19 22:40:00,email,medium,South,13.95,324.0,,password reset could not be completed,ticketing_v2
+T000778,2024-07-22 07:45:00,email,medium,West,16.79,298.0,,billing question about invoice,ticketing_v2
+T000779,2024-07-24 10:20:00,portal,medium,South,15.28,139.0,1.0,customer reported a login error,ticketing_v2
+T000780,2024-07-20 16:54:00,phone,low,East,16.85,179.0,4.0,password reset could not be completed,ticketing_v2
+T000781,2024-01-05 10:33:00,phone,medium,North,9.39,243.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000782,2024-05-26 13:04:00,email,high,East,10.71,314.0,5.0,asked how to export data,ticketing_v2
+T000783,2024-05-10 23:21:00,email,high,North,0.93,20.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000784,2024-05-30 01:24:00,email,high,North,9.93,78.0,,billing question about invoice,ticketing_v2
+T000785,2024-11-01 10:09:00,email,medium,North,8.67,28.0,4.0,password reset could not be completed,ticketing_v2
+T000786,2024-10-19 22:18:00,email,low,North,7.81,89.0,,requested a refund for a damaged item,ticketing_v2
+T000787,2024-04-03 02:40:00,email,low,West,11.15,257.0,5.0,billing question about invoice,ticketing_v2
+T000788,2024-10-15 12:56:00,phone,high,South,4.67,24.0,5.0,customer reported a login error,ticketing_v2
+T000789,2024-08-21 10:48:00,phone,low,South,20.77,470.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000790,2024-05-16 12:55:00,chat,low,South,35.8,383.0,,requested a refund for a damaged item,ticketing_v2
+T000791,2024-08-06 13:43:00,portal,high,West,3.01,61.0,,password reset could not be completed,ticketing_v2
+T000792,2024-10-05 08:35:00,chat,medium,South,3.12,37.0,,asked how to export data,ticketing_v2
+T000793,2024-03-01 03:42:00,email,medium,North,8.26,90.0,5.0,password reset could not be completed,ticketing_v2
+T000794,2024-09-01 02:45:00,email,medium,South,10.92,129.0,,password reset could not be completed,ticketing_v2
+T000795,2024-11-22 19:57:00,email,medium,West,9.02,69.0,5.0,asked how to export data,ticketing_v2
+T000796,2024-11-20 16:56:00,portal,low,West,453.1257802540745,6349.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000797,2024-06-09 09:00:00,email,low,South,7.75,58.0,3.0,customer reported a login error,ticketing_v2
+T000798,2024-06-15 07:58:00,chat,urgent,East,0.75,21.0,,customer reported a login error,ticketing_v2
+T000799,2024-07-15 09:23:00,email,low,West,42.93,1105.0,,requested a refund for a damaged item,ticketing_v2
+T000800,2024-02-11 05:00:00,phone,high,East,1.17,6.0,3.0,customer reported a login error,ticketing_v2
+T000801,2024-05-14 01:15:00,chat,high,South,2.02,7.0,5.0,password reset could not be completed,ticketing_v2
+T000802,2024-09-09 04:15:00,chat,low,East,24.7,730.0,,billing question about invoice,ticketing_v2
+T000803,2024-05-23 03:42:00,email,medium,South,2.09,47.0,3.0,billing question about invoice,ticketing_v2
+T000804,2024-07-01 22:57:00,email,low,West,35.42,950.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000805,2024-07-21 03:38:00,phone,high,West,19.28,265.0,,billing question about invoice,ticketing_v2
+T000806,2024-08-30 04:18:00,phone,high,West,10.04,246.0,,asked how to export data,ticketing_v2
+T000807,2024-01-06 07:05:00,email,medium,South,10.3,154.0,5.0,asked how to export data,ticketing_v2
+T000808,2024-09-12 06:19:00,email,low,South,83.64,2292.0,3.0,password reset could not be completed,ticketing_v2
+T000809,2024-09-04 05:42:00,portal,medium,West,3.24,88.0,1.0,password reset could not be completed,ticketing_v2
+T000810,2024-08-06 18:14:00,chat,medium,South,30.53,514.0,,requested a refund for a damaged item,ticketing_v2
+T000811,2024-05-24 03:58:00,email,medium,South,0.93,25.0,,password reset could not be completed,ticketing_v2
+T000812,2024-11-20 02:17:00,email,medium,South,5.3,118.0,,billing question about invoice,ticketing_v2
+T000813,2024-03-03 20:38:00,email,medium,North,6.54,144.0,4.0,billing question about invoice,ticketing_v2
+T000814,2024-04-05 20:26:00,chat,low,East,9.09,123.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000815,2024-09-07 08:38:00,chat,medium,South,19.61,26.0,5.0,billing question about invoice,ticketing_v2
+T000816,2024-02-12 21:53:00,email,medium,South,5.32,97.0,1.0,password reset could not be completed,ticketing_v2
+T000817,2024-06-17 00:22:00,email,medium,North,10.36,211.0,2.0,password reset could not be completed,ticketing_v2
+T000818,2024-04-24 18:39:00,email,high,West,1.71,47.0,,billing question about invoice,ticketing_v2
+T000819,2024-09-25 09:05:00,email,medium,North,7.64,121.0,,billing question about invoice,ticketing_v2
+T000820,2024-10-17 06:55:00,email,urgent,East,2.68,45.0,1.0,asked how to export data,ticketing_v2
+T000821,2024-03-19 01:59:00,phone,medium,South,481.23416139302185,12093.0,,requested a refund for a damaged item,ticketing_v2
+T000822,2024-07-30 17:40:00,phone,low,South,39.44,904.0,2.0,asked how to export data,ticketing_v2
+T000823,2024-06-27 01:36:00,email,low,East,51.58,809.0,,requested a refund for a damaged item,ticketing_v2
+T000824,2024-01-27 06:16:00,portal,urgent,North,1.28,29.0,3.0,asked how to export data,ticketing_v2
+T000825,2024-01-06 07:43:00,chat,medium,West,10.81,161.0,,asked how to export data,ticketing_v2
+T000826,2024-11-06 14:54:00,phone,low,West,19.71,348.0,,customer reported a login error,ticketing_v2
+T000827,2024-09-22 01:16:00,email,urgent,West,0.59,9.0,,customer reported a login error,ticketing_v2
+T000828,2024-03-10 19:42:00,portal,medium,South,2.57,58.0,2.0,password reset could not be completed,ticketing_v2
+T000829,2024-05-20 02:36:00,email,medium,South,11.84,203.0,,billing question about invoice,ticketing_v2
+T000830,2024-07-15 13:36:00,email,urgent,South,2.25,51.0,,customer reported a login error,ticketing_v2
+T000831,2024-06-02 23:29:00,portal,high,South,6.65,130.0,,requested a refund for a damaged item,ticketing_v2
+T000832,2024-10-23 02:29:00,email,low,West,19.67,251.0,,customer reported a login error,ticketing_v2
+T000833,2024-06-27 08:32:00,phone,medium,East,31.05,475.0,4.0,customer reported a login error,ticketing_v2
+T000834,2024-05-31 22:04:00,email,low,South,476.8585309154776,928.0,,password reset could not be completed,ticketing_v2
+T000835,2024-05-23 08:43:00,phone,medium,West,7.62,22.0,3.0,asked how to export data,ticketing_v2
+T000836,2024-05-05 07:22:00,chat,medium,North,19.97,68.0,4.0,customer reported a login error,ticketing_v2
+T000837,2024-08-11 00:26:00,email,high,East,3.9,22.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000838,2024-05-18 03:20:00,chat,medium,East,22.85,245.0,1.0,requested a refund for a damaged item,ticketing_v2
+T000839,2024-01-07 03:01:00,email,low,West,56.31,1465.0,4.0,password reset could not be completed,ticketing_v2
+T000840,2024-09-24 04:49:00,chat,urgent,North,1.82,15.0,3.0,billing question about invoice,ticketing_v2
+T000841,2024-01-07 17:02:00,email,medium,West,16.55,267.0,,password reset could not be completed,ticketing_v2
+T000842,2024-09-01 10:42:00,portal,medium,North,2.93,6.0,1.0,password reset could not be completed,ticketing_v2
+T000843,2024-07-20 15:06:00,portal,medium,North,28.56,665.0,4.0,asked how to export data,ticketing_v2
+T000844,2024-08-02 21:42:00,portal,high,West,4.96,38.0,4.0,asked how to export data,ticketing_v2
+T000845,2024-06-23 00:20:00,email,high,North,2.21,8.0,,asked how to export data,ticketing_v2
+T000846,2024-05-28 05:14:00,email,medium,North,3.53,49.0,4.0,asked how to export data,ticketing_v2
+T000847,2024-10-29 05:42:00,email,medium,West,7.17,167.0,3.0,billing question about invoice,ticketing_v2
+T000848,2024-10-10 07:54:00,email,high,North,6.97,81.0,5.0,password reset could not be completed,ticketing_v2
+T000849,2024-05-30 18:55:00,portal,high,North,5.56,141.0,,billing question about invoice,ticketing_v2
+T000850,2024-03-21 13:25:00,chat,high,East,1.5,7.0,5.0,customer reported a login error,ticketing_v2
+T000851,2024-08-03 09:27:00,chat,urgent,South,1.74,15.0,3.0,customer reported a login error,ticketing_v2
+T000852,2024-06-16 16:07:00,portal,high,North,3.84,101.0,,requested a refund for a damaged item,ticketing_v2
+T000853,2024-09-19 06:05:00,email,low,North,12.83,234.0,,billing question about invoice,ticketing_v2
+T000854,2024-07-08 09:04:00,portal,medium,East,6.4,49.0,2.0,customer reported a login error,ticketing_v2
+T000855,2024-06-19 12:48:00,chat,low,North,13.98,153.0,,requested a refund for a damaged item,ticketing_v2
+T000856,2024-10-23 07:50:00,email,medium,East,6.45,20.0,2.0,asked how to export data,ticketing_v2
+T000857,2024-06-05 13:01:00,chat,low,East,26.21,267.0,,customer reported a login error,ticketing_v2
+T000858,2024-04-13 19:17:00,phone,medium,South,3.11,83.0,,password reset could not be completed,ticketing_v2
+T000859,2024-02-10 14:58:00,chat,low,North,64.33,1564.0,,customer reported a login error,ticketing_v2
+T000860,2024-07-21 07:10:00,email,medium,South,7.36,137.0,2.0,requested a refund for a damaged item,ticketing_v2
+T000861,2024-09-14 14:39:00,email,high,South,2.31,38.0,5.0,password reset could not be completed,ticketing_v2
+T000862,2024-02-20 11:31:00,email,medium,East,6.52,136.0,,billing question about invoice,ticketing_v2
+T000863,2024-04-17 07:50:00,phone,high,North,2.49,71.0,3.0,customer reported a login error,ticketing_v2
+T000864,2024-04-30 20:34:00,phone,low,South,12.83,383.0,1.0,customer reported a login error,ticketing_v2
+T000865,2024-05-03 13:44:00,email,low,North,29.39,540.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000866,2024-07-21 06:11:00,phone,medium,South,9.69,263.0,,customer reported a login error,ticketing_v2
+T000867,2024-04-01 14:31:00,phone,high,North,1.86,48.0,4.0,customer reported a login error,ticketing_v2
+T000868,2024-01-15 14:26:00,phone,medium,West,5.01,73.0,5.0,billing question about invoice,ticketing_v2
+T000869,2024-12-22 18:15:00,phone,low,South,64.41,1154.0,4.0,password reset could not be completed,ticketing_v2
+T000870,2024-02-16 23:33:00,chat,low,East,47.32,1402.0,4.0,password reset could not be completed,ticketing_v2
+T000871,2024-04-23 15:13:00,portal,low,North,16.1,228.0,2.0,asked how to export data,ticketing_v2
+T000872,2024-07-12 04:43:00,phone,medium,North,15.39,259.0,,billing question about invoice,ticketing_v2
+T000873,2024-02-12 21:40:00,phone,low,North,20.27,223.0,,asked how to export data,ticketing_v2
+T000874,2024-03-16 13:31:00,email,high,North,1.34,20.0,5.0,password reset could not be completed,ticketing_v2
+T000875,2024-10-16 12:58:00,chat,low,West,10.2,15.0,5.0,customer reported a login error,ticketing_v2
+T000876,2024-05-08 13:10:00,chat,low,West,39.13,841.0,5.0,billing question about invoice,ticketing_v2
+T000877,2024-06-15 12:31:00,portal,medium,West,22.08,553.0,3.0,asked how to export data,ticketing_v2
+T000878,2024-01-24 01:07:00,phone,low,East,6.67,53.0,4.0,password reset could not be completed,ticketing_v2
+T000879,2024-08-13 20:22:00,chat,high,North,1.34,28.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000880,2024-11-09 19:26:00,chat,low,West,23.81,558.0,,requested a refund for a damaged item,ticketing_v2
+T000881,2024-02-21 00:42:00,chat,low,South,100.43,1160.0,,password reset could not be completed,ticketing_v2
+T000882,2024-01-01 14:06:00,phone,medium,East,3.34,45.0,4.0,customer reported a login error,ticketing_v2
+T000883,2024-08-22 11:03:00,chat,medium,South,26.44,451.0,4.0,password reset could not be completed,ticketing_v2
+T000884,2024-01-01 02:40:00,email,low,East,20.08,24.0,3.0,asked how to export data,ticketing_v2
+T000885,2024-03-29 13:26:00,portal,high,West,3.25,41.0,3.0,billing question about invoice,ticketing_v2
+T000886,2024-08-22 23:51:00,phone,medium,East,23.14,290.0,5.0,asked how to export data,ticketing_v2
+T000887,2024-01-05 21:58:00,portal,medium,East,39.8,844.0,5.0,password reset could not be completed,ticketing_v2
+T000888,2024-08-04 14:49:00,email,low,South,10.51,267.0,2.0,password reset could not be completed,ticketing_v2
+T000889,2024-06-25 04:00:00,chat,high,North,1.65,39.0,,asked how to export data,ticketing_v2
+T000890,2024-04-06 10:33:00,email,medium,West,1.53,18.0,,billing question about invoice,ticketing_v2
+T000891,2024-03-08 08:06:00,email,medium,East,19.46,517.0,,password reset could not be completed,ticketing_v2
+T000892,2024-02-07 08:19:00,email,low,East,4.97,138.0,,billing question about invoice,ticketing_v2
+T000893,2024-04-20 04:09:00,email,medium,West,9.45,180.0,,password reset could not be completed,ticketing_v2
+T000894,2024-06-01 07:21:00,email,urgent,South,2.39,16.0,,requested a refund for a damaged item,ticketing_v2
+T000895,2024-02-22 09:05:00,chat,low,North,26.01,55.0,2.0,customer reported a login error,ticketing_v2
+T000896,2024-09-27 12:08:00,chat,medium,North,27.13,181.0,3.0,billing question about invoice,ticketing_v2
+T000897,2024-10-21 22:42:00,phone,medium,North,6.42,160.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000898,2024-01-26 20:50:00,email,low,East,5.55,53.0,3.0,billing question about invoice,ticketing_v2
+T000899,2024-09-16 17:48:00,chat,low,East,12.58,184.0,2.0,customer reported a login error,ticketing_v2
+T000900,2024-11-22 23:52:00,portal,medium,North,4.57,33.0,1.0,customer reported a login error,ticketing_v2
+T000901,2024-01-12 08:08:00,email,low,South,7.41,45.0,,password reset could not be completed,ticketing_v2
+T000902,2024-11-12 03:58:00,phone,medium,East,5.16,9.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000903,2024-06-27 23:01:00,chat,high,East,10.66,295.0,,asked how to export data,ticketing_v2
+T000904,2024-08-30 09:18:00,chat,medium,North,1.52,10.0,2.0,billing question about invoice,ticketing_v2
+T000905,2024-12-09 12:52:00,portal,low,South,6.43,101.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000906,2024-01-10 09:09:00,portal,low,South,9.24,104.0,,asked how to export data,ticketing_v2
+T000907,2024-04-16 21:12:00,chat,low,West,7.93,186.0,4.0,customer reported a login error,ticketing_v2
+T000908,2024-04-05 08:49:00,email,high,West,2.17,62.0,,asked how to export data,ticketing_v2
+T000909,2024-02-14 16:40:00,email,medium,West,3.88,92.0,5.0,billing question about invoice,ticketing_v2
+T000910,2024-12-21 16:35:00,chat,high,South,5.96,109.0,2.0,billing question about invoice,ticketing_v2
+T000911,2024-03-11 16:45:00,chat,low,South,21.72,353.0,,customer reported a login error,ticketing_v2
+T000912,2024-11-08 01:23:00,email,low,North,32.98,856.0,,customer reported a login error,ticketing_v2
+T000913,2024-01-07 15:44:00,portal,low,West,26.43,723.0,,password reset could not be completed,ticketing_v2
+T000914,2024-02-26 14:39:00,email,medium,South,4.71,101.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000915,2024-04-05 03:41:00,email,medium,South,7.15,139.0,2.0,customer reported a login error,ticketing_v2
+T000916,2024-07-12 10:31:00,email,low,South,82.51,757.0,1.0,asked how to export data,ticketing_v2
+T000917,2024-01-02 21:15:00,chat,high,South,1.57,26.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000918,2024-09-07 19:47:00,phone,urgent,West,1.6,6.0,,password reset could not be completed,ticketing_v2
+T000919,2024-06-02 06:05:00,chat,low,East,24.29,210.0,4.0,customer reported a login error,ticketing_v2
+T000920,2024-01-28 18:18:00,email,medium,West,53.87,1572.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000921,2024-05-06 09:59:00,email,medium,West,20.42,325.0,,asked how to export data,ticketing_v2
+T000922,2024-03-04 23:55:00,phone,low,North,24.86,727.0,1.0,customer reported a login error,ticketing_v2
+T000923,2024-08-14 19:38:00,portal,medium,West,7.07,172.0,5.0,password reset could not be completed,ticketing_v2
+T000924,2024-04-10 14:28:00,email,high,North,5.19,117.0,1.0,asked how to export data,ticketing_v2
+T000925,2024-09-16 08:13:00,portal,medium,South,20.3,234.0,1.0,password reset could not be completed,ticketing_v2
+T000926,2024-05-15 22:43:00,email,medium,West,12.91,141.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000927,2024-03-20 13:32:00,phone,medium,West,23.04,302.0,,requested a refund for a damaged item,ticketing_v2
+T000928,2024-10-24 09:51:00,email,low,East,33.43,303.0,,password reset could not be completed,ticketing_v2
+T000929,2024-04-26 10:22:00,chat,high,South,1.82,9.0,5.0,customer reported a login error,ticketing_v2
+T000930,2024-01-25 09:21:00,phone,medium,North,20.85,111.0,3.0,billing question about invoice,ticketing_v2
+T000931,2024-08-08 19:31:00,email,medium,South,5.53,38.0,4.0,billing question about invoice,ticketing_v2
+T000932,2024-11-10 10:19:00,chat,low,West,10.24,208.0,,billing question about invoice,ticketing_v2
+T000933,2024-03-16 10:24:00,phone,low,East,8.41,219.0,,billing question about invoice,ticketing_v2
+T000934,2024-01-20 04:38:00,chat,medium,South,1.98,17.0,3.0,asked how to export data,ticketing_v2
+T000935,2024-01-01 09:14:00,phone,medium,East,13.38,200.0,2.0,password reset could not be completed,ticketing_v2
+T000936,2024-05-15 23:50:00,chat,low,South,108.94,1239.0,4.0,asked how to export data,ticketing_v2
+T000937,2024-11-07 11:36:00,email,urgent,West,4.21,77.0,,customer reported a login error,ticketing_v2
+T000938,2024-02-27 08:37:00,portal,medium,North,22.5,387.0,5.0,customer reported a login error,ticketing_v2
+T000939,2024-08-03 14:31:00,chat,medium,South,6.54,158.0,3.0,password reset could not be completed,ticketing_v2
+T000940,2024-06-17 14:36:00,email,low,West,20.6,142.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000941,2024-08-29 07:04:00,chat,high,East,4.98,141.0,,customer reported a login error,ticketing_v2
+T000942,2024-08-07 09:19:00,chat,low,West,38.14,481.0,3.0,requested a refund for a damaged item,ticketing_v2
+T000943,2024-02-07 03:15:00,email,low,North,15.6,425.0,,password reset could not be completed,ticketing_v2
+T000944,2024-09-11 06:26:00,chat,low,South,12.59,259.0,3.0,customer reported a login error,ticketing_v2
+T000945,2024-08-04 21:28:00,chat,medium,North,39.05,1043.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000946,2024-01-16 12:05:00,chat,medium,North,47.45,240.0,,password reset could not be completed,ticketing_v2
+T000947,2024-06-26 12:36:00,email,medium,North,8.19,132.0,1.0,password reset could not be completed,ticketing_v2
+T000948,2024-11-26 15:43:00,phone,medium,East,10.74,99.0,4.0,customer reported a login error,ticketing_v2
+T000949,2024-12-01 13:07:00,phone,low,West,12.52,199.0,4.0,asked how to export data,ticketing_v2
+T000950,2024-06-09 17:26:00,phone,low,West,13.65,209.0,4.0,requested a refund for a damaged item,ticketing_v2
+T000951,2024-06-12 16:43:00,portal,high,East,6.15,44.0,,password reset could not be completed,ticketing_v2
+T000952,2024-07-13 10:59:00,phone,low,East,10.95,193.0,1.0,asked how to export data,ticketing_v2
+T000953,2024-08-14 20:29:00,portal,high,South,8.02,164.0,5.0,billing question about invoice,ticketing_v2
+T000954,2024-08-31 12:13:00,chat,medium,East,5.6,80.0,,password reset could not be completed,ticketing_v2
+T000955,2024-12-06 03:49:00,chat,urgent,East,2.32,11.0,,billing question about invoice,ticketing_v2
+T000956,2024-03-01 12:34:00,portal,medium,West,13.73,94.0,,billing question about invoice,ticketing_v2
+T000957,2024-07-18 12:32:00,chat,low,North,5.87,97.0,5.0,password reset could not be completed,ticketing_v2
+T000958,2024-05-31 23:40:00,email,medium,North,22.44,407.0,4.0,billing question about invoice,ticketing_v2
+T000959,2024-04-02 04:25:00,phone,medium,North,3.67,73.0,,billing question about invoice,ticketing_v2
+T000960,2024-12-15 08:50:00,email,medium,North,2.04,16.0,5.0,asked how to export data,ticketing_v2
+T000961,2024-04-27 09:50:00,portal,low,South,44.33,1267.0,3.0,password reset could not be completed,ticketing_v2
+T000962,2024-09-11 08:50:00,chat,medium,West,8.97,39.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000963,2024-12-17 05:29:00,chat,low,East,22.43,668.0,,requested a refund for a damaged item,ticketing_v2
+T000964,2024-09-10 15:51:00,chat,medium,South,4.82,106.0,,password reset could not be completed,ticketing_v2
+T000965,2024-07-28 22:07:00,email,medium,North,8.15,58.0,5.0,customer reported a login error,ticketing_v2
+T000966,2024-04-12 10:33:00,email,medium,North,15.29,186.0,1.0,billing question about invoice,ticketing_v2
+T000967,2024-06-12 18:29:00,chat,high,West,5.97,11.0,,requested a refund for a damaged item,ticketing_v2
+T000968,2024-03-21 04:34:00,phone,medium,North,9.66,123.0,2.0,asked how to export data,ticketing_v2
+T000969,2024-11-02 12:41:00,chat,urgent,South,4.44,73.0,5.0,billing question about invoice,ticketing_v2
+T000970,2024-10-11 17:11:00,email,low,South,8.42,65.0,3.0,customer reported a login error,ticketing_v2
+T000971,2024-02-21 15:59:00,email,medium,West,10.18,66.0,,password reset could not be completed,ticketing_v2
+T000972,2024-01-12 14:08:00,chat,high,East,4.52,88.0,,password reset could not be completed,ticketing_v2
+T000973,2024-06-24 21:12:00,chat,low,South,5.66,50.0,4.0,password reset could not be completed,ticketing_v2
+T000974,2024-04-14 01:08:00,phone,low,South,45.7,108.0,,customer reported a login error,ticketing_v2
+T000975,2024-02-19 13:17:00,portal,medium,West,13.65,68.0,5.0,billing question about invoice,ticketing_v2
+T000976,2024-10-12 15:28:00,email,low,South,17.55,371.0,,requested a refund for a damaged item,ticketing_v2
+T000977,2024-06-07 00:53:00,phone,low,South,8.02,15.0,,password reset could not be completed,ticketing_v2
+T000978,2024-05-05 13:43:00,email,medium,South,27.19,333.0,4.0,billing question about invoice,ticketing_v2
+T000979,2024-01-30 16:55:00,phone,medium,East,12.93,330.0,5.0,customer reported a login error,ticketing_v2
+T000980,2024-05-07 04:12:00,phone,low,East,12.68,89.0,3.0,billing question about invoice,ticketing_v2
+T000981,2024-10-20 17:54:00,portal,medium,West,14.93,186.0,3.0,password reset could not be completed,ticketing_v2
+T000982,2024-07-12 08:51:00,email,medium,West,1.98,47.0,1.0,billing question about invoice,ticketing_v2
+T000983,2024-09-30 17:00:00,portal,low,South,30.47,534.0,,asked how to export data,ticketing_v2
+T000984,2024-07-12 04:44:00,phone,low,West,30.86,464.0,1.0,billing question about invoice,ticketing_v2
+T000985,2024-08-15 16:43:00,email,medium,South,2.8,45.0,,billing question about invoice,ticketing_v2
+T000986,2024-09-26 05:27:00,phone,medium,North,6.5,50.0,,billing question about invoice,ticketing_v2
+T000987,2024-09-13 03:29:00,phone,medium,South,23.92,346.0,,asked how to export data,ticketing_v2
+T000988,2024-01-28 20:04:00,email,medium,South,4.11,24.0,3.0,billing question about invoice,ticketing_v2
+T000989,2024-05-16 20:42:00,email,low,North,8.69,85.0,5.0,requested a refund for a damaged item,ticketing_v2
+T000990,2024-09-24 21:45:00,email,low,West,50.54,643.0,5.0,billing question about invoice,ticketing_v2
+T000991,2024-08-23 23:03:00,portal,low,South,6.64,178.0,,requested a refund for a damaged item,ticketing_v2
+T000992,2024-10-26 02:56:00,chat,medium,West,264.27280142476866,399.0,,customer reported a login error,ticketing_v2
+T000993,2024-03-31 04:48:00,email,medium,East,1.65,23.0,3.0,customer reported a login error,ticketing_v2
+T000994,2024-01-18 12:45:00,chat,low,South,25.31,265.0,3.0,asked how to export data,ticketing_v2
+T000995,2024-02-07 05:24:00,portal,medium,East,10.66,131.0,1.0,billing question about invoice,ticketing_v2
+T000996,2024-04-02 15:27:00,email,low,East,33.19,909.0,1.0,billing question about invoice,ticketing_v2
+T000997,2024-09-30 19:04:00,phone,low,West,71.96,136.0,,asked how to export data,ticketing_v2
+T000998,2024-01-14 17:26:00,email,medium,North,14.46,150.0,,password reset could not be completed,ticketing_v2
+T000999,2024-05-13 08:56:00,email,low,East,65.68,1046.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001000,2024-08-10 21:05:00,email,medium,West,19.15,423.0,,password reset could not be completed,ticketing_v2
+T001001,2024-02-05 16:19:00,portal,low,South,7.59,175.0,,customer reported a login error,ticketing_v2
+T001002,2024-01-11 03:37:00,portal,high,North,1.08,31.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001003,2024-06-29 00:26:00,email,low,North,23.53,184.0,2.0,customer reported a login error,ticketing_v2
+T001004,2024-03-27 01:08:00,email,medium,East,15.33,431.0,,password reset could not be completed,ticketing_v2
+T001005,2024-04-19 00:45:00,chat,medium,East,15.48,137.0,2.0,asked how to export data,ticketing_v2
+T001006,2024-08-15 03:31:00,email,medium,South,12.28,235.0,,password reset could not be completed,ticketing_v2
+T001007,2024-03-08 10:37:00,email,high,West,3.31,62.0,,customer reported a login error,ticketing_v2
+T001008,2024-01-24 19:23:00,portal,high,West,3.69,28.0,5.0,password reset could not be completed,ticketing_v2
+T001009,2024-12-07 12:09:00,email,high,West,1.6,29.0,2.0,billing question about invoice,ticketing_v2
+T001010,2024-11-06 23:34:00,email,medium,North,15.94,259.0,4.0,billing question about invoice,ticketing_v2
+T001011,2024-08-15 07:03:00,chat,urgent,North,1.6,32.0,,password reset could not be completed,ticketing_v2
+T001012,2024-09-24 10:42:00,phone,high,South,4.49,63.0,2.0,asked how to export data,ticketing_v2
+T001013,2024-12-06 01:12:00,portal,medium,South,18.29,492.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001014,2024-05-28 07:01:00,portal,low,South,4.9,60.0,5.0,billing question about invoice,ticketing_v2
+T001015,2024-01-08 14:57:00,email,low,North,23.73,368.0,5.0,password reset could not be completed,ticketing_v2
+T001016,2024-07-27 20:29:00,chat,low,East,2105.6309137300022,36144.0,,billing question about invoice,ticketing_v2
+T001017,2024-06-07 01:19:00,chat,high,East,3.34,62.0,,requested a refund for a damaged item,ticketing_v2
+T001018,2024-09-26 12:54:00,email,low,West,6.89,184.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001019,2024-05-07 06:47:00,portal,medium,West,38.88,1153.0,5.0,billing question about invoice,ticketing_v2
+T001020,2024-12-20 23:38:00,phone,low,East,13.86,25.0,4.0,password reset could not be completed,ticketing_v2
+T001021,2024-01-13 18:45:00,email,low,North,15.16,188.0,2.0,asked how to export data,ticketing_v2
+T001022,2024-06-05 18:44:00,chat,medium,East,17.17,253.0,,asked how to export data,ticketing_v2
+T001023,2024-11-29 20:03:00,chat,medium,East,33.75,841.0,4.0,password reset could not be completed,ticketing_v2
+T001024,2024-10-23 19:24:00,email,low,South,14.2,41.0,4.0,billing question about invoice,ticketing_v2
+T001025,2024-07-15 05:07:00,email,low,West,8.9,87.0,,requested a refund for a damaged item,ticketing_v2
+T001026,2024-04-19 14:39:00,email,urgent,South,1.73,32.0,,password reset could not be completed,ticketing_v2
+T001027,2024-12-22 13:57:00,chat,high,South,1.1,22.0,2.0,asked how to export data,ticketing_v2
+T001028,2024-10-08 12:20:00,phone,high,North,1.18,15.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001029,2024-11-23 13:29:00,chat,high,West,2.29,63.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001030,2024-02-23 15:37:00,email,high,East,7.16,144.0,2.0,asked how to export data,ticketing_v2
+T001031,2024-03-14 23:00:00,email,medium,West,3.13,36.0,,asked how to export data,ticketing_v2
+T001032,2024-09-14 22:10:00,email,medium,North,13.69,111.0,4.0,asked how to export data,ticketing_v2
+T001033,2024-05-15 08:49:00,chat,medium,South,26.99,486.0,2.0,requested a refund for a damaged item,ticketing_v2
+T001034,2024-02-19 18:44:00,chat,low,South,11.5,198.0,,customer reported a login error,ticketing_v2
+T001035,2024-10-16 06:54:00,email,low,East,10.61,117.0,5.0,billing question about invoice,ticketing_v2
+T001036,2024-05-09 10:49:00,chat,urgent,South,2.49,29.0,3.0,billing question about invoice,ticketing_v2
+T001037,2024-05-12 20:28:00,email,medium,South,27.24,728.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001038,2024-09-21 11:35:00,email,high,East,8.01,184.0,,customer reported a login error,ticketing_v2
+T001039,2024-06-09 02:32:00,chat,low,North,33.01,743.0,,billing question about invoice,ticketing_v2
+T001040,2024-07-22 18:28:00,email,low,West,41.89,824.0,,customer reported a login error,ticketing_v2
+T001041,2024-11-01 06:49:00,phone,low,East,14.46,336.0,,requested a refund for a damaged item,ticketing_v2
+T001042,2024-08-29 12:14:00,portal,urgent,East,0.59,9.0,,asked how to export data,ticketing_v2
+T001043,2024-10-22 04:56:00,portal,low,East,12.95,91.0,,billing question about invoice,ticketing_v2
+T001044,2024-01-11 01:52:00,chat,high,North,0.95,27.0,4.0,asked how to export data,ticketing_v2
+T001045,2024-06-13 19:35:00,email,low,East,59.42,1091.0,1.0,customer reported a login error,ticketing_v2
+T001046,2024-11-14 15:09:00,chat,urgent,East,0.4,2.0,5.0,asked how to export data,ticketing_v2
+T001047,2024-11-02 11:14:00,email,urgent,North,1.68,30.0,3.0,billing question about invoice,ticketing_v2
+T001048,2024-10-01 17:12:00,email,high,South,2.68,53.0,5.0,password reset could not be completed,ticketing_v2
+T001049,2024-02-25 17:52:00,portal,urgent,North,0.55,12.0,1.0,billing question about invoice,ticketing_v2
+T001050,2024-12-26 14:28:00,email,medium,East,5.65,13.0,,asked how to export data,ticketing_v2
+T001051,2024-11-14 13:03:00,phone,low,West,73.11,981.0,4.0,customer reported a login error,ticketing_v2
+T001052,2024-06-02 04:00:00,email,medium,East,7.62,83.0,5.0,billing question about invoice,ticketing_v2
+T001053,2024-09-04 01:07:00,email,medium,West,29.97,56.0,,customer reported a login error,ticketing_v2
+T001054,2024-03-10 17:04:00,email,high,West,5.59,87.0,,password reset could not be completed,ticketing_v2
+T001055,2024-04-09 17:55:00,portal,high,East,2.75,36.0,,password reset could not be completed,ticketing_v2
+T001056,2024-10-08 08:07:00,phone,medium,North,16.03,65.0,4.0,password reset could not be completed,ticketing_v2
+T001057,2024-01-17 03:49:00,chat,high,West,55.70459826251806,778.0,,asked how to export data,ticketing_v2
+T001058,2024-10-06 00:08:00,chat,high,South,2.56,45.0,,requested a refund for a damaged item,ticketing_v2
+T001059,2024-09-11 17:42:00,email,high,South,1.05,27.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001060,2024-11-23 21:57:00,email,low,West,30.0,92.0,3.0,password reset could not be completed,ticketing_v2
+T001061,2024-10-19 19:42:00,chat,medium,South,7.55,37.0,3.0,billing question about invoice,ticketing_v2
+T001062,2024-03-09 08:23:00,portal,low,East,73.79,385.0,,password reset could not be completed,ticketing_v2
+T001063,2024-04-21 06:37:00,phone,medium,North,2.63,54.0,,password reset could not be completed,ticketing_v2
+T001064,2024-01-31 19:44:00,chat,medium,East,9.7,232.0,1.0,asked how to export data,ticketing_v2
+T001065,2024-09-21 23:28:00,email,medium,South,6.15,98.0,1.0,billing question about invoice,ticketing_v2
+T001066,2024-11-25 22:43:00,email,low,West,68.76,730.0,,password reset could not be completed,ticketing_v2
+T001067,2024-02-11 01:12:00,email,low,North,15.45,35.0,1.0,password reset could not be completed,ticketing_v2
+T001068,2024-08-23 01:15:00,chat,medium,East,2.29,7.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001069,2024-04-17 13:54:00,phone,high,East,5.22,73.0,4.0,billing question about invoice,ticketing_v2
+T001070,2024-08-31 06:43:00,chat,high,North,2.17,41.0,,password reset could not be completed,ticketing_v2
+T001071,2024-04-02 12:50:00,phone,low,West,27.49,553.0,3.0,password reset could not be completed,ticketing_v2
+T001072,2024-04-21 02:22:00,phone,high,North,11.66,78.0,1.0,billing question about invoice,ticketing_v2
+T001073,2024-02-16 23:01:00,email,low,West,13.95,141.0,5.0,customer reported a login error,ticketing_v2
+T001074,2024-02-02 06:10:00,portal,low,East,26.46,654.0,5.0,customer reported a login error,ticketing_v2
+T001075,2024-08-28 10:25:00,chat,medium,East,67.7,641.0,4.0,password reset could not be completed,ticketing_v2
+T001076,2024-12-18 00:42:00,chat,high,West,2.31,52.0,,asked how to export data,ticketing_v2
+T001077,2024-01-24 23:31:00,email,high,East,2.38,27.0,,customer reported a login error,ticketing_v2
+T001078,2024-06-15 11:51:00,portal,medium,South,7.43,182.0,4.0,billing question about invoice,ticketing_v2
+T001079,2024-07-11 07:30:00,chat,low,West,24.03,412.0,,billing question about invoice,ticketing_v2
+T001080,2024-08-09 23:46:00,chat,high,South,1.91,20.0,4.0,customer reported a login error,ticketing_v2
+T001081,2024-05-06 23:36:00,chat,high,East,2.35,59.0,5.0,password reset could not be completed,ticketing_v2
+T001082,2024-11-14 11:15:00,portal,low,North,51.6,634.0,4.0,password reset could not be completed,ticketing_v2
+T001083,2024-08-14 21:14:00,chat,low,North,9.62,33.0,1.0,billing question about invoice,ticketing_v2
+T001084,2024-03-09 04:10:00,email,low,South,6.3,178.0,3.0,password reset could not be completed,ticketing_v2
+T001085,2024-08-03 22:15:00,portal,low,North,15.21,236.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001086,2024-03-09 20:45:00,phone,low,South,17.23,471.0,,password reset could not be completed,ticketing_v2
+T001087,2024-12-21 13:06:00,phone,medium,East,7.2,19.0,,customer reported a login error,ticketing_v2
+T001088,2024-04-20 05:32:00,portal,urgent,North,1.11,19.0,,password reset could not be completed,ticketing_v2
+T001089,2024-11-19 06:04:00,chat,medium,North,2.4,51.0,,customer reported a login error,ticketing_v2
+T001090,2024-01-02 02:52:00,chat,medium,North,29.72,76.0,5.0,billing question about invoice,ticketing_v2
+T001091,2024-02-18 11:16:00,email,low,West,657.0309567246641,2829.0,4.0,password reset could not be completed,ticketing_v2
+T001092,2024-10-11 23:51:00,portal,low,West,11.11,218.0,,customer reported a login error,ticketing_v2
+T001093,2024-03-10 01:36:00,chat,low,East,3.85,60.0,5.0,customer reported a login error,ticketing_v2
+T001094,2024-12-18 05:52:00,email,low,West,14.26,338.0,5.0,billing question about invoice,ticketing_v2
+T001095,2024-05-04 06:43:00,portal,medium,South,5.35,67.0,3.0,asked how to export data,ticketing_v2
+T001096,2024-12-13 21:07:00,phone,urgent,West,3.92,48.0,4.0,asked how to export data,ticketing_v2
+T001097,2024-03-21 16:07:00,phone,urgent,South,1.1,22.0,,password reset could not be completed,ticketing_v2
+T001098,2024-05-16 01:45:00,phone,medium,East,6.92,104.0,4.0,customer reported a login error,ticketing_v2
+T001099,2024-09-14 00:26:00,portal,medium,North,8.67,166.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001100,2024-07-03 06:59:00,portal,medium,East,7.2,131.0,,password reset could not be completed,ticketing_v2
+T001101,2024-09-18 02:43:00,email,high,West,3.37,9.0,,customer reported a login error,ticketing_v2
+T001102,2024-10-02 08:06:00,chat,low,North,22.26,95.0,2.0,asked how to export data,ticketing_v2
+T001103,2024-03-09 04:27:00,portal,high,South,15.64,341.0,,customer reported a login error,ticketing_v2
+T001104,2024-02-11 03:31:00,phone,low,West,34.26,952.0,,requested a refund for a damaged item,ticketing_v2
+T001105,2024-07-17 11:54:00,chat,medium,East,4.57,127.0,5.0,customer reported a login error,ticketing_v2
+T001106,2024-11-03 16:31:00,chat,low,North,15.24,112.0,,requested a refund for a damaged item,ticketing_v2
+T001107,2024-07-29 01:37:00,chat,low,North,5.14,106.0,,requested a refund for a damaged item,ticketing_v2
+T001108,2024-10-29 03:18:00,chat,high,North,4.3,53.0,,billing question about invoice,ticketing_v2
+T001109,2024-04-16 22:04:00,chat,low,East,2.93,74.0,,password reset could not be completed,ticketing_v2
+T001110,2024-07-10 18:15:00,phone,medium,North,5.08,80.0,,password reset could not be completed,ticketing_v2
+T001111,2024-09-24 14:06:00,email,medium,South,6.8,162.0,2.0,billing question about invoice,ticketing_v2
+T001112,2024-05-22 11:11:00,phone,medium,North,6.4,43.0,2.0,customer reported a login error,ticketing_v2
+T001113,2024-10-25 23:39:00,chat,high,West,6.27,64.0,,asked how to export data,ticketing_v2
+T001114,2024-03-28 10:44:00,email,medium,West,10.53,43.0,,requested a refund for a damaged item,ticketing_v2
+T001115,2024-06-21 17:23:00,email,high,North,6.36,138.0,,billing question about invoice,ticketing_v2
+T001116,2024-11-27 03:37:00,email,medium,South,9.07,118.0,,requested a refund for a damaged item,ticketing_v2
+T001117,2024-07-24 16:30:00,email,low,North,31.31,402.0,4.0,billing question about invoice,ticketing_v2
+T001118,2024-03-06 13:50:00,chat,high,East,0.84,8.0,5.0,asked how to export data,ticketing_v2
+T001119,2024-10-23 12:17:00,chat,low,West,32.24,782.0,,requested a refund for a damaged item,ticketing_v2
+T001120,2024-10-13 03:55:00,portal,medium,South,2.42,10.0,,customer reported a login error,ticketing_v2
+T001121,2024-08-19 02:41:00,portal,high,South,18.35,158.0,2.0,billing question about invoice,ticketing_v2
+T001122,2024-09-07 03:10:00,phone,low,South,67.09,1834.0,,customer reported a login error,ticketing_v2
+T001123,2024-01-29 11:24:00,phone,low,West,41.57,901.0,4.0,billing question about invoice,ticketing_v2
+T001124,2024-10-19 08:30:00,chat,low,South,17.46,435.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001125,2024-11-02 23:24:00,chat,medium,West,13.25,248.0,5.0,asked how to export data,ticketing_v2
+T001126,2024-01-24 22:10:00,portal,high,East,1.15,16.0,,billing question about invoice,ticketing_v2
+T001127,2024-02-23 16:56:00,portal,low,North,4.04,20.0,1.0,asked how to export data,ticketing_v2
+T001128,2024-07-24 12:29:00,email,medium,West,3.46,73.0,,asked how to export data,ticketing_v2
+T001129,2024-04-18 08:28:00,email,low,South,9.97,226.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001130,2024-01-20 00:23:00,email,low,East,11.59,163.0,5.0,billing question about invoice,ticketing_v2
+T001131,2024-01-26 09:36:00,chat,high,West,16.46,448.0,,customer reported a login error,ticketing_v2
+T001132,2024-09-20 22:00:00,chat,medium,North,16.51,267.0,,billing question about invoice,ticketing_v2
+T001133,2024-01-21 09:16:00,phone,high,West,10.39,185.0,3.0,asked how to export data,ticketing_v2
+T001134,2024-12-02 16:56:00,email,low,East,15.34,32.0,,password reset could not be completed,ticketing_v2
+T001135,2024-10-31 17:44:00,chat,high,East,3.38,66.0,,customer reported a login error,ticketing_v2
+T001136,2024-07-17 22:32:00,phone,medium,East,21.95,453.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001137,2024-12-28 11:48:00,email,high,South,3.11,30.0,5.0,password reset could not be completed,ticketing_v2
+T001138,2024-05-02 23:19:00,email,low,South,38.7,188.0,,customer reported a login error,ticketing_v2
+T001139,2024-07-21 04:34:00,email,low,South,13.09,202.0,,password reset could not be completed,ticketing_v2
+T001140,2024-09-04 07:07:00,email,low,East,17.36,113.0,4.0,asked how to export data,ticketing_v2
+T001141,2024-10-12 01:07:00,chat,high,East,3.4,36.0,,asked how to export data,ticketing_v2
+T001142,2024-02-19 21:05:00,email,high,South,2.96,51.0,,requested a refund for a damaged item,ticketing_v2
+T001143,2024-06-06 04:06:00,chat,medium,North,7.75,221.0,,customer reported a login error,ticketing_v2
+T001144,2024-12-14 20:23:00,email,urgent,North,1.66,39.0,5.0,customer reported a login error,ticketing_v2
+T001145,2024-10-14 09:25:00,chat,medium,East,10.41,106.0,,password reset could not be completed,ticketing_v2
+T001146,2024-09-24 15:08:00,chat,medium,North,9.29,59.0,2.0,customer reported a login error,ticketing_v2
+T001147,2024-02-16 16:47:00,portal,low,South,16.34,45.0,4.0,billing question about invoice,ticketing_v2
+T001148,2024-01-05 14:39:00,email,low,North,44.77,1303.0,,billing question about invoice,ticketing_v2
+T001149,2024-01-18 08:34:00,email,low,West,20.67,148.0,,billing question about invoice,ticketing_v2
+T001150,2024-11-02 00:29:00,email,medium,North,19.55,458.0,5.0,password reset could not be completed,ticketing_v2
+T001151,2024-01-26 08:34:00,email,high,West,2.03,56.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001152,2024-01-02 01:05:00,email,low,West,15.67,258.0,3.0,billing question about invoice,ticketing_v2
+T001153,2024-06-21 18:02:00,phone,medium,South,4.82,55.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001154,2024-10-08 04:10:00,portal,high,West,2.61,75.0,4.0,asked how to export data,ticketing_v2
+T001155,2024-06-22 10:38:00,chat,low,West,13.66,261.0,,customer reported a login error,ticketing_v2
+T001156,2024-10-09 11:26:00,email,high,North,11.61,22.0,1.0,asked how to export data,ticketing_v2
+T001157,2024-12-23 01:20:00,email,medium,East,4.94,55.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001158,2024-06-05 17:48:00,email,medium,West,6.26,174.0,3.0,password reset could not be completed,ticketing_v2
+T001159,2024-01-30 07:29:00,chat,low,East,79.63,2229.0,5.0,password reset could not be completed,ticketing_v2
+T001160,2024-01-30 19:09:00,chat,low,South,25.52,481.0,,asked how to export data,ticketing_v2
+T001161,2024-03-19 00:43:00,chat,medium,North,2.22,49.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001162,2024-05-13 16:24:00,phone,urgent,North,0.75,16.0,4.0,billing question about invoice,ticketing_v2
+T001163,2024-09-10 11:38:00,chat,high,West,5.55,57.0,4.0,billing question about invoice,ticketing_v2
+T001164,2024-06-02 02:11:00,email,medium,East,2.23,47.0,,password reset could not be completed,ticketing_v2
+T001165,2024-03-14 21:18:00,portal,medium,North,13.29,165.0,4.0,customer reported a login error,ticketing_v2
+T001166,2024-04-14 03:46:00,email,medium,North,20.37,524.0,,asked how to export data,ticketing_v2
+T001167,2024-06-26 01:42:00,email,medium,South,12.97,354.0,,password reset could not be completed,ticketing_v2
+T001168,2024-08-11 18:21:00,chat,medium,South,4.89,58.0,3.0,password reset could not be completed,ticketing_v2
+T001169,2024-02-17 09:37:00,email,high,West,17.03,437.0,2.0,billing question about invoice,ticketing_v2
+T001170,2024-01-06 14:09:00,email,medium,East,20.13,318.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001171,2024-01-20 07:29:00,email,high,South,1.52,21.0,,customer reported a login error,ticketing_v2
+T001172,2024-01-05 16:15:00,email,medium,East,24.65,734.0,5.0,asked how to export data,ticketing_v2
+T001173,2024-08-16 05:07:00,chat,low,West,63.44,669.0,,requested a refund for a damaged item,ticketing_v2
+T001174,2024-03-26 14:47:00,portal,low,North,35.3,305.0,1.0,customer reported a login error,ticketing_v2
+T001175,2024-06-13 19:29:00,portal,medium,East,6.52,46.0,4.0,asked how to export data,ticketing_v2
+T001176,2024-02-15 15:51:00,chat,high,North,3.8,11.0,,customer reported a login error,ticketing_v2
+T001177,2024-09-15 08:53:00,portal,medium,East,16.18,254.0,,asked how to export data,ticketing_v2
+T001178,2024-04-25 23:40:00,email,medium,South,7.35,92.0,,customer reported a login error,ticketing_v2
+T001179,2024-11-01 11:40:00,email,medium,West,51.87,913.0,,requested a refund for a damaged item,ticketing_v2
+T001180,2024-08-02 03:37:00,email,high,West,5.98,170.0,3.0,asked how to export data,ticketing_v2
+T001181,2024-07-29 23:37:00,portal,low,North,46.67,324.0,,customer reported a login error,ticketing_v2
+T001182,2024-10-22 05:06:00,phone,medium,South,3.84,23.0,2.0,billing question about invoice,ticketing_v2
+T001183,2024-05-16 05:51:00,phone,urgent,South,2.39,37.0,,billing question about invoice,ticketing_v2
+T001184,2024-11-30 15:50:00,email,medium,North,6.62,52.0,,customer reported a login error,ticketing_v2
+T001185,2024-12-11 13:00:00,email,medium,South,3.35,77.0,3.0,customer reported a login error,ticketing_v2
+T001186,2024-12-09 12:07:00,portal,medium,West,3.74,6.0,,asked how to export data,ticketing_v2
+T001187,2024-09-15 22:03:00,portal,urgent,West,1.62,13.0,4.0,password reset could not be completed,ticketing_v2
+T001188,2024-10-09 17:27:00,email,medium,West,7.29,30.0,,billing question about invoice,ticketing_v2
+T001189,2024-04-22 18:17:00,email,low,North,5.23,154.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001190,2024-05-19 01:15:00,chat,low,North,7.9,175.0,2.0,asked how to export data,ticketing_v2
+T001191,2024-08-30 03:27:00,chat,medium,South,14.81,422.0,,requested a refund for a damaged item,ticketing_v2
+T001192,2024-04-20 18:19:00,email,high,North,17.7,49.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001193,2024-11-16 04:57:00,chat,low,East,35.01,372.0,5.0,asked how to export data,ticketing_v2
+T001194,2024-04-03 13:08:00,email,medium,East,4.37,62.0,4.0,billing question about invoice,ticketing_v2
+T001195,2024-11-26 22:24:00,portal,medium,North,8.11,231.0,4.0,billing question about invoice,ticketing_v2
+T001196,2024-12-11 02:54:00,chat,high,West,38.9,188.0,,asked how to export data,ticketing_v2
+T001197,2024-10-27 12:22:00,email,medium,East,17.31,273.0,,customer reported a login error,ticketing_v2
+T001198,2024-07-07 09:32:00,portal,medium,East,8.74,227.0,,requested a refund for a damaged item,ticketing_v2
+T001199,2024-06-14 12:30:00,chat,medium,South,4.77,66.0,,billing question about invoice,ticketing_v2
+T001200,2024-01-13 07:03:00,email,high,West,3.84,108.0,,billing question about invoice,ticketing_v2
+T001201,2024-11-16 13:28:00,chat,medium,West,15.28,193.0,3.0,password reset could not be completed,ticketing_v2
+T001202,2024-05-23 00:55:00,chat,medium,West,4.66,42.0,3.0,asked how to export data,ticketing_v2
+T001203,2024-07-19 19:03:00,portal,high,East,4.44,53.0,3.0,customer reported a login error,ticketing_v2
+T001204,2024-05-09 00:44:00,phone,low,South,12.78,307.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001205,2024-10-02 03:30:00,email,low,East,60.72,1374.0,,customer reported a login error,ticketing_v2
+T001206,2024-03-13 04:18:00,phone,high,North,4.91,8.0,5.0,billing question about invoice,ticketing_v2
+T001207,2024-12-14 10:41:00,chat,medium,West,10.98,196.0,,customer reported a login error,ticketing_v2
+T001208,2024-07-12 15:34:00,phone,low,North,40.18,876.0,3.0,password reset could not be completed,ticketing_v2
+T001209,2024-09-22 08:35:00,phone,low,South,82.97,2384.0,2.0,password reset could not be completed,ticketing_v2
+T001210,2024-09-18 13:03:00,email,high,East,3.31,48.0,4.0,billing question about invoice,ticketing_v2
+T001211,2024-10-12 17:52:00,email,urgent,West,1.28,37.0,3.0,password reset could not be completed,ticketing_v2
+T001212,2024-03-16 22:28:00,email,medium,West,7.41,113.0,4.0,billing question about invoice,ticketing_v2
+T001213,2024-11-08 10:55:00,email,urgent,South,0.63,2.0,,billing question about invoice,ticketing_v2
+T001214,2024-10-06 02:52:00,email,medium,East,8.28,40.0,,customer reported a login error,ticketing_v2
+T001215,2024-01-06 00:09:00,chat,high,North,5.67,45.0,,customer reported a login error,ticketing_v2
+T001216,2024-11-03 21:09:00,email,medium,West,19.77,545.0,3.0,billing question about invoice,ticketing_v2
+T001217,2024-03-21 06:47:00,chat,medium,West,1.42,19.0,1.0,billing question about invoice,ticketing_v2
+T001218,2024-05-21 19:45:00,chat,low,West,31.46,494.0,,requested a refund for a damaged item,ticketing_v2
+T001219,2024-07-11 06:49:00,portal,high,South,13.72,173.0,3.0,asked how to export data,ticketing_v2
+T001220,2024-11-17 19:02:00,email,high,North,2.15,23.0,4.0,billing question about invoice,ticketing_v2
+T001221,2024-09-16 01:31:00,email,medium,West,8.48,70.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001222,2024-12-27 00:48:00,chat,medium,North,6.06,114.0,5.0,customer reported a login error,ticketing_v2
+T001223,2024-04-07 05:11:00,email,low,East,7.0,47.0,3.0,customer reported a login error,ticketing_v2
+T001224,2024-03-22 02:41:00,chat,medium,South,54.0,1405.0,5.0,customer reported a login error,ticketing_v2
+T001225,2024-05-24 06:06:00,chat,medium,East,9.58,241.0,,asked how to export data,ticketing_v2
+T001226,2024-05-28 05:42:00,phone,low,South,29.75,795.0,5.0,password reset could not be completed,ticketing_v2
+T001227,2024-10-06 00:39:00,email,medium,South,12.94,103.0,5.0,customer reported a login error,ticketing_v2
+T001228,2024-08-19 23:42:00,chat,high,North,8.95,47.0,4.0,billing question about invoice,ticketing_v2
+T001229,2024-03-28 20:16:00,email,low,West,36.63,665.0,,requested a refund for a damaged item,ticketing_v2
+T001230,2024-10-12 21:51:00,email,low,East,26.26,155.0,4.0,billing question about invoice,ticketing_v2
+T001231,2024-04-29 20:37:00,chat,low,East,9.54,218.0,2.0,billing question about invoice,ticketing_v2
+T001232,2024-06-01 16:12:00,portal,low,West,30.38,315.0,,billing question about invoice,ticketing_v2
+T001233,2024-06-23 07:50:00,portal,medium,South,8.08,36.0,5.0,customer reported a login error,ticketing_v2
+T001234,2024-05-19 09:22:00,email,urgent,East,2.59,19.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001235,2024-11-20 09:58:00,email,low,East,19.49,455.0,4.0,asked how to export data,ticketing_v2
+T001236,2024-03-31 15:40:00,chat,medium,South,8.9,181.0,4.0,asked how to export data,ticketing_v2
+T001237,2024-03-25 17:55:00,email,medium,West,22.51,654.0,5.0,asked how to export data,ticketing_v2
+T001238,2024-02-16 04:46:00,phone,medium,South,7.99,113.0,3.0,billing question about invoice,ticketing_v2
+T001239,2024-01-27 05:28:00,chat,low,South,39.56,309.0,4.0,customer reported a login error,ticketing_v2
+T001240,2024-04-22 03:02:00,portal,low,West,25.26,556.0,4.0,billing question about invoice,ticketing_v2
+T001241,2024-08-07 21:09:00,phone,medium,East,14.93,313.0,1.0,billing question about invoice,ticketing_v2
+T001242,2024-08-14 22:36:00,phone,high,West,4.24,67.0,,asked how to export data,ticketing_v2
+T001243,2024-06-21 06:52:00,phone,low,North,7.36,30.0,,billing question about invoice,ticketing_v2
+T001244,2024-01-18 09:38:00,chat,high,East,6.44,86.0,3.0,customer reported a login error,ticketing_v2
+T001245,2024-12-28 13:19:00,email,urgent,North,1.15,9.0,,billing question about invoice,ticketing_v2
+T001246,2024-08-20 06:47:00,email,low,North,11.96,292.0,3.0,customer reported a login error,ticketing_v2
+T001247,2024-08-30 21:46:00,email,low,West,37.39,347.0,,asked how to export data,ticketing_v2
+T001248,2024-07-25 22:35:00,email,urgent,West,2.45,73.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001249,2024-07-20 14:02:00,chat,medium,West,2.73,26.0,,requested a refund for a damaged item,ticketing_v2
+T001250,2024-09-30 01:48:00,phone,medium,East,8.94,179.0,3.0,asked how to export data,ticketing_v2
+T001251,2024-06-12 15:19:00,chat,low,West,10.41,42.0,,customer reported a login error,ticketing_v2
+T001252,2024-05-10 13:05:00,portal,low,North,14.92,111.0,,requested a refund for a damaged item,ticketing_v2
+T001253,2024-01-30 10:39:00,phone,high,South,6.76,169.0,,customer reported a login error,ticketing_v2
+T001254,2024-06-25 08:23:00,email,low,East,28.64,831.0,1.0,customer reported a login error,ticketing_v2
+T001255,2024-10-04 04:26:00,portal,low,West,28.75,579.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001256,2024-06-09 20:29:00,phone,high,West,8.16,23.0,,requested a refund for a damaged item,ticketing_v2
+T001257,2024-04-28 00:07:00,phone,high,South,9.53,28.0,4.0,password reset could not be completed,ticketing_v2
+T001258,2024-12-12 00:01:00,phone,high,East,3.76,31.0,,customer reported a login error,ticketing_v2
+T001259,2024-11-15 00:45:00,email,low,South,6.65,149.0,3.0,asked how to export data,ticketing_v2
+T001260,2024-04-19 18:55:00,chat,medium,West,31.49,597.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001261,2024-11-15 01:53:00,phone,high,East,7.7,126.0,,requested a refund for a damaged item,ticketing_v2
+T001262,2024-12-04 16:33:00,email,medium,East,14.9,421.0,5.0,customer reported a login error,ticketing_v2
+T001263,2024-11-18 20:47:00,chat,low,North,16.52,321.0,3.0,billing question about invoice,ticketing_v2
+T001264,2024-02-12 01:44:00,chat,urgent,South,1.02,14.0,4.0,asked how to export data,ticketing_v2
+T001265,2024-06-10 22:30:00,chat,medium,South,12.51,239.0,,password reset could not be completed,ticketing_v2
+T001266,2024-06-22 05:00:00,email,high,East,2.58,72.0,3.0,password reset could not be completed,ticketing_v2
+T001267,2024-05-05 10:28:00,phone,urgent,North,1.29,23.0,,customer reported a login error,ticketing_v2
+T001268,2024-10-07 20:19:00,portal,medium,South,2.71,38.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001269,2024-05-17 22:59:00,email,medium,East,12.87,295.0,,billing question about invoice,ticketing_v2
+T001270,2024-08-10 00:10:00,email,high,East,1.97,49.0,,password reset could not be completed,ticketing_v2
+T001271,2024-03-06 19:49:00,phone,low,West,31.58,757.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001272,2024-11-03 07:59:00,email,low,East,13.1,148.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001273,2024-12-01 03:01:00,email,medium,North,4.61,10.0,5.0,billing question about invoice,ticketing_v2
+T001274,2024-10-07 16:57:00,chat,medium,South,3.88,29.0,,asked how to export data,ticketing_v2
+T001275,2024-06-02 00:11:00,phone,low,West,26.25,198.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001276,2024-11-02 01:01:00,email,low,East,34.27,431.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001277,2024-04-10 00:46:00,email,low,East,7.14,89.0,1.0,billing question about invoice,ticketing_v2
+T001278,2024-05-30 10:51:00,email,medium,West,8.89,82.0,,billing question about invoice,ticketing_v2
+T001279,2024-02-27 16:26:00,chat,medium,North,10.24,245.0,,requested a refund for a damaged item,ticketing_v2
+T001280,2024-07-05 02:29:00,email,medium,West,6.33,28.0,5.0,asked how to export data,ticketing_v2
+T001281,2024-07-22 20:21:00,chat,low,North,14.74,106.0,4.0,asked how to export data,ticketing_v2
+T001282,2024-12-21 10:50:00,chat,low,South,34.2,762.0,,customer reported a login error,ticketing_v2
+T001283,2024-04-17 19:51:00,chat,medium,South,12.86,81.0,5.0,asked how to export data,ticketing_v2
+T001284,2024-10-31 08:58:00,portal,low,North,8.83,136.0,1.0,customer reported a login error,ticketing_v2
+T001285,2024-08-27 16:07:00,chat,medium,East,43.55,1147.0,2.0,password reset could not be completed,ticketing_v2
+T001286,2024-02-02 01:09:00,email,medium,West,2.56,16.0,,billing question about invoice,ticketing_v2
+T001287,2024-12-16 18:51:00,phone,low,North,1738.5774220719013,42337.0,4.0,billing question about invoice,ticketing_v2
+T001288,2024-07-16 21:38:00,chat,medium,East,5.46,55.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001289,2024-11-29 23:31:00,email,medium,West,2.14,48.0,5.0,customer reported a login error,ticketing_v2
+T001290,2024-09-29 10:11:00,portal,medium,West,5.7,104.0,,customer reported a login error,ticketing_v2
+T001291,2024-08-03 13:22:00,chat,low,East,6.05,61.0,5.0,asked how to export data,ticketing_v2
+T001292,2024-07-15 10:24:00,chat,low,South,15.17,35.0,,asked how to export data,ticketing_v2
+T001293,2024-07-18 10:56:00,email,high,East,10.5,300.0,,customer reported a login error,ticketing_v2
+T001294,2024-06-14 09:23:00,email,medium,East,3.11,73.0,4.0,billing question about invoice,ticketing_v2
+T001295,2024-11-24 02:21:00,portal,medium,North,1.1,12.0,,password reset could not be completed,ticketing_v2
+T001296,2024-01-07 05:17:00,portal,medium,West,2.51,35.0,4.0,password reset could not be completed,ticketing_v2
+T001297,2024-01-30 00:09:00,chat,medium,North,5.34,144.0,,customer reported a login error,ticketing_v2
+T001298,2024-05-29 04:24:00,email,high,West,1.25,28.0,,billing question about invoice,ticketing_v2
+T001299,2024-02-16 12:24:00,chat,medium,South,5.96,75.0,,customer reported a login error,ticketing_v2
+T001300,2024-01-21 15:33:00,portal,low,West,10.79,129.0,,billing question about invoice,ticketing_v2
+T001301,2024-04-25 22:35:00,portal,medium,West,6.22,72.0,4.0,customer reported a login error,ticketing_v2
+T001302,2024-07-25 15:09:00,email,low,East,10.32,238.0,4.0,billing question about invoice,ticketing_v2
+T001303,2024-01-22 21:41:00,phone,low,South,12.68,294.0,1.0,billing question about invoice,ticketing_v2
+T001304,2024-07-30 09:40:00,email,low,South,25.26,656.0,,password reset could not be completed,ticketing_v2
+T001305,2024-03-22 16:56:00,email,low,East,14.28,52.0,2.0,billing question about invoice,ticketing_v2
+T001306,2024-06-17 20:15:00,portal,high,East,63.653534316654714,691.0,,customer reported a login error,ticketing_v2
+T001307,2024-08-26 12:25:00,chat,low,North,33.36,346.0,4.0,password reset could not be completed,ticketing_v2
+T001308,2024-08-18 16:05:00,phone,high,West,4.48,96.0,4.0,password reset could not be completed,ticketing_v2
+T001309,2024-06-02 18:08:00,phone,low,East,16.93,130.0,,billing question about invoice,ticketing_v2
+T001310,2024-05-14 18:07:00,portal,high,North,9.26,217.0,3.0,asked how to export data,ticketing_v2
+T001311,2024-08-01 13:55:00,phone,low,West,9.91,191.0,2.0,password reset could not be completed,ticketing_v2
+T001312,2024-09-20 18:07:00,portal,medium,North,3.84,32.0,,billing question about invoice,ticketing_v2
+T001313,2024-07-28 23:57:00,chat,high,East,5.78,142.0,4.0,password reset could not be completed,ticketing_v2
+T001314,2024-05-14 22:29:00,phone,medium,East,13.84,291.0,,asked how to export data,ticketing_v2
+T001315,2024-10-24 00:23:00,phone,medium,East,10.97,24.0,2.0,customer reported a login error,ticketing_v2
+T001316,2024-05-05 04:44:00,chat,medium,South,10.18,210.0,,customer reported a login error,ticketing_v2
+T001317,2024-06-22 08:20:00,email,low,East,17.71,504.0,,requested a refund for a damaged item,ticketing_v2
+T001318,2024-06-16 05:27:00,chat,medium,South,3.25,31.0,4.0,customer reported a login error,ticketing_v2
+T001319,2024-01-13 10:42:00,email,medium,South,48.41,97.0,,billing question about invoice,ticketing_v2
+T001320,2024-09-07 07:30:00,chat,low,South,3.81,14.0,3.0,billing question about invoice,ticketing_v2
+T001321,2024-01-06 04:40:00,phone,low,North,39.31,625.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001322,2024-04-05 15:56:00,portal,low,North,19.15,566.0,,customer reported a login error,ticketing_v2
+T001323,2024-02-29 18:23:00,email,high,East,4.21,21.0,,password reset could not be completed,ticketing_v2
+T001324,2024-06-06 03:48:00,portal,high,West,5.57,97.0,1.0,password reset could not be completed,ticketing_v2
+T001325,2024-11-01 04:20:00,chat,low,West,28.07,315.0,,asked how to export data,ticketing_v2
+T001326,2024-12-24 16:42:00,email,high,North,1.53,16.0,1.0,asked how to export data,ticketing_v2
+T001327,2024-02-28 13:24:00,email,high,South,2.07,47.0,5.0,billing question about invoice,ticketing_v2
+T001328,2024-09-03 00:24:00,chat,low,South,57.45,473.0,,requested a refund for a damaged item,ticketing_v2
+T001329,2024-10-14 07:29:00,phone,urgent,South,3.07,6.0,,password reset could not be completed,ticketing_v2
+T001330,2024-04-04 08:14:00,chat,high,East,4.18,113.0,5.0,asked how to export data,ticketing_v2
+T001331,2024-05-18 11:55:00,chat,medium,South,16.21,397.0,3.0,password reset could not be completed,ticketing_v2
+T001332,2024-10-19 14:37:00,phone,low,West,23.66,171.0,1.0,billing question about invoice,ticketing_v2
+T001333,2024-08-08 03:33:00,phone,urgent,East,1.18,21.0,5.0,password reset could not be completed,ticketing_v2
+T001334,2024-02-04 23:30:00,chat,low,East,4.86,77.0,2.0,requested a refund for a damaged item,ticketing_v2
+T001335,2024-02-26 04:08:00,email,medium,East,7.57,97.0,5.0,billing question about invoice,ticketing_v2
+T001336,2024-12-14 20:38:00,email,medium,West,24.22,628.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001337,2024-06-21 08:07:00,portal,urgent,East,6.27,22.0,,asked how to export data,ticketing_v2
+T001338,2024-09-24 02:16:00,phone,medium,North,26.9,297.0,5.0,asked how to export data,ticketing_v2
+T001339,2024-11-28 02:28:00,email,medium,North,6.22,25.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001340,2024-10-21 04:15:00,email,low,South,43.85,829.0,3.0,password reset could not be completed,ticketing_v2
+T001341,2024-03-08 21:09:00,portal,low,East,16.79,80.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001342,2024-08-31 15:20:00,email,low,West,11.6,125.0,,customer reported a login error,ticketing_v2
+T001343,2024-01-02 09:09:00,chat,urgent,West,2.96,40.0,,password reset could not be completed,ticketing_v2
+T001344,2024-05-05 14:16:00,email,medium,East,2.89,64.0,2.0,password reset could not be completed,ticketing_v2
+T001345,2024-07-23 07:18:00,phone,medium,East,3.69,107.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001346,2024-08-21 12:19:00,phone,medium,North,14.63,314.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001347,2024-03-13 13:26:00,email,urgent,East,0.85,4.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001348,2024-12-14 15:11:00,chat,urgent,North,2.7,38.0,,billing question about invoice,ticketing_v2
+T001349,2024-02-14 08:48:00,chat,low,South,33.09,749.0,,password reset could not be completed,ticketing_v2
+T001350,2024-02-12 05:13:00,email,medium,East,23.83,234.0,,customer reported a login error,ticketing_v2
+T001351,2024-05-23 12:05:00,chat,medium,West,3.48,84.0,3.0,password reset could not be completed,ticketing_v2
+T001352,2024-09-08 05:56:00,email,medium,North,9.07,242.0,,requested a refund for a damaged item,ticketing_v2
+T001353,2024-12-07 21:45:00,email,medium,South,11.93,33.0,,password reset could not be completed,ticketing_v2
+T001354,2024-05-10 00:03:00,phone,low,West,6.8,120.0,5.0,password reset could not be completed,ticketing_v2
+T001355,2024-06-28 06:31:00,email,urgent,South,1.5,20.0,,billing question about invoice,ticketing_v2
+T001356,2024-06-06 02:51:00,phone,low,North,23.54,399.0,4.0,asked how to export data,ticketing_v2
+T001357,2024-06-04 08:22:00,chat,low,South,13.28,54.0,,billing question about invoice,ticketing_v2
+T001358,2024-07-04 01:54:00,email,high,East,3.06,89.0,4.0,customer reported a login error,ticketing_v2
+T001359,2024-04-01 01:34:00,portal,low,North,54.1,649.0,,requested a refund for a damaged item,ticketing_v2
+T001360,2024-12-13 19:21:00,phone,medium,South,6.68,107.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001361,2024-07-14 21:27:00,portal,high,West,5.61,147.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001362,2024-04-25 08:06:00,phone,high,South,3.3,68.0,4.0,password reset could not be completed,ticketing_v2
+T001363,2024-05-16 20:35:00,phone,low,South,92.32,1100.0,4.0,customer reported a login error,ticketing_v2
+T001364,2024-06-03 12:09:00,phone,high,North,1.4,32.0,,requested a refund for a damaged item,ticketing_v2
+T001365,2024-07-31 05:55:00,phone,low,North,25.31,696.0,,password reset could not be completed,ticketing_v2
+T001366,2024-03-11 23:49:00,phone,high,South,0.54,14.0,2.0,requested a refund for a damaged item,ticketing_v2
+T001367,2024-06-13 00:46:00,email,high,North,14.66,28.0,2.0,customer reported a login error,ticketing_v2
+T001368,2024-11-23 19:27:00,chat,low,West,21.8,141.0,,asked how to export data,ticketing_v2
+T001369,2024-01-12 18:53:00,email,medium,East,9.57,143.0,,requested a refund for a damaged item,ticketing_v2
+T001370,2024-04-06 14:12:00,email,high,North,3.22,39.0,4.0,billing question about invoice,ticketing_v2
+T001371,2024-08-29 05:51:00,chat,low,East,13.25,229.0,,billing question about invoice,ticketing_v2
+T001372,2024-02-11 10:37:00,portal,medium,East,14.62,331.0,2.0,password reset could not be completed,ticketing_v2
+T001373,2024-08-23 06:24:00,email,medium,South,6.68,46.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001374,2024-10-13 10:09:00,phone,medium,East,4.09,68.0,4.0,password reset could not be completed,ticketing_v2
+T001375,2024-09-29 21:16:00,chat,urgent,South,0.17,2.0,,requested a refund for a damaged item,ticketing_v2
+T001376,2024-02-09 02:39:00,chat,low,South,46.97,749.0,,asked how to export data,ticketing_v2
+T001377,2024-08-10 12:38:00,email,low,East,7.3,102.0,3.0,password reset could not be completed,ticketing_v2
+T001378,2024-11-02 12:04:00,chat,low,West,16.51,280.0,4.0,password reset could not be completed,ticketing_v2
+T001379,2024-08-08 06:11:00,email,low,West,18.7,201.0,,password reset could not be completed,ticketing_v2
+T001380,2024-07-19 13:41:00,email,low,West,15.15,277.0,,password reset could not be completed,ticketing_v2
+T001381,2024-12-10 04:09:00,portal,low,South,17.15,505.0,4.0,billing question about invoice,ticketing_v2
+T001382,2024-08-03 21:31:00,email,high,South,3.12,51.0,1.0,password reset could not be completed,ticketing_v2
+T001383,2024-11-20 07:29:00,chat,low,North,4.98,86.0,,billing question about invoice,ticketing_v2
+T001384,2024-05-28 00:03:00,phone,medium,West,16.15,483.0,5.0,billing question about invoice,ticketing_v2
+T001385,2024-03-04 01:29:00,email,low,North,39.05,99.0,,billing question about invoice,ticketing_v2
+T001386,2024-03-26 18:32:00,chat,medium,South,14.22,237.0,5.0,asked how to export data,ticketing_v2
+T001387,2024-02-16 04:26:00,email,high,West,2.89,27.0,,password reset could not be completed,ticketing_v2
+T001388,2024-01-14 10:21:00,email,medium,West,8.63,25.0,,password reset could not be completed,ticketing_v2
+T001389,2024-01-04 08:11:00,chat,high,South,1.73,12.0,2.0,asked how to export data,ticketing_v2
+T001390,2024-08-12 00:27:00,chat,high,South,2.65,5.0,,billing question about invoice,ticketing_v2
+T001391,2024-11-01 19:16:00,email,high,South,11.03,250.0,2.0,requested a refund for a damaged item,ticketing_v2
+T001392,2024-06-08 09:35:00,phone,high,East,104.85579493176539,234.0,4.0,billing question about invoice,ticketing_v2
+T001393,2024-06-20 06:03:00,phone,urgent,South,0.61,8.0,3.0,asked how to export data,ticketing_v2
+T001394,2024-04-30 17:18:00,email,low,West,90.74,1025.0,,billing question about invoice,ticketing_v2
+T001395,2024-11-11 07:26:00,phone,medium,East,1.23,32.0,,billing question about invoice,ticketing_v2
+T001396,2024-09-28 07:15:00,email,low,North,15.51,310.0,3.0,billing question about invoice,ticketing_v2
+T001397,2024-02-19 07:41:00,chat,low,West,21.49,189.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001398,2024-03-17 15:15:00,chat,high,East,3.88,92.0,,billing question about invoice,ticketing_v2
+T001399,2024-01-05 07:14:00,email,high,East,2.59,19.0,4.0,customer reported a login error,ticketing_v2
+T001400,2024-08-17 05:58:00,email,medium,West,4.76,100.0,,customer reported a login error,ticketing_v2
+T001401,2024-09-26 12:11:00,email,urgent,East,0.36,9.0,4.0,asked how to export data,ticketing_v2
+T001402,2024-08-30 05:29:00,chat,low,West,12.05,339.0,,password reset could not be completed,ticketing_v2
+T001403,2024-01-29 08:54:00,email,medium,East,10.47,53.0,,password reset could not be completed,ticketing_v2
+T001404,2024-06-20 08:20:00,email,high,East,1.32,10.0,5.0,asked how to export data,ticketing_v2
+T001405,2024-03-23 07:14:00,chat,high,East,3.17,60.0,1.0,billing question about invoice,ticketing_v2
+T001406,2024-07-14 00:04:00,email,medium,West,3.87,27.0,,requested a refund for a damaged item,ticketing_v2
+T001407,2024-01-08 06:45:00,email,medium,North,312.503706890581,6839.0,,billing question about invoice,ticketing_v2
+T001408,2024-04-12 19:39:00,portal,low,North,21.34,204.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001409,2024-07-22 14:54:00,chat,high,East,6.88,139.0,3.0,asked how to export data,ticketing_v2
+T001410,2024-06-28 13:59:00,phone,medium,North,7.72,122.0,,billing question about invoice,ticketing_v2
+T001411,2024-05-03 14:35:00,chat,medium,West,9.72,27.0,,password reset could not be completed,ticketing_v2
+T001412,2024-05-06 03:03:00,phone,medium,North,28.94,683.0,5.0,billing question about invoice,ticketing_v2
+T001413,2024-07-23 03:34:00,chat,medium,East,3.36,14.0,3.0,asked how to export data,ticketing_v2
+T001414,2024-04-02 21:34:00,email,high,East,12.44,126.0,,requested a refund for a damaged item,ticketing_v2
+T001415,2024-03-09 11:10:00,email,medium,South,3.99,65.0,,requested a refund for a damaged item,ticketing_v2
+T001416,2024-10-14 16:21:00,phone,urgent,West,0.21,1.0,5.0,billing question about invoice,ticketing_v2
+T001417,2024-06-06 04:45:00,email,medium,South,15.0,117.0,,customer reported a login error,ticketing_v2
+T001418,2024-12-20 20:16:00,portal,medium,North,2.23,65.0,5.0,billing question about invoice,ticketing_v2
+T001419,2024-12-12 14:50:00,email,medium,North,4.05,29.0,5.0,password reset could not be completed,ticketing_v2
+T001420,2024-02-10 02:10:00,email,medium,South,14.49,333.0,,billing question about invoice,ticketing_v2
+T001421,2024-06-20 23:11:00,email,medium,South,9.6,155.0,,asked how to export data,ticketing_v2
+T001422,2024-08-11 20:47:00,email,low,East,8.96,135.0,4.0,customer reported a login error,ticketing_v2
+T001423,2024-01-08 10:51:00,phone,medium,East,13.21,279.0,3.0,customer reported a login error,ticketing_v2
+T001424,2024-08-22 22:58:00,email,medium,East,3.24,52.0,3.0,billing question about invoice,ticketing_v2
+T001425,2024-04-07 19:37:00,portal,low,South,12.11,73.0,,requested a refund for a damaged item,ticketing_v2
+T001426,2024-09-20 02:10:00,chat,high,East,2.65,19.0,,billing question about invoice,ticketing_v2
+T001427,2024-10-17 10:21:00,email,high,South,2.8,46.0,3.0,asked how to export data,ticketing_v2
+T001428,2024-02-12 02:28:00,phone,high,South,1.29,3.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001429,2024-05-12 12:51:00,email,low,South,13.68,186.0,,customer reported a login error,ticketing_v2
+T001430,2024-06-16 12:46:00,chat,high,South,5.16,103.0,3.0,billing question about invoice,ticketing_v2
+T001431,2024-07-25 01:43:00,phone,medium,West,2.85,40.0,,customer reported a login error,ticketing_v2
+T001432,2024-10-10 13:04:00,portal,urgent,South,0.42,10.0,2.0,customer reported a login error,ticketing_v2
+T001433,2024-12-18 22:27:00,email,medium,West,3.79,51.0,,requested a refund for a damaged item,ticketing_v2
+T001434,2024-11-03 05:14:00,chat,high,West,1.16,31.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001435,2024-05-09 19:56:00,email,low,North,24.79,184.0,,billing question about invoice,ticketing_v2
+T001436,2024-03-26 00:35:00,chat,high,East,0.7,8.0,1.0,customer reported a login error,ticketing_v2
+T001437,2024-10-14 15:51:00,chat,low,West,7.15,173.0,,customer reported a login error,ticketing_v2
+T001438,2024-09-01 22:54:00,chat,medium,West,5.76,159.0,4.0,asked how to export data,ticketing_v2
+T001439,2024-12-01 05:19:00,phone,high,South,15.79,139.0,5.0,password reset could not be completed,ticketing_v2
+T001440,2024-07-14 12:35:00,chat,low,North,65.26,220.0,5.0,asked how to export data,ticketing_v2
+T001441,2024-11-07 12:31:00,chat,medium,North,19.39,115.0,4.0,password reset could not be completed,ticketing_v2
+T001442,2024-10-04 10:35:00,chat,high,West,5.01,126.0,1.0,password reset could not be completed,ticketing_v2
+T001443,2024-05-18 06:17:00,email,high,South,2.1,60.0,,requested a refund for a damaged item,ticketing_v2
+T001444,2024-01-21 13:37:00,phone,medium,West,4.57,34.0,,requested a refund for a damaged item,ticketing_v2
+T001445,2024-02-28 09:00:00,email,high,South,9.19,142.0,,password reset could not be completed,ticketing_v2
+T001446,2024-07-22 10:31:00,chat,medium,West,3.48,20.0,5.0,asked how to export data,ticketing_v2
+T001447,2024-04-04 15:01:00,phone,medium,East,12.83,92.0,5.0,password reset could not be completed,ticketing_v2
+T001448,2024-05-25 16:47:00,chat,medium,West,641.786411958339,7133.0,2.0,requested a refund for a damaged item,ticketing_v2
+T001449,2024-08-27 03:40:00,email,low,East,39.93,215.0,3.0,asked how to export data,ticketing_v2
+T001450,2024-12-08 22:12:00,email,urgent,East,0.48,5.0,,customer reported a login error,ticketing_v2
+T001451,2024-01-19 16:39:00,portal,medium,North,10.07,148.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001452,2024-04-11 00:18:00,chat,low,South,25.37,604.0,5.0,billing question about invoice,ticketing_v2
+T001453,2024-06-01 18:10:00,chat,low,East,14.85,111.0,4.0,billing question about invoice,ticketing_v2
+T001454,2024-06-30 11:57:00,chat,low,East,20.98,405.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001455,2024-08-19 08:47:00,chat,medium,South,11.29,250.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001456,2024-11-17 08:04:00,email,low,East,9.98,149.0,,customer reported a login error,ticketing_v2
+T001457,2024-01-27 21:06:00,portal,urgent,East,1.04,24.0,5.0,asked how to export data,ticketing_v2
+T001458,2024-11-09 01:02:00,chat,low,North,38.1,1053.0,3.0,password reset could not be completed,ticketing_v2
+T001459,2024-07-28 00:54:00,chat,low,South,526.4433857060365,8660.0,,requested a refund for a damaged item,ticketing_v2
+T001460,2024-05-06 05:58:00,chat,high,East,3.17,52.0,,customer reported a login error,ticketing_v2
+T001461,2024-12-18 02:48:00,email,high,West,13.9,365.0,,password reset could not be completed,ticketing_v2
+T001462,2024-01-24 22:08:00,portal,low,South,63.5,530.0,,password reset could not be completed,ticketing_v2
+T001463,2024-08-24 00:17:00,chat,medium,North,14.63,107.0,3.0,billing question about invoice,ticketing_v2
+T001464,2024-03-14 10:38:00,chat,urgent,North,1.08,7.0,5.0,customer reported a login error,ticketing_v2
+T001465,2024-03-15 18:49:00,email,medium,North,8.21,49.0,,requested a refund for a damaged item,ticketing_v2
+T001466,2024-01-20 11:15:00,email,medium,East,9.15,14.0,,asked how to export data,ticketing_v2
+T001467,2024-05-07 04:33:00,phone,high,West,1.98,24.0,,asked how to export data,ticketing_v2
+T001468,2024-05-08 11:09:00,email,medium,South,9.04,200.0,,password reset could not be completed,ticketing_v2
+T001469,2024-04-27 21:21:00,chat,low,South,48.66,1237.0,3.0,password reset could not be completed,ticketing_v2
+T001470,2024-06-19 20:21:00,email,low,South,69.95,923.0,1.0,password reset could not be completed,ticketing_v2
+T001471,2024-01-08 18:55:00,phone,low,West,9.35,246.0,,billing question about invoice,ticketing_v2
+T001472,2024-05-22 00:22:00,email,medium,West,10.32,82.0,,requested a refund for a damaged item,ticketing_v2
+T001473,2024-03-23 19:11:00,email,high,East,12.12,275.0,5.0,asked how to export data,ticketing_v2
+T001474,2024-06-03 08:47:00,chat,low,East,59.63,824.0,5.0,password reset could not be completed,ticketing_v2
+T001475,2024-06-29 01:23:00,portal,medium,West,13.74,212.0,,customer reported a login error,ticketing_v2
+T001476,2024-09-25 10:24:00,chat,low,North,12.95,286.0,,customer reported a login error,ticketing_v2
+T001477,2024-03-15 21:44:00,email,medium,East,2.61,71.0,1.0,password reset could not be completed,ticketing_v2
+T001478,2024-07-22 02:16:00,portal,high,East,2.12,30.0,5.0,customer reported a login error,ticketing_v2
+T001479,2024-10-12 08:43:00,email,high,North,0.88,7.0,4.0,password reset could not be completed,ticketing_v2
+T001480,2024-05-01 10:53:00,portal,low,East,71.02,1309.0,2.0,customer reported a login error,ticketing_v2
+T001481,2024-08-01 01:42:00,email,high,West,7.47,48.0,,asked how to export data,ticketing_v2
+T001482,2024-05-02 04:48:00,phone,high,South,5.86,29.0,,password reset could not be completed,ticketing_v2
+T001483,2024-08-08 02:59:00,email,medium,South,4.76,111.0,2.0,customer reported a login error,ticketing_v2
+T001484,2024-01-04 09:32:00,chat,medium,East,5.15,48.0,5.0,billing question about invoice,ticketing_v2
+T001485,2024-05-04 07:32:00,email,medium,East,38.56,617.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001486,2024-11-27 11:12:00,email,urgent,West,4.68,140.0,5.0,customer reported a login error,ticketing_v2
+T001487,2024-02-17 17:22:00,email,low,East,11.79,351.0,,requested a refund for a damaged item,ticketing_v2
+T001488,2024-12-26 10:54:00,email,low,South,31.18,833.0,,requested a refund for a damaged item,ticketing_v2
+T001489,2024-02-05 13:37:00,email,medium,North,16.54,300.0,4.0,password reset could not be completed,ticketing_v2
+T001490,2024-12-07 15:01:00,email,medium,West,7.05,125.0,,requested a refund for a damaged item,ticketing_v2
+T001491,2024-01-12 15:02:00,portal,low,South,4398.956133957644,119986.0,1.0,password reset could not be completed,ticketing_v2
+T001492,2024-03-30 01:17:00,chat,high,West,1.57,24.0,,requested a refund for a damaged item,ticketing_v2
+T001493,2024-11-25 02:59:00,phone,medium,East,7.61,44.0,,billing question about invoice,ticketing_v2
+T001494,2024-12-07 17:43:00,chat,high,West,7.84,167.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001495,2024-12-01 11:50:00,email,high,East,11.12,208.0,5.0,password reset could not be completed,ticketing_v2
+T001496,2024-08-22 14:38:00,chat,low,North,4.81,32.0,4.0,customer reported a login error,ticketing_v2
+T001497,2024-07-23 12:21:00,email,high,North,6.75,100.0,3.0,asked how to export data,ticketing_v2
+T001498,2024-12-26 22:44:00,email,low,West,30.2,349.0,,billing question about invoice,ticketing_v2
+T001499,2024-01-20 05:12:00,email,medium,North,1.52,15.0,,customer reported a login error,ticketing_v2
+T001500,2024-04-26 02:34:00,email,medium,West,4.02,43.0,,customer reported a login error,ticketing_v2
+T001501,2024-02-23 14:10:00,portal,high,North,9.6,254.0,,password reset could not be completed,ticketing_v2
+T001502,2024-12-14 09:12:00,chat,low,East,7.22,20.0,2.0,customer reported a login error,ticketing_v2
+T001503,2024-07-23 10:12:00,chat,low,West,21.37,335.0,5.0,billing question about invoice,ticketing_v2
+T001504,2024-07-23 19:06:00,phone,high,North,17.75,86.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001505,2024-04-18 01:39:00,chat,medium,North,12.78,370.0,4.0,billing question about invoice,ticketing_v2
+T001506,2024-09-18 03:32:00,email,high,West,0.89,16.0,,asked how to export data,ticketing_v2
+T001507,2024-06-29 13:09:00,chat,medium,West,6.6,94.0,,requested a refund for a damaged item,ticketing_v2
+T001508,2024-06-11 06:13:00,chat,medium,East,10.93,84.0,3.0,billing question about invoice,ticketing_v2
+T001509,2024-07-25 18:17:00,chat,high,West,7.47,144.0,,customer reported a login error,ticketing_v2
+T001510,2024-06-09 01:52:00,email,low,North,45.62,976.0,,password reset could not be completed,ticketing_v2
+T001511,2024-11-05 10:05:00,phone,urgent,South,3.23,62.0,4.0,customer reported a login error,ticketing_v2
+T001512,2024-03-17 00:16:00,phone,medium,South,13.44,248.0,,password reset could not be completed,ticketing_v2
+T001513,2024-05-05 11:02:00,phone,low,East,7.78,153.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001514,2024-04-27 14:08:00,email,low,South,13.7,146.0,1.0,asked how to export data,ticketing_v2
+T001515,2024-01-05 12:23:00,phone,low,West,15.23,161.0,,password reset could not be completed,ticketing_v2
+T001516,2024-03-20 18:30:00,phone,urgent,South,0.91,2.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001517,2024-06-11 19:05:00,email,low,West,14.56,198.0,3.0,password reset could not be completed,ticketing_v2
+T001518,2024-06-16 09:47:00,portal,high,North,7.91,36.0,5.0,billing question about invoice,ticketing_v2
+T001519,2024-05-11 01:21:00,chat,medium,South,13.3,129.0,4.0,customer reported a login error,ticketing_v2
+T001520,2024-12-29 17:26:00,chat,medium,East,13.07,360.0,,requested a refund for a damaged item,ticketing_v2
+T001521,2024-09-24 09:41:00,chat,urgent,West,3.77,59.0,,asked how to export data,ticketing_v2
+T001522,2024-06-01 23:41:00,phone,medium,North,20.28,285.0,5.0,billing question about invoice,ticketing_v2
+T001523,2024-01-05 02:23:00,phone,medium,North,12.16,124.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001524,2024-10-15 17:16:00,portal,medium,South,16.56,241.0,1.0,password reset could not be completed,ticketing_v2
+T001525,2024-08-17 11:07:00,phone,medium,West,26.64,165.0,2.0,asked how to export data,ticketing_v2
+T001526,2024-03-05 15:47:00,phone,medium,North,2.76,47.0,2.0,billing question about invoice,ticketing_v2
+T001527,2024-12-12 11:30:00,phone,high,North,11.78,337.0,2.0,customer reported a login error,ticketing_v2
+T001528,2024-02-06 09:53:00,chat,medium,North,13.75,141.0,5.0,password reset could not be completed,ticketing_v2
+T001529,2024-07-18 04:30:00,email,high,South,7.12,127.0,5.0,billing question about invoice,ticketing_v2
+T001530,2024-09-30 04:39:00,chat,high,North,9.84,25.0,,password reset could not be completed,ticketing_v2
+T001531,2024-05-28 03:52:00,email,high,East,2.85,20.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001532,2024-01-07 16:29:00,email,low,North,21.41,48.0,,billing question about invoice,ticketing_v2
+T001533,2024-02-22 02:50:00,chat,high,East,7.71,105.0,2.0,password reset could not be completed,ticketing_v2
+T001534,2024-07-11 19:15:00,email,low,South,18.17,521.0,3.0,customer reported a login error,ticketing_v2
+T001535,2024-02-16 23:25:00,chat,medium,East,7.06,123.0,,asked how to export data,ticketing_v2
+T001536,2024-03-08 12:49:00,email,high,South,2.25,17.0,,asked how to export data,ticketing_v2
+T001537,2024-02-08 14:57:00,email,low,South,4.95,15.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001538,2024-01-03 08:39:00,email,low,South,379.16427320839597,10481.0,4.0,customer reported a login error,ticketing_v2
+T001539,2024-04-07 22:01:00,email,medium,West,4.95,102.0,5.0,asked how to export data,ticketing_v2
+T001540,2024-06-27 16:47:00,chat,medium,West,7.42,76.0,5.0,asked how to export data,ticketing_v2
+T001541,2024-05-27 07:00:00,email,low,West,7.96,54.0,,billing question about invoice,ticketing_v2
+T001542,2024-01-31 17:56:00,portal,low,East,19.16,298.0,4.0,billing question about invoice,ticketing_v2
+T001543,2024-04-07 11:47:00,portal,medium,North,2.67,35.0,,password reset could not be completed,ticketing_v2
+T001544,2024-02-06 12:47:00,phone,urgent,East,0.94,7.0,4.0,password reset could not be completed,ticketing_v2
+T001545,2024-12-28 14:40:00,email,low,North,1452.9164849713213,34685.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001546,2024-10-19 17:39:00,portal,low,East,5.79,106.0,1.0,password reset could not be completed,ticketing_v2
+T001547,2024-12-12 10:14:00,email,low,North,18.33,358.0,,asked how to export data,ticketing_v2
+T001548,2024-03-19 22:34:00,email,medium,South,4.05,66.0,,customer reported a login error,ticketing_v2
+T001549,2024-02-07 12:18:00,email,medium,South,10.96,269.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001550,2024-10-20 00:05:00,email,low,South,37.47,937.0,,billing question about invoice,ticketing_v2
+T001551,2024-02-18 19:13:00,email,high,West,9.34,191.0,,password reset could not be completed,ticketing_v2
+T001552,2024-02-16 02:09:00,phone,low,East,10.78,293.0,,requested a refund for a damaged item,ticketing_v2
+T001553,2024-08-18 09:12:00,email,medium,North,3.72,36.0,,billing question about invoice,ticketing_v2
+T001554,2024-10-20 10:39:00,chat,medium,East,3.82,10.0,1.0,password reset could not be completed,ticketing_v2
+T001555,2024-12-24 21:35:00,chat,medium,North,7.46,211.0,5.0,password reset could not be completed,ticketing_v2
+T001556,2024-04-09 08:17:00,chat,high,North,13.58,33.0,,billing question about invoice,ticketing_v2
+T001557,2024-04-03 03:12:00,chat,low,West,13.46,261.0,,requested a refund for a damaged item,ticketing_v2
+T001558,2024-05-20 09:00:00,chat,low,South,30.98,580.0,5.0,password reset could not be completed,ticketing_v2
+T001559,2024-01-19 22:41:00,phone,medium,South,2.92,70.0,4.0,customer reported a login error,ticketing_v2
+T001560,2024-08-10 14:23:00,email,low,East,7.79,27.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001561,2024-09-18 13:52:00,email,medium,South,9.24,242.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001562,2024-06-01 00:11:00,email,medium,East,20.35,532.0,5.0,asked how to export data,ticketing_v2
+T001563,2024-01-03 02:25:00,chat,high,East,1.44,6.0,4.0,billing question about invoice,ticketing_v2
+T001564,2024-05-04 15:30:00,phone,low,South,10.2,23.0,,password reset could not be completed,ticketing_v2
+T001565,2024-02-13 05:48:00,portal,high,South,5.87,28.0,,password reset could not be completed,ticketing_v2
+T001566,2024-06-25 21:20:00,email,low,South,9.06,249.0,4.0,customer reported a login error,ticketing_v2
+T001567,2024-12-15 04:23:00,chat,low,South,15.03,66.0,,password reset could not be completed,ticketing_v2
+T001568,2024-08-19 18:29:00,phone,medium,East,14.46,101.0,4.0,password reset could not be completed,ticketing_v2
+T001569,2024-08-27 00:16:00,portal,urgent,North,3.86,88.0,,asked how to export data,ticketing_v2
+T001570,2024-11-26 00:00:00,email,low,North,28.72,698.0,3.0,billing question about invoice,ticketing_v2
+T001571,2024-09-26 20:10:00,portal,high,East,5.26,139.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001572,2024-12-08 06:34:00,chat,low,West,24.36,591.0,4.0,password reset could not be completed,ticketing_v2
+T001573,2024-05-16 23:55:00,portal,medium,East,14.97,81.0,,password reset could not be completed,ticketing_v2
+T001574,2024-05-03 06:40:00,portal,medium,West,5.5,141.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001575,2024-02-21 00:52:00,email,medium,East,6.44,105.0,,billing question about invoice,ticketing_v2
+T001576,2024-06-30 04:06:00,chat,low,East,13.84,137.0,,asked how to export data,ticketing_v2
+T001577,2024-12-30 21:53:00,portal,urgent,East,0.6,18.0,,requested a refund for a damaged item,ticketing_v2
+T001578,2024-01-24 12:34:00,email,urgent,North,1.86,30.0,,asked how to export data,ticketing_v2
+T001579,2024-09-07 19:12:00,email,high,North,5.26,32.0,5.0,customer reported a login error,ticketing_v2
+T001580,2024-02-14 19:36:00,phone,medium,North,9.24,144.0,,asked how to export data,ticketing_v2
+T001581,2024-01-17 23:37:00,email,medium,East,5.95,96.0,,billing question about invoice,ticketing_v2
+T001582,2024-08-01 00:58:00,email,medium,North,4.76,7.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001583,2024-07-09 09:42:00,email,low,East,20.79,273.0,5.0,billing question about invoice,ticketing_v2
+T001584,2024-11-25 12:21:00,email,medium,East,35.99,816.0,4.0,billing question about invoice,ticketing_v2
+T001585,2024-03-31 19:35:00,chat,urgent,West,0.44,6.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001586,2024-07-31 07:51:00,email,medium,East,16.09,210.0,5.0,password reset could not be completed,ticketing_v2
+T001587,2024-03-24 22:16:00,email,medium,West,4.85,66.0,,password reset could not be completed,ticketing_v2
+T001588,2024-05-14 05:45:00,portal,low,South,34.81,498.0,,customer reported a login error,ticketing_v2
+T001589,2024-06-21 08:20:00,phone,urgent,East,0.86,14.0,,requested a refund for a damaged item,ticketing_v2
+T001590,2024-05-02 22:22:00,email,low,East,78.52,2294.0,,customer reported a login error,ticketing_v2
+T001591,2024-03-19 01:44:00,phone,medium,West,37.44,71.0,,customer reported a login error,ticketing_v2
+T001592,2024-12-01 15:45:00,email,medium,East,4.07,68.0,,billing question about invoice,ticketing_v2
+T001593,2024-02-24 00:03:00,chat,medium,South,4.58,42.0,4.0,billing question about invoice,ticketing_v2
+T001594,2024-08-17 12:43:00,phone,medium,North,8.24,82.0,,requested a refund for a damaged item,ticketing_v2
+T001595,2024-05-07 03:48:00,email,low,East,12.59,123.0,,billing question about invoice,ticketing_v2
+T001596,2024-12-03 12:33:00,email,low,West,15.06,280.0,,billing question about invoice,ticketing_v2
+T001597,2024-08-17 23:15:00,phone,low,East,7.1,189.0,3.0,asked how to export data,ticketing_v2
+T001598,2024-06-28 11:47:00,email,low,South,29.51,266.0,,password reset could not be completed,ticketing_v2
+T001599,2024-04-20 21:59:00,phone,medium,West,12.16,48.0,,billing question about invoice,ticketing_v2
+T001600,2024-09-04 08:50:00,email,medium,West,7.3,84.0,5.0,password reset could not be completed,ticketing_v2
+T001601,2024-01-28 08:16:00,email,medium,South,4.62,60.0,,customer reported a login error,ticketing_v2
+T001602,2024-08-06 03:27:00,email,medium,West,4.7,141.0,5.0,asked how to export data,ticketing_v2
+T001603,2024-04-06 08:27:00,email,medium,East,3.52,26.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001604,2024-01-11 07:52:00,chat,medium,East,18.55,449.0,,requested a refund for a damaged item,ticketing_v2
+T001605,2024-04-06 02:34:00,email,medium,West,10.31,93.0,4.0,customer reported a login error,ticketing_v2
+T001606,2024-03-07 09:54:00,chat,high,North,8.83,183.0,,asked how to export data,ticketing_v2
+T001607,2024-05-13 22:27:00,email,low,East,16.53,470.0,,billing question about invoice,ticketing_v2
+T001608,2024-05-19 20:23:00,chat,medium,East,14.92,127.0,,requested a refund for a damaged item,ticketing_v2
+T001609,2024-01-09 18:07:00,email,low,North,16.12,24.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001610,2024-02-13 19:58:00,phone,high,North,12.9,260.0,1.0,billing question about invoice,ticketing_v2
+T001611,2024-02-10 13:34:00,email,medium,West,14.09,178.0,1.0,billing question about invoice,ticketing_v2
+T001612,2024-01-03 11:38:00,phone,medium,West,9.57,89.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001613,2024-12-13 01:41:00,email,medium,South,7.67,166.0,,password reset could not be completed,ticketing_v2
+T001614,2024-02-29 06:44:00,email,low,South,28.99,469.0,,requested a refund for a damaged item,ticketing_v2
+T001615,2024-05-30 05:03:00,chat,medium,East,6.13,34.0,,customer reported a login error,ticketing_v2
+T001616,2024-02-14 15:00:00,chat,high,North,2.47,37.0,1.0,billing question about invoice,ticketing_v2
+T001617,2024-01-23 17:52:00,chat,low,West,58.91,596.0,2.0,customer reported a login error,ticketing_v2
+T001618,2024-02-04 11:50:00,phone,medium,East,17.21,144.0,,asked how to export data,ticketing_v2
+T001619,2024-05-17 01:25:00,portal,medium,North,9.11,47.0,5.0,asked how to export data,ticketing_v2
+T001620,2024-06-12 23:40:00,portal,medium,West,3.78,20.0,3.0,customer reported a login error,ticketing_v2
+T001621,2024-01-22 18:11:00,portal,medium,North,29.48,805.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001622,2024-08-21 12:01:00,portal,high,West,2.4,64.0,,password reset could not be completed,ticketing_v2
+T001623,2024-09-06 06:47:00,phone,medium,North,6.23,81.0,4.0,billing question about invoice,ticketing_v2
+T001624,2024-09-03 06:47:00,chat,medium,North,16.77,34.0,,billing question about invoice,ticketing_v2
+T001625,2024-05-14 14:11:00,chat,low,West,18.52,83.0,4.0,customer reported a login error,ticketing_v2
+T001626,2024-10-01 23:14:00,chat,low,South,35.63,954.0,1.0,billing question about invoice,ticketing_v2
+T001627,2024-04-13 15:48:00,phone,medium,West,9.12,41.0,,asked how to export data,ticketing_v2
+T001628,2024-02-10 03:46:00,email,urgent,West,0.68,17.0,5.0,password reset could not be completed,ticketing_v2
+T001629,2024-07-08 20:26:00,portal,low,West,28.29,181.0,,billing question about invoice,ticketing_v2
+T001630,2024-04-13 11:40:00,chat,high,South,8.0,207.0,,billing question about invoice,ticketing_v2
+T001631,2024-05-13 11:40:00,email,high,South,4.16,82.0,,password reset could not be completed,ticketing_v2
+T001632,2024-03-17 03:39:00,email,low,South,7.06,200.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001633,2024-07-05 03:44:00,phone,medium,North,23.58,478.0,,billing question about invoice,ticketing_v2
+T001634,2024-09-24 06:09:00,email,medium,West,11.74,177.0,5.0,customer reported a login error,ticketing_v2
+T001635,2024-09-28 10:53:00,email,high,East,4.16,63.0,4.0,billing question about invoice,ticketing_v2
+T001636,2024-06-13 02:14:00,chat,medium,West,7.23,100.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001637,2024-08-21 06:37:00,email,medium,East,6.7,147.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001638,2024-02-11 06:12:00,email,high,West,11.58,67.0,,customer reported a login error,ticketing_v2
+T001639,2024-11-19 06:19:00,email,medium,East,4.15,77.0,3.0,customer reported a login error,ticketing_v2
+T001640,2024-12-10 04:18:00,chat,medium,West,199.38869725845677,1384.0,,billing question about invoice,ticketing_v2
+T001641,2024-08-07 03:27:00,portal,medium,North,20.05,488.0,,asked how to export data,ticketing_v2
+T001642,2024-10-11 22:50:00,email,low,West,15.71,165.0,,billing question about invoice,ticketing_v2
+T001643,2024-08-11 15:37:00,email,medium,North,6.04,12.0,,asked how to export data,ticketing_v2
+T001644,2024-02-08 02:59:00,chat,high,East,2.18,33.0,,password reset could not be completed,ticketing_v2
+T001645,2024-08-31 15:10:00,email,medium,South,9.48,21.0,,billing question about invoice,ticketing_v2
+T001646,2024-11-13 07:27:00,chat,low,West,10.75,112.0,2.0,password reset could not be completed,ticketing_v2
+T001647,2024-09-13 18:42:00,email,medium,West,6.65,60.0,,asked how to export data,ticketing_v2
+T001648,2024-08-17 03:44:00,portal,medium,North,7.49,12.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001649,2024-01-12 13:35:00,chat,medium,North,5.98,25.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001650,2024-06-27 22:55:00,email,medium,North,23.01,432.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001651,2024-04-07 21:06:00,email,medium,West,8.2,228.0,,asked how to export data,ticketing_v2
+T001652,2024-07-27 05:35:00,portal,medium,North,11.12,94.0,,asked how to export data,ticketing_v2
+T001653,2024-11-20 13:29:00,email,high,East,17.23,70.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001654,2024-04-03 17:06:00,phone,medium,West,4.33,38.0,,requested a refund for a damaged item,ticketing_v2
+T001655,2024-07-28 22:23:00,phone,medium,South,2.51,8.0,,password reset could not be completed,ticketing_v2
+T001656,2024-10-28 11:59:00,portal,high,South,2.73,37.0,,asked how to export data,ticketing_v2
+T001657,2024-07-05 22:04:00,chat,medium,West,5.44,118.0,5.0,asked how to export data,ticketing_v2
+T001658,2024-11-16 00:38:00,email,high,East,0.51,10.0,2.0,asked how to export data,ticketing_v2
+T001659,2024-06-09 14:10:00,email,medium,West,14.05,214.0,2.0,billing question about invoice,ticketing_v2
+T001660,2024-04-10 15:42:00,chat,urgent,South,2.99,27.0,4.0,customer reported a login error,ticketing_v2
+T001661,2024-05-15 06:20:00,chat,low,West,7.71,150.0,,asked how to export data,ticketing_v2
+T001662,2024-11-30 03:54:00,email,high,West,1.66,14.0,5.0,billing question about invoice,ticketing_v2
+T001663,2024-11-03 18:07:00,phone,low,South,54.54,602.0,,billing question about invoice,ticketing_v2
+T001664,2024-03-08 15:33:00,email,medium,West,15.85,23.0,,billing question about invoice,ticketing_v2
+T001665,2024-08-18 17:15:00,portal,high,North,2.35,6.0,,requested a refund for a damaged item,ticketing_v2
+T001666,2024-04-03 14:29:00,phone,low,West,18.51,166.0,1.0,password reset could not be completed,ticketing_v2
+T001667,2024-03-27 02:05:00,email,medium,North,308.34170589318217,7585.0,,password reset could not be completed,ticketing_v2
+T001668,2024-10-20 20:48:00,email,medium,West,6.52,27.0,4.0,asked how to export data,ticketing_v2
+T001669,2024-09-11 22:18:00,chat,medium,South,3.61,69.0,5.0,asked how to export data,ticketing_v2
+T001670,2024-06-22 07:10:00,portal,low,East,21.52,590.0,,customer reported a login error,ticketing_v2
+T001671,2024-10-14 21:50:00,email,urgent,South,1.31,24.0,4.0,password reset could not be completed,ticketing_v2
+T001672,2024-04-22 10:23:00,phone,low,South,98.63,524.0,,billing question about invoice,ticketing_v2
+T001673,2024-05-10 17:23:00,email,low,West,36.86,69.0,,password reset could not be completed,ticketing_v2
+T001674,2024-03-01 05:09:00,chat,medium,North,26.0,447.0,1.0,asked how to export data,ticketing_v2
+T001675,2024-10-07 10:47:00,chat,low,North,71.71,1160.0,4.0,billing question about invoice,ticketing_v2
+T001676,2024-11-27 16:06:00,chat,low,South,11.41,193.0,5.0,billing question about invoice,ticketing_v2
+T001677,2024-04-08 02:38:00,email,low,South,16.89,414.0,,customer reported a login error,ticketing_v2
+T001678,2024-01-07 08:08:00,email,low,North,24.28,529.0,4.0,asked how to export data,ticketing_v2
+T001679,2024-05-29 22:09:00,email,medium,North,7.15,208.0,,requested a refund for a damaged item,ticketing_v2
+T001680,2024-10-14 02:16:00,chat,high,East,5.75,16.0,,requested a refund for a damaged item,ticketing_v2
+T001681,2024-01-08 03:28:00,chat,low,South,7.05,109.0,2.0,billing question about invoice,ticketing_v2
+T001682,2024-05-30 19:30:00,phone,low,North,26.54,116.0,2.0,customer reported a login error,ticketing_v2
+T001683,2024-08-12 10:26:00,chat,low,East,20.92,123.0,,customer reported a login error,ticketing_v2
+T001684,2024-06-21 18:29:00,email,urgent,South,0.97,28.0,,asked how to export data,ticketing_v2
+T001685,2024-09-21 09:50:00,chat,high,East,8.3,121.0,5.0,password reset could not be completed,ticketing_v2
+T001686,2024-01-11 18:48:00,chat,low,North,14.13,62.0,,billing question about invoice,ticketing_v2
+T001687,2024-05-18 22:34:00,chat,medium,South,7.33,122.0,4.0,customer reported a login error,ticketing_v2
+T001688,2024-03-26 08:55:00,chat,low,South,7.89,215.0,,password reset could not be completed,ticketing_v2
+T001689,2024-04-05 01:42:00,email,medium,West,1.42,25.0,2.0,billing question about invoice,ticketing_v2
+T001690,2024-11-04 13:10:00,email,low,West,19.77,205.0,,requested a refund for a damaged item,ticketing_v2
+T001691,2024-08-13 17:45:00,email,high,East,4.14,81.0,,password reset could not be completed,ticketing_v2
+T001692,2024-12-15 20:42:00,email,medium,West,14.71,18.0,4.0,billing question about invoice,ticketing_v2
+T001693,2024-09-01 22:04:00,email,high,East,4.88,38.0,5.0,customer reported a login error,ticketing_v2
+T001694,2024-03-12 02:01:00,email,low,South,21.98,429.0,4.0,password reset could not be completed,ticketing_v2
+T001695,2024-02-05 01:30:00,phone,medium,South,26.38,765.0,,billing question about invoice,ticketing_v2
+T001696,2024-09-25 10:55:00,phone,medium,South,2.73,44.0,,password reset could not be completed,ticketing_v2
+T001697,2024-03-31 06:41:00,email,medium,West,5.19,30.0,1.0,password reset could not be completed,ticketing_v2
+T001698,2024-08-24 23:55:00,portal,low,North,12.91,329.0,5.0,customer reported a login error,ticketing_v2
+T001699,2024-11-21 03:12:00,email,low,East,7.7,194.0,,customer reported a login error,ticketing_v2
+T001700,2024-12-25 10:23:00,chat,high,West,14.62,156.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001701,2024-10-09 13:33:00,chat,medium,North,7.85,157.0,,requested a refund for a damaged item,ticketing_v2
+T001702,2024-04-12 02:37:00,chat,medium,East,13.02,49.0,4.0,billing question about invoice,ticketing_v2
+T001703,2024-12-24 19:01:00,portal,medium,South,6.86,133.0,5.0,password reset could not be completed,ticketing_v2
+T001704,2024-08-17 07:04:00,chat,medium,East,0.69,9.0,1.0,asked how to export data,ticketing_v2
+T001705,2024-10-13 09:58:00,email,medium,North,5.82,74.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001706,2024-08-15 21:52:00,phone,medium,East,11.68,169.0,,requested a refund for a damaged item,ticketing_v2
+T001707,2024-04-01 11:35:00,portal,low,West,438.60906614589504,4999.0,2.0,customer reported a login error,ticketing_v2
+T001708,2024-11-10 21:16:00,chat,high,South,1.1,27.0,4.0,password reset could not be completed,ticketing_v2
+T001709,2024-07-17 08:56:00,chat,high,West,2.17,60.0,,customer reported a login error,ticketing_v2
+T001710,2024-07-19 19:49:00,phone,high,East,2.46,69.0,3.0,asked how to export data,ticketing_v2
+T001711,2024-05-08 17:10:00,phone,low,West,930.9550818336505,14006.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001712,2024-06-23 22:06:00,email,low,West,11.47,228.0,,password reset could not be completed,ticketing_v2
+T001713,2024-02-11 11:36:00,chat,medium,South,12.23,127.0,5.0,billing question about invoice,ticketing_v2
+T001714,2024-07-05 21:40:00,email,low,South,9.02,120.0,,requested a refund for a damaged item,ticketing_v2
+T001715,2024-12-23 08:47:00,email,high,South,8.32,243.0,4.0,asked how to export data,ticketing_v2
+T001716,2024-02-12 22:08:00,email,medium,South,4.84,138.0,,asked how to export data,ticketing_v2
+T001717,2024-05-10 10:21:00,email,low,East,17.08,156.0,2.0,customer reported a login error,ticketing_v2
+T001718,2024-02-02 09:02:00,phone,medium,North,4.16,70.0,,customer reported a login error,ticketing_v2
+T001719,2024-11-10 07:31:00,email,low,North,357.1405556318324,10011.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001720,2024-10-17 23:56:00,chat,low,South,35.98,1037.0,1.0,password reset could not be completed,ticketing_v2
+T001721,2024-05-20 11:22:00,email,low,East,31.59,601.0,5.0,billing question about invoice,ticketing_v2
+T001722,2024-09-30 01:49:00,chat,low,West,4.15,120.0,,password reset could not be completed,ticketing_v2
+T001723,2024-01-09 01:46:00,chat,low,South,11.28,279.0,,customer reported a login error,ticketing_v2
+T001724,2024-06-10 10:30:00,email,low,West,50.98,1184.0,4.0,billing question about invoice,ticketing_v2
+T001725,2024-01-04 09:11:00,chat,low,South,7.28,121.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001726,2024-03-18 19:09:00,chat,high,South,18.4,269.0,,customer reported a login error,ticketing_v2
+T001727,2024-02-19 14:05:00,email,high,East,4.46,79.0,2.0,asked how to export data,ticketing_v2
+T001728,2024-12-16 23:56:00,phone,medium,South,6.91,194.0,5.0,billing question about invoice,ticketing_v2
+T001729,2024-09-01 01:00:00,email,low,East,30.13,603.0,,customer reported a login error,ticketing_v2
+T001730,2024-09-25 19:11:00,email,low,South,8.7,52.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001731,2024-03-12 10:28:00,email,low,North,10.02,68.0,2.0,asked how to export data,ticketing_v2
+T001732,2024-12-16 10:19:00,email,medium,North,6.05,130.0,5.0,password reset could not be completed,ticketing_v2
+T001733,2024-04-22 13:37:00,phone,high,West,7.9,170.0,,billing question about invoice,ticketing_v2
+T001734,2024-07-20 02:33:00,email,low,North,11.35,120.0,,password reset could not be completed,ticketing_v2
+T001735,2024-11-25 11:59:00,phone,high,East,3.27,88.0,,customer reported a login error,ticketing_v2
+T001736,2024-05-07 20:47:00,phone,medium,North,9.7,74.0,5.0,billing question about invoice,ticketing_v2
+T001737,2024-03-31 17:20:00,email,low,East,6.66,74.0,,customer reported a login error,ticketing_v2
+T001738,2024-10-22 02:01:00,email,low,North,21.53,159.0,1.0,customer reported a login error,ticketing_v2
+T001739,2024-01-08 09:59:00,chat,high,West,4.59,59.0,,asked how to export data,ticketing_v2
+T001740,2024-05-30 12:36:00,email,medium,East,3.33,47.0,4.0,password reset could not be completed,ticketing_v2
+T001741,2024-01-07 12:38:00,email,medium,East,23.62,542.0,,asked how to export data,ticketing_v2
+T001742,2024-01-27 19:28:00,portal,medium,South,8.83,19.0,,customer reported a login error,ticketing_v2
+T001743,2024-12-11 17:54:00,email,medium,West,11.02,41.0,5.0,asked how to export data,ticketing_v2
+T001744,2024-12-21 17:25:00,phone,medium,East,12.75,75.0,4.0,customer reported a login error,ticketing_v2
+T001745,2024-08-19 17:01:00,chat,high,East,3.1,81.0,4.0,password reset could not be completed,ticketing_v2
+T001746,2024-12-18 05:46:00,portal,medium,South,10.8,228.0,5.0,asked how to export data,ticketing_v2
+T001747,2024-06-26 06:37:00,email,medium,East,33.86,396.0,,billing question about invoice,ticketing_v2
+T001748,2024-02-05 11:34:00,email,high,East,6.68,54.0,,asked how to export data,ticketing_v2
+T001749,2024-02-03 14:19:00,chat,medium,South,11.24,258.0,,billing question about invoice,ticketing_v2
+T001750,2024-08-20 08:28:00,phone,high,West,5.45,102.0,4.0,customer reported a login error,ticketing_v2
+T001751,2024-10-28 13:49:00,portal,low,East,7.67,133.0,1.0,customer reported a login error,ticketing_v2
+T001752,2024-09-09 06:26:00,portal,medium,East,14.6,176.0,5.0,asked how to export data,ticketing_v2
+T001753,2024-01-17 06:42:00,email,medium,North,13.95,230.0,,billing question about invoice,ticketing_v2
+T001754,2024-01-31 11:02:00,chat,medium,West,6.9,70.0,1.0,billing question about invoice,ticketing_v2
+T001755,2024-04-16 23:57:00,phone,urgent,West,2.15,53.0,,billing question about invoice,ticketing_v2
+T001756,2024-01-25 22:05:00,phone,low,South,32.05,60.0,,password reset could not be completed,ticketing_v2
+T001757,2024-10-19 14:31:00,phone,high,North,6.03,10.0,,billing question about invoice,ticketing_v2
+T001758,2024-10-05 20:17:00,portal,medium,East,251.5134940599227,659.0,1.0,password reset could not be completed,ticketing_v2
+T001759,2024-04-29 16:40:00,chat,high,East,2.39,69.0,5.0,asked how to export data,ticketing_v2
+T001760,2024-06-24 14:20:00,email,low,North,26.97,534.0,2.0,customer reported a login error,ticketing_v2
+T001761,2024-06-15 05:36:00,portal,low,West,45.03,1212.0,4.0,billing question about invoice,ticketing_v2
+T001762,2024-08-04 09:26:00,phone,medium,North,8.78,143.0,,requested a refund for a damaged item,ticketing_v2
+T001763,2024-11-09 11:08:00,chat,medium,North,4.05,5.0,,requested a refund for a damaged item,ticketing_v2
+T001764,2024-03-17 13:01:00,phone,low,West,39.17,242.0,4.0,password reset could not be completed,ticketing_v2
+T001765,2024-03-13 12:27:00,email,high,East,6.87,135.0,,password reset could not be completed,ticketing_v2
+T001766,2024-11-10 15:25:00,email,low,North,24.88,102.0,,password reset could not be completed,ticketing_v2
+T001767,2024-11-03 15:26:00,chat,urgent,North,1.4,38.0,,requested a refund for a damaged item,ticketing_v2
+T001768,2024-06-20 14:18:00,chat,urgent,South,1.85,16.0,5.0,asked how to export data,ticketing_v2
+T001769,2024-05-27 06:59:00,phone,low,South,18.35,361.0,2.0,customer reported a login error,ticketing_v2
+T001770,2024-02-01 14:16:00,chat,low,West,17.42,493.0,,requested a refund for a damaged item,ticketing_v2
+T001771,2024-10-27 15:26:00,email,high,East,3.63,51.0,,requested a refund for a damaged item,ticketing_v2
+T001772,2024-09-18 12:48:00,email,medium,West,22.94,619.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001773,2024-10-05 23:20:00,phone,low,West,29.12,787.0,5.0,customer reported a login error,ticketing_v2
+T001774,2024-07-16 04:05:00,chat,low,West,22.27,178.0,4.0,billing question about invoice,ticketing_v2
+T001775,2024-12-23 18:11:00,email,low,East,46.23,217.0,3.0,requested a refund for a damaged item,ticketing_v2
+T001776,2024-05-05 13:41:00,email,low,West,22.38,344.0,4.0,customer reported a login error,ticketing_v2
+T001777,2024-03-06 04:54:00,email,low,South,27.47,223.0,,billing question about invoice,ticketing_v2
+T001778,2024-09-14 13:17:00,portal,high,North,5.96,30.0,5.0,requested a refund for a damaged item,ticketing_v2
+T001779,2024-12-15 15:05:00,email,medium,North,12.92,62.0,,asked how to export data,ticketing_v2
+T001780,2024-02-18 05:58:00,phone,low,East,421.32379668061515,10145.0,,customer reported a login error,ticketing_v2
+T001781,2024-09-13 12:06:00,email,low,North,9.2,229.0,,asked how to export data,ticketing_v2
+T001782,2024-09-08 13:44:00,email,medium,South,4.4,33.0,4.0,requested a refund for a damaged item,ticketing_v2
+T001783,2024-11-30 21:28:00,email,low,West,9.89,28.0,4.0,billing question about invoice,ticketing_v2
+T001784,2024-06-25 13:59:00,email,medium,North,7.88,230.0,1.0,requested a refund for a damaged item,ticketing_v2
+T001785,2024-09-12 15:33:00,phone,medium,East,15.95,317.0,4.0,asked how to export data,ticketing_v2
+T001786,2024-10-26 01:41:00,email,low,East,26.19,532.0,4.0,password reset could not be completed,ticketing_v2
+T001787,2024-01-31 17:03:00,chat,medium,South,10.57,306.0,1.0,asked how to export data,ticketing_v2
+T001788,2024-09-11 23:21:00,portal,medium,North,14.31,347.0,,customer reported a login error,ticketing_v2
+T001789,2024-04-15 03:38:00,portal,low,East,29.1,768.0,4.0,password reset could not be completed,ticketing_v2
+T001790,2024-04-18 17:10:00,email,medium,South,13.84,25.0,4.0,password reset could not be completed,ticketing_v2
+T001791,2024-09-29 18:59:00,chat,low,East,47.42,1066.0,3.0,billing question about invoice,ticketing_v2
+T001792,2024-05-31 15:16:00,email,medium,South,11.29,304.0,,billing question about invoice,ticketing_v2
+T001793,2024-02-28 02:16:00,email,low,North,31.11,896.0,4.0,password reset could not be completed,ticketing_v2
+T001794,2024-04-20 19:32:00,email,low,East,12.93,53.0,4.0,billing question about invoice,ticketing_v2
+T001795,2024-03-22 16:24:00,phone,low,North,25.17,501.0,,billing question about invoice,ticketing_v2
+T001796,2024-10-15 01:34:00,chat,medium,South,14.09,230.0,2.0,asked how to export data,ticketing_v2
+T001797,2024-06-20 06:38:00,portal,low,West,28.33,63.0,,requested a refund for a damaged item,ticketing_v2
+T001798,2024-06-03 07:37:00,phone,high,South,4.02,35.0,3.0,billing question about invoice,ticketing_v2
+T001799,2024-07-01 02:31:00,email,medium,East,5.23,143.0,,requested a refund for a damaged item,ticketing_v2
+T001800,2024-08-09 23:55:00,email,low,East,19.01,426.0,2.0,customer reported a login error,ticketing_v2

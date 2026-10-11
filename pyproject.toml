@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "byteanalyst"
+version = "0.1.0"
+description = "An LLM agent that analyses arbitrary tabular datasets with a suite of genuinely different analysis tools."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Byte Analyst" }]
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "statsmodels>=0.14",
+    "scikit-learn>=1.3",
+    "duckdb>=0.10",
+    "matplotlib>=3.7",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "pyarrow>=14.0",
+    "openpyxl>=3.1",
+]
+
+[project.optional-dependencies]
+web = ["fastapi>=0.110", "uvicorn>=0.29", "python-multipart>=0.0.9"]
+dev = ["pytest>=8.0", "pytest-timeout>=2.3"]
+
+[project.scripts]
+byteanalyst = "byteanalyst.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["byteanalyst*"]
+
+[tool.setuptools.package-data]
+"byteanalyst.web" = ["static/*.html", "static/*.css", "static/*.js"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+filterwarnings = ["ignore::DeprecationWarning"]

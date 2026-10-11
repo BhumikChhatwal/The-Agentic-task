@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Byte Analyst</title>
+<style>
+  :root {
+    --bg: #0f1115; --panel: #171a21; --panel-2: #1d2129; --line: #2a2f3a;
+    --text: #e6e8ee; --muted: #9aa3b2; --accent: #6ea8fe; --good: #57d38c;
+    --warn: #f2c14e; --bad: #ef6f6c; --mem: #c08bf0;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text); font: 15px/1.55 system-ui, -apple-system, Segoe UI, sans-serif;
+  }
+  header {
+    display: flex; align-items: center; gap: 14px; padding: 14px 20px;
+    border-bottom: 1px solid var(--line); background: var(--panel); position: sticky; top: 0; z-index: 5;
+  }
+  header h1 { font-size: 16px; margin: 0; letter-spacing: .2px; }
+  header .meta { color: var(--muted); font-size: 12.5px; }
+  header .spacer { flex: 1; }
+  button, select, input, textarea {
+    font: inherit; color: var(--text); background: var(--panel-2);
+    border: 1px solid var(--line); border-radius: 8px; padding: 7px 11px;
+  }
+  button { cursor: pointer; }
+  button:hover:not(:disabled) { border-color: var(--accent); }
+  button:disabled { opacity: .5; cursor: not-allowed; }
+  button.primary { background: var(--accent); color: #0b1220; border-color: var(--accent); font-weight: 600; }
+  button.ghost { background: transparent; }
+  .layout { display: grid; grid-template-columns: 330px 1fr; gap: 18px; padding: 18px 20px 60px; align-items: start; }
+  @media (max-width: 900px) { .layout { grid-template-columns: 1fr; } }
+  .panel { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; padding: 14px; }
+  .panel + .panel { margin-top: 14px; }
+  .panel h2 { font-size: 12px; text-transform: uppercase; letter-spacing: .09em; color: var(--muted); margin: 0 0 10px; }
+  .chip {
+    display: inline-flex; align-items: center; gap: 6px; background: var(--panel-2);
+    border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; margin: 0 6px 6px 0; font-size: 12.5px;
+  }
+  .chip button { border: 0; background: none; padding: 0 0 0 2px; color: var(--muted); }
+  .ask-row { display: flex; gap: 10px; }
+  .ask-row input { flex: 1; padding: 11px 13px; }
+  .examples { margin-top: 10px; }
+  .examples button { font-size: 12.5px; padding: 4px 9px; margin: 0 6px 6px 0; color: var(--muted); }
+  .turn { border-top: 1px solid var(--line); padding-top: 16px; margin-top: 18px; }
+  .turn:first-of-type { border-top: 0; margin-top: 8px; }
+  .q { font-weight: 600; margin-bottom: 10px; }
+  .q::before { content: "▸ "; color: var(--accent); }
+  .steps { font-family: var(--mono); font-size: 12.5px; border-left: 2px solid var(--line); margin: 0 0 12px 6px; padding-left: 12px; }
+  .step { margin-bottom: 6px; color: var(--muted); white-space: pre-wrap; word-break: break-word; }
+  .step b { color: var(--text); font-weight: 600; }
+  .step.call b { color: var(--accent); }
+  .step.ok b { color: var(--good); }
+  .step.bad b { color: var(--bad); }
+  .step.mem b { color: var(--mem); }
+  .step.warn b { color: var(--warn); }
+  .answer { background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 14px; white-space: pre-wrap; }
+  .footer { display: flex; flex-wrap: wrap; gap: 14px; color: var(--muted); font-size: 12.5px; margin-top: 10px; }
+  .badge { border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; }
+  .badge.good { color: var(--good); border-color: rgba(87,211,140,.4); }
+  .badge.bad { color: var(--bad); border-color: rgba(239,111,108,.4); }
+  .badge.warn { color: var(--warn); border-color: rgba(242,193,78,.4); }
+  .charts { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 12px; }
+  .charts figure { margin: 0; }
+  .charts img { max-width: 100%; width: 520px; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+  .charts figcaption { color: var(--muted); font-size: 12px; margin-top: 4px; font-family: var(--mono); }
+  .mem-item { display: flex; gap: 8px; align-items: flex-start; font-size: 13px; padding: 7px 0; border-top: 1px solid var(--line); }
+  .mem-item:first-child { border-top: 0; }
+  .mem-item .id { font-family: var(--mono); color: var(--muted); font-size: 11.5px; }
+  .mem-item .kind { color: var(--mem); font-size: 11.5px; text-transform: uppercase; letter-spacing: .06em; }
+  .mem-item .txt { flex: 1; }
+  .mem-form { display: grid; gap: 8px; margin-top: 10px; }
+  .mem-form .row { display: flex; gap: 8px; }
+  .mem-form input, .mem-form select { flex: 1; }
+  .empty { color: var(--muted); font-size: 13px; }
+  .spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid var(--line);
+             border-top-color: var(--accent); border-radius: 50%; animation: spin .8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .err { color: var(--bad); font-size: 13px; margin-top: 8px; }
+  .tools code { font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  details.tools { margin-top: 10px; }
+  details.tools summary { cursor: pointer; color: var(--muted); font-size: 12.5px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Byte Analyst</h1>
+  <span class="meta" id="providerMeta">loading…</span>
+  <span class="spacer"></span>
+  <button class="ghost" id="resetBtn" title="Clear conversation history">Reset chat</button>
+</header>
+
+<div class="layout">
+  <aside>
+    <div class="panel">
+      <h2>Datasets</h2>
+      <div id="datasetChips"><span class="empty">none loaded</span></div>
+      <div class="row" style="display:flex;gap:8px;margin-top:8px">
+        <select id="sampleSelect"></select>
+        <button id="loadSample">Add</button>
+      </div>
+      <div style="margin-top:10px">
+        <input type="file" id="fileInput" multiple accept=".csv,.tsv,.txt,.json,.jsonl,.parquet,.xlsx" />
+        <button id="uploadBtn" style="margin-top:8px;width:100%">Upload &amp; load</button>
+      </div>
+      <div class="err" id="dataErr"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Memory <span id="memStats" class="meta"></span></h2>
+      <div id="memoryList"><span class="empty">empty</span></div>
+      <div class="mem-form">
+        <input id="memText" placeholder="e.g. active customers exclude cancelled accounts" />
+        <div class="row">
+          <select id="memKind">
+            <option value="filter">filter</option>
+            <option value="definition">definition</option>
+            <option value="preference">preference</option>
+            <option value="correction">correction</option>
+            <option value="fact">fact</option>
+            <option value="note">note</option>
+          </select>
+          <input id="memKeys" placeholder="keys: status, revenue" />
+          <button id="memAdd">Save</button>
+        </div>
+      </div>
+      <div class="err" id="memErr"></div>
+    </div>
+
+    <div class="panel tools">
+      <h2>Tools</h2>
+      <div id="toolList" class="tools"></div>
+    </div>
+  </aside>
+
+  <main>
+    <div class="panel">
+      <div class="ask-row">
+        <input id="question" placeholder="Ask a question about the data…" autocomplete="off" />
+        <button class="primary" id="askBtn">Analyse</button>
+      </div>
+      <div class="examples" id="examples"></div>
+      <div class="err" id="askErr"></div>
+    </div>
+    <div id="turns"></div>
+  </main>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+let memoryOn = true;
+
+const EXAMPLES = [
+  "what's in this data",
+  "total revenue by region",
+  "are there any outliers in revenue",
+  "is revenue different between North and South",
+  "how does revenue trend over time",
+  "plot the distribution of revenue"
+];
+
+async function api(path, options) {
+  const response = await fetch(path, options);
+  const text = await response.text();
+  let payload = {};
+  try { payload = text ? JSON.parse(text) : {}; } catch (e) { payload = { detail: text }; }
+  if (!response.ok) throw new Error(payload.detail || ("HTTP " + response.status));
+  return payload;
+}
+
+function esc(value) {
+  return String(value).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+/* ---------------------------------------------------------------- state */
+async function refreshState() {
+  const state = await api("/api/state");
+  $("providerMeta").textContent = `${state.provider} · ${state.model} · ${state.tools.length} tools`;
+  const chips = $("datasetChips");
+  chips.innerHTML = state.datasets.length
+    ? state.datasets.map((d) =>
+        `<span class="chip">${esc(d.name)}<span class="meta">${d.rows.toLocaleString()}×${d.columns.length}</span>
+         <button data-drop="${esc(d.name)}" title="remove">×</button></span>`).join("")
+    : '<span class="empty">none loaded</span>';
+  chips.querySelectorAll("[data-drop]").forEach((btn) => {
+    btn.onclick = async () => {
+      await api("/api/remove", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name: btn.dataset.drop }) });
+      refreshState();
+    };
+  });
+  const select = $("sampleSelect");
+  if (!select.options.length) {
+    select.innerHTML = state.samples.map((s) => `<option>${esc(s)}</option>`).join("");
+  }
+  $("toolList").innerHTML = state.tools
+    .map((t) => `<div><code>${esc(t.name)}</code> <span class="meta">${esc(t.category)}</span></div>`)
+    .join("");
+  const memories = await api("/api/memory");
+  renderMemory(memories);
+  if (!state.datasets.length) {
+    $("dataErr").textContent = "Load a dataset (bundled sample or your own file) to begin.";
+  } else {
+    $("dataErr").textContent = "";
+  }
+  return state;
+}
+
+function renderMemory(payload) {
+  $("memStats").textContent = `${payload.stats.active} active`;
+  const list = $("memoryList");
+  if (!payload.records.length) { list.innerHTML = '<span class="empty">empty</span>'; return; }
+  list.innerHTML = payload.records.map((r) => `
+    <div class="mem-item">
+      <div class="txt">
+        <div class="kind">${esc(r.kind)} <span class="id">${esc(r.id)}</span></div>
+        <div>${esc(r.text)}</div>
+        ${r.keys && r.keys.length ? `<div class="id">keys: ${esc(r.keys.join(", "))}</div>` : ""}
+      </div>
+      <button class="ghost" data-forget="${esc(r.id)}" title="forget">×</button>
+    </div>`).join("");
+  list.querySelectorAll("[data-forget]").forEach((btn) => {
+    btn.onclick = async () => {
+      await api("/api/memory/forget", { method: "POST", headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ id: btn.dataset.forget }) });
+      refreshState();
+    };
+  });
+}
+
+/* ---------------------------------------------------------------- render */
+function renderTrace(turn, trace) {
+  const lines = [];
+  for (const event of trace) {
+    if (event.type === "start") {
+      lines.push(`<div class="step">model: <b>${esc(event.model || "")}</b> (${esc(event.provider || "")})</div>`);
+    } else if (event.type === "memory") {
+      for (const item of event.items || []) {
+        lines.push(`<div class="step mem">recall <b>[${esc(item.id)}]</b> ${esc(item.kind)} · ${esc(item.text)} <span class="meta">score ${item.score}</span></div>`);
+      }
+    } else if (event.type === "tool_call") {
+      lines.push(`<div class="step call">call <b>${esc(event.name)}</b>(${esc(fmtArgs(event.arguments))})</div>`);
+    } else if (event.type === "tool_result") {
+      const cls = event.ok ? "ok" : "bad";
+      const label = event.ok ? "ok" : "error";
+      lines.push(`<div class="step ${cls}">${label} <b>${esc((event.error || event.summary || "").slice(0, 400))}</b> <span class="meta">${event.duration_ms} ms</span></div>`);
+      if (event.table && event.table.rows && event.table.rows.length) {
+        const head = event.table.rows.slice(0, 4)
+          .map((row) => row.slice(0, 6).join(" | ")).join("\n");
+        lines.push(`<div class="step">${esc(head)}${event.table.total_rows > 4 ? "\n… " + (event.table.total_rows - 4) + " more rows" : ""}</div>`);
+      }
+    } else if (event.type === "verification") {
+      lines.push(event.grounded
+        ? '<div class="step ok">verified <b>every number traced to a tool result</b></div>'
+        : `<div class="step warn">unverified <b>${esc((event.unsupported || []).join(", "))}</b></div>`);
+    } else if (event.type === "saved") {
+      lines.push(`<div class="step mem">memory <b>${esc(event.action)}</b> [${esc(event.id)}] ${esc(event.text)}</div>`);
+    } else if (event.type === "error") {
+      lines.push(`<div class="step bad">${esc(event.where)} <b>${esc(event.message)}</b></div>`);
+    }
+  }
+  const el = document.createElement("div");
+  el.className = "steps";
+  el.innerHTML = lines.join("") || '<div class="step">no tool calls</div>';
+  turn.appendChild(el);
+}
+
+function fmtArgs(args) {
+  return Object.entries(args || {}).map(([k, v]) => {
+    const text = typeof v === "string" ? v : JSON.stringify(v);
+    return `${k}=${text.length > 90 ? text.slice(0, 90) + "…" : text}`;
+  }).join(", ");
+}
+
+function renderTurn(question, payload) {
+  const turn = document.createElement("div");
+  turn.className = "turn";
+  const heading = document.createElement("div");
+  heading.className = "q";
+  heading.textContent = question;
+  turn.appendChild(heading);
+
+  if (payload.trace) renderTrace(turn, payload.trace);
+
+  const answer = document.createElement("div");
+  answer.className = "answer";
+  answer.textContent = payload.answer || "(no answer)";
+  turn.appendChild(answer);
+
+  const footer = document.createElement("div");
+  footer.className = "footer";
+  footer.innerHTML = [
+    `<span class="badge">tools: ${esc((payload.tools_used || []).join(", ") || "none")}</span>`,
+    `<span class="badge">${payload.duration_ms} ms</span>`,
+    payload.grounded
+      ? '<span class="badge good">grounded</span>'
+      : `<span class="badge bad">unverified: ${esc((payload.unsupported_numbers || []).join(", "))}</span>`,
+    payload.memories_saved && payload.memories_saved.length
+      ? `<span class="badge warn">memory written: ${payload.memories_saved.length}</span>` : ""
+  ].join(" ");
+  turn.appendChild(footer);
+
+  if (payload.artifacts_inline && payload.artifacts_inline.length) {
+    const charts = document.createElement("div");
+    charts.className = "charts";
+    charts.innerHTML = payload.artifacts_inline.map((a) =>
+      `<figure><img src="${a.data_uri}" alt="${esc(a.name)}" /><figcaption>${esc(a.name)}</figcaption></figure>`).join("");
+    turn.appendChild(charts);
+  }
+  $("turns").prepend(turn);
+}
+
+/* ---------------------------------------------------------------- actions */
+async function ask() {
+  const question = $("question").value.trim();
+  if (!question) return;
+  $("askErr").textContent = "";
+  const btn = $("askBtn");
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> working…';
+  const started = Date.now();
+  try {
+    const payload = await api("/api/ask", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question, use_memory: memoryOn }) });
+    renderTurn(question, payload);
+    $("question").value = "";
+    refreshState();
+  } catch (error) {
+    $("askErr").textContent = error.message;
+  } finally {
+    btn.disabled = false;
+    btn.textContent = "Analyse";
+  }
+}
+
+$("askBtn").onclick = ask;
+$("question").addEventListener("keydown", (event) => { if (event.key === "Enter") ask(); });
+
+$("loadSample").onclick = async () => {
+  $("dataErr").textContent = "";
+  try {
+    await api("/api/sample", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ name: $("sampleSelect").value }) });
+    refreshState();
+  } catch (error) { $("dataErr").textContent = error.message; }
+};
+
+$("uploadBtn").onclick = async () => {
+  const input = $("fileInput");
+  if (!input.files.length) { $("dataErr").textContent = "choose a file first"; return; }
+  const form = new FormData();
+  for (const file of input.files) form.append("files", file);
+  $("dataErr").textContent = "";
+  try {
+    await api("/api/upload", { method: "POST", body: form });
+    input.value = "";
+    refreshState();
+  } catch (error) { $("dataErr").textContent = error.message; }
+};
+
+$("memAdd").onclick = async () => {
+  const text = $("memText").value.trim();
+  if (!text) { $("memErr").textContent = "write something to remember"; return; }
+  const keys = $("memKeys").value.split(",").map((k) => k.trim()).filter(Boolean);
+  $("memErr").textContent = "";
+  try {
+    await api("/api/memory/add", { method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, kind: $("memKind").value, keys }) });
+    $("memText").value = ""; $("memKeys").value = "";
+    refreshState();
+  } catch (error) { $("memErr").textContent = error.message; }
+};
+
+$("resetBtn").onclick = async () => {
+  await api("/api/reset", { method: "POST", headers: { "Content-Type": "application/json" }, body: "{}" });
+  $("turns").innerHTML = "";
+  refreshState();
+};
+
+$("examples").innerHTML = EXAMPLES.map((e) => `<button class="ghost" data-q="${esc(e)}">${esc(e)}</button>`).join("");
+$("examples").querySelectorAll("[data-q]").forEach((btn) => {
+  btn.onclick = () => { $("question").value = btn.dataset.q; ask(); };
+});
+
+refreshState();
+</script>
+</body>
+</html>
