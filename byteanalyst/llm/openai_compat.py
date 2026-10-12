@@ -19,6 +19,45 @@ RETRY_STATUSES = {408, 409, 425, 429, 500, 502, 503, 504}
 MAX_ATTEMPTS = 3
 
 
+def _is_connection_refused(exc: BaseException) -> bool:
+    """True when the failure is a refused TCP connection (server not listening).
+
+    A refusal is a definitive answer — retrying only multiplies latency (the OS
+    itself takes ~2s per refused loopback connect on Windows) — so it is
+    distinguished from timeouts and resets, which are transient. Windows reports
+    it as WinError 10061, POSIX as errno 111.
+    """
+    seen: set[int] = set()
+    current: BaseException | None = exc
+    while current is not None and id(current) not in seen:
+        seen.add(id(current))
+        if isinstance(current, ConnectionRefusedError):
+            return True
+        text = str(current).lower()
+        if "10061" in text or "errno 111" in text or "actively refused" in text:
+            return True
+        current = current.__cause__ or current.__context__
+    return False
+
+
+def _connection_hint(url: str) -> str:
+    """Turn the most common connection failures into an actionable next step.
+
+    A refused connection to localhost:11434 means the local model server
+    (Ollama, LM Studio, …) simply is not running — a different fix from a wrong
+    base URL or a flaky network.
+    """
+    local = ":11434" in url or "localhost" in url or "127.0.0.1" in url
+    if local:
+        return (
+            "The local model server is not running. Start it (for Ollama: `ollama serve`, "
+            "or launch the Ollama/LM Studio app) and confirm the model is pulled, "
+            "e.g. `ollama pull llama3.1`. If you meant to run without a model, "
+            "add `--provider offline`."
+        )
+    return "Check BYTEANALYST_BASE_URL and your network."
+
+
 class OpenAICompatibleClient:
     def __init__(
         self,
@@ -107,12 +146,20 @@ class OpenAICompatibleClient:
                     response = client.post(url, json=payload, headers=self._headers())
                 except httpx.HTTPError as exc:
                     last_error = f"{type(exc).__name__}: {exc}"
+                    if _is_connection_refused(exc):
+                        # Nothing is listening: retrying a refused connection
+                        # only multiplies the OS refusal latency without changing
+                        # the outcome. Fail fast with an actionable message.
+                        raise LLMError(
+                            f"could not reach the model endpoint at {url}: {last_error}. "
+                            + _connection_hint(url)
+                        ) from exc
                     if attempt < MAX_ATTEMPTS:
                         time.sleep(1.5 * attempt)
                         continue
                     raise LLMError(
                         f"could not reach the model endpoint at {url}: {last_error}. "
-                        "Check BYTEANALYST_BASE_URL and your network."
+                        + _connection_hint(url)
                     ) from exc
 
                 if response.status_code in RETRY_STATUSES and attempt < MAX_ATTEMPTS:

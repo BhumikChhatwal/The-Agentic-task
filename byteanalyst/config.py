@@ -112,12 +112,18 @@ class Config:
         provider = _env("BYTEANALYST_PROVIDER")
         api_key = _env("BYTEANALYST_API_KEY", "OPENAI_API_KEY")
         anthropic_key = _env("ANTHROPIC_API_KEY")
+        base_url = _env("BYTEANALYST_BASE_URL")
 
         if provider is None:
             if api_key:
                 provider = "openai_compatible"
             elif anthropic_key:
                 provider = "anthropic"
+            elif base_url:
+                # An explicit base URL is a stated intent to talk to that server
+                # (Ollama, LM Studio, vLLM, …). Local servers need no key, so
+                # keyless auto-detection must not silently fall back to offline.
+                provider = "openai_compatible"
             else:
                 provider = "offline"
 
@@ -129,7 +135,6 @@ class Config:
         if provider == "anthropic":
             api_key = anthropic_key or api_key
 
-        base_url = _env("BYTEANALYST_BASE_URL")
         if not base_url:
             base_url = DEFAULT_BASE_URLS.get(provider, "")
 

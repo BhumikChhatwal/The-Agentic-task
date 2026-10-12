@@ -301,6 +301,70 @@ def test_config_autodetects_provider(monkeypatch, tmp_path) -> None:
     assert anthropic_cfg.model.startswith("claude")
 
 
+def test_keyless_base_url_selects_local_server_not_offline(monkeypatch, tmp_path) -> None:
+    """Pointing BASE_URL at a local server must reach that server without a key.
+
+    The documented keyless Ollama flow sets only BASE_URL and MODEL. Detection
+    used to fall back to `offline` in that case, so the agent never dialled the
+    server the user explicitly configured.
+    """
+    for name in ("BYTEANALYST_PROVIDER", "BYTEANALYST_API_KEY", "OPENAI_API_KEY",
+                 "ANTHROPIC_API_KEY"):
+        monkeypatch.delenv(name, raising=False)
+    monkeypatch.setenv("BYTEANALYST_BASE_URL", "http://localhost:11434/v1")
+    monkeypatch.setenv("BYTEANALYST_MODEL", "llama3.1")
+
+    cfg = Config.from_env(root=tmp_path)
+    assert cfg.provider == "openai_compatible"
+    assert cfg.base_url == "http://localhost:11434/v1"
+    assert cfg.model == "llama3.1"
+    # build_client accepts keyless configs for local hosts, so the flow works end to end.
+    client = build_client(cfg)
+    assert client.base_url == "http://localhost:11434/v1"
+
+
+def test_refused_connection_fails_fast_with_actionable_hint() -> None:
+    """A refusal is definitive: one attempt, no backoff, and a useful message."""
+    import httpx
+
+    attempts: list[int] = []
+
+    class RefusingClient:
+        def __init__(self, *args, **kwargs) -> None:
+            pass
+
+        def __enter__(self):
+            return self
+
+        def __exit__(self, *exc) -> bool:
+            return False
+
+        def post(self, url, json=None, headers=None):
+            attempts.append(url)
+            raise httpx.ConnectError(
+                "[WinError 10061] No connection could be made because the target "
+                "machine actively refused it"
+            )
+
+    import byteanalyst.llm.openai_compat as module
+    module_httpx_client = module.httpx.Client
+    module.httpx.Client = RefusingClient
+    try:
+        client = OpenAICompatibleClient(
+            model="llama3.1", base_url="http://localhost:11434/v1"
+        )
+        with pytest.raises(LLMError) as excinfo:
+            client.chat([Message(role="user", content="hi")])
+    finally:
+        module.httpx.Client = module_httpx_client
+
+    assert len(attempts) == 1, "a refused connection must not be retried"
+    message = str(excinfo.value)
+    assert "local model server is not running" in message
+    assert "ollama pull llama3.1" in message
+    assert "--provider offline" in message
+
+
 def test_config_overrides_and_derived_paths(tmp_path) -> None:
     config = Config.from_env(root=tmp_path, provider="openai_compatible", model="custom", max_iterations=3)
     assert config.provider == "openai_compatible"

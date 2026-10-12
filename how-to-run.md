@@ -88,12 +88,22 @@ byteanalyst ask "which region is growing fastest and is the gap significant?" \
   --data data/ecommerce_orders.csv --data data/customers.csv
 ```
 
-#### Local model server (no API key at all)
+#### Local model server (no API key, but the server must be running)
 
 Any OpenAI-compatible server works: Ollama, vLLM, LM Studio, llama.cpp server.
-Example with Ollama (`http://localhost:11434/v1`, model `llama3.1`):
+A `WinError 10061 … actively refused` error means nothing is listening on that
+port — the server is not running (or not installed).
 
-**PowerShell:**
+**One-time setup on Windows (Ollama):**
+
+1. Install: download and run `OllamaSetup.exe` from
+   <https://ollama.com/download/windows> (per-user, no admin needed), or
+   `winget install Ollama.Ollama`.
+2. Pull a model (a few GB the first time): `ollama pull llama3.1`
+3. Confirm it works: `ollama list`. The Windows app keeps the server running in
+   the background; with the standalone CLI, start it yourself: `ollama serve`.
+
+**Every session (PowerShell):**
 
 ```powershell
 $env:BYTEANALYST_BASE_URL="http://localhost:11434/v1"
@@ -109,9 +119,10 @@ export BYTEANALYST_MODEL=llama3.1
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
 
-When `BYTEANALYST_BASE_URL` is set, the agent hunts down the model server at that
-base URL and sends OpenAI-format requests to it — the `openai_compatible` provider
-behind the scenes.
+Setting `BYTEANALYST_BASE_URL` alone selects the local server — no key and no
+`BYTEANALYST_PROVIDER` needed. Use an exact model name from `ollama list` (tags
+included, e.g. `llama3.1:8b`); a wrong name returns HTTP 404. If you just want
+it to work with no server at all, add `--provider offline`.
 
 Environment variables (preferred over CLI flags for secrets):
 
@@ -190,7 +201,7 @@ byteanalyst ask "total price by category" --data ~/my_export.csv --data ~/branch
 pytest -q
 ```
 
-That is 198 tests, no network, no API key, ~30s. It exercises datasets, all seven
+That is 186 tests, no network, no API key, ~30s. It exercises datasets, all seven
 tools, memory, the agent loop, both LLM wire formats, the CLI, and the web app.
 
 ## 5. Where output ends up
