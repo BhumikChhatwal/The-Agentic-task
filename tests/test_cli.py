@@ -210,6 +210,25 @@ def test_ask_offline_trace_output(capsys, state_dir) -> None:
     assert "grounded: yes" in out or "traced to a tool result" in out
 
 
+def test_ask_trace_flag_is_accepted(capsys, state_dir) -> None:
+    code = main([
+        "ask", "how many orders are there", "--data", "ecommerce_orders.csv",
+        "--provider", "offline", "--state-dir", state_dir, "--no-color", "--trace",
+    ])
+    out = capsys.readouterr().out
+    assert code == 0, out
+    assert "run_sql" in out  # the flag is valid and the trace is shown
+
+    # --json must still win: stdout stays machine readable.
+    code = main([
+        "ask", "how many orders are there", "--data", "ecommerce_orders.csv",
+        "--provider", "offline", "--state-dir", state_dir, "--no-color", "--trace", "--json",
+    ])
+    payload = json.loads(capsys.readouterr().out)
+    assert code == 0
+    assert payload["tools_used"] == ["run_sql"]
+
+
 def test_ask_resolves_bundled_sample_names(capsys, state_dir) -> None:
     code = main([
         "ask", "profile the data", "--data", "employees.csv",

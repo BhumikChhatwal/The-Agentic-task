@@ -56,6 +56,10 @@ def _add_source_options(parser: argparse.ArgumentParser) -> None:
     )
     parser.add_argument("--no-memory", action="store_true", help="Disable persistent memory entirely.")
     parser.add_argument("--no-auto-memory", action="store_true", help="Do not write memories automatically.")
+    parser.add_argument(
+        "--trace", action="store_true",
+        help="Show the tool trace (this is already the default; use it to override --quiet).",
+    )
     parser.add_argument("--quiet", action="store_true", help="Hide the tool trace.")
     parser.add_argument("--no-color", action="store_true", help="Disable ANSI colours.")
     parser.add_argument("--json", action="store_true", help="Emit machine-readable JSON.")
@@ -174,10 +178,17 @@ def _resolve_paths(paths: Sequence[str]) -> list[Path]:
 
 def _renderer(args: argparse.Namespace) -> Renderer:
     as_json = bool(getattr(args, "json", False))
+    if as_json:
+        # --json means "machine readable stdout", so the human trace is suppressed
+        # even if --trace was also passed.
+        trace = False
+    elif getattr(args, "trace", False):
+        trace = True
+    else:
+        trace = not getattr(args, "quiet", False)
     return Renderer(
         use_color=False if getattr(args, "no_color", False) else None,
-        # --json means "machine readable stdout", so the human trace is suppressed.
-        trace=False if as_json else not getattr(args, "quiet", False),
+        trace=trace,
     )
 
 

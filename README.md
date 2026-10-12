@@ -56,8 +56,11 @@ Honest breakdown of the external inputs:
 
 No part of the system is hard-coded for one dataset. The schema, the column roles,
 the prompt and the tool arguments are all derived at runtime from whatever file you
-load. This is verified against six tables the code has never seen
-(see [Bring your own data](#bring-your-own-data)).
+load. To check that claim rather than assert it, I authored two files *after* the
+code was finished — a hand-written TSV with currency-symbol prices and a nested
+JSON table — and ran the agent against them, alongside the five bundled datasets
+that the code also special-cases nowhere (see
+[Bring your own data](#bring-your-own-data)).
 
 **Design decision worth calling out:** the repository runs end-to-end with **no API
 key at all**. When no provider is configured, the agent swaps the model for a
@@ -380,14 +383,16 @@ byteanalyst ask "which product category has the worst satisfaction and is it sig
   --data ~/my_export.csv --data ~/customers.json
 ```
 
-Verified against these tables, none of which the code has ever seen:
+The two files I wrote specifically to test generalisation, after the code was
+complete (neither is referenced anywhere in the codebase):
 
-- a **TSV** with `£`-prefixed prices (currency symbols coerced to numeric), a date
-  column, an embedded tab-delimited layout, a deliberate price-entry error, and an
-  empty-string column;
-- a **nested JSON** file (`{"branches": [...]}`) joined against it;
-- the bundled `data/` CSVs, which span e-commerce, HR, weather and support-ticket
-  shapes (2,600 / 400 / 320 / 6,576 / 1,800 rows).
+- a hand-written **TSV** — tab delimiters, `£`-prefixed prices (currency symbols
+  coerced to numeric), a date column, an empty-string column, and one deliberate
+  price-entry error;
+- a **nested JSON** file (`{"branches": [...]}`) loaded as a second, joinable table.
+
+Plus the five bundled `data/` CSVs, which span e-commerce, HR, weather and
+support-ticket shapes (2,600 / 400 / 320 / 6,576 / 1,800 rows).
 
 Two behaviours worth noting from that run: the agent grouped a Coffee-vs-Food price
 comparison correctly by recognising the *values* in the question, and it attached a
