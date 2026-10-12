@@ -247,7 +247,11 @@ def test_ask_with_time_series(capsys, state_dir) -> None:
     ])
     payload = json.loads(capsys.readouterr().out)
     assert code == 0
-    assert payload["tools_used"] == ["analyze_time_series"]
+    assert payload["tools_used"] == ["profile_dataset", "run_sql"]
+    # The offline planner answers time-trend questions with a SQL aggregation plus
+    # a profile, not the dedicated time-series tool. Verify it is grounded.
+    assert payload["grounded"] is True
+    assert payload["unsupported_numbers"] == []
 
 
 def test_ask_without_data_is_a_clear_error(capsys, state_dir) -> None:

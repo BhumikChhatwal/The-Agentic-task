@@ -63,11 +63,20 @@ that the code also special-cases nowhere (see
 [Bring your own data](#bring-your-own-data)).
 
 **Design decision worth calling out:** the repository runs end-to-end with **no API
-key at all**. When no provider is configured, the agent swaps the model for a
-deterministic rule-based planner (`byteanalyst/llm/offline.py`) that issues the same
-tool calls and composes answers *from tool output only*. That is what makes the
-whole pipeline testable and demoable offline — and the answer footer says so
-explicitly. The LLM path is the default whenever a key is present.
+key at all**. *No key at all* means two different things depending on what you want:
+
+- **Offline demo / tests — no model at all.** When no LLM key is present, the agent
+  swaps the model for a deterministic rule-based planner (`byteanalyst/llm/offline.py`)
+  that issues the same tool calls and composes answers *from tool output only*. That is
+  what makes the whole pipeline testable and demoable offline — and the answer footer
+  says so explicitly.
+- **Local model server — no API key, but a server still runs.** You can point the agent
+  at a local OpenAI-compatible server (Ollama, vLLM, LM Studio, llama.cpp serve, …)
+  with `BYTEANALYST_BASE_URL=http://localhost:11434/v1`. No API key is needed, but the
+  server itself must be running on the machine. The README's "Full agent run" section
+  has the exact PowerShell and bash command lines.
+
+The LLM path (real hosted model) is the default when a key is present.
 
 ---
 
@@ -94,8 +103,12 @@ byteanalyst serve                             # web UI at http://127.0.0.1:8000
 
 ### Full agent run (with a model)
 
+Environment variables beat CLI flags for secrets. The syntax differs by shell —
+use the one matching your terminal. The examples below are bash; for PowerShell use
+`$env:NAME="value"` and for cmd use `set NAME=value`.
+
 ```bash
-# OpenAI
+# OpenAI (bash / Git Bash / WSL)
 export BYTEANALYST_API_KEY=sk-...            # or put it in .env
 export BYTEANALYST_MODEL=gpt-4o-mini
 
@@ -103,18 +116,39 @@ byteanalyst ask "which region is growing fastest and is the gap significant?" \
   --data data/ecommerce_orders.csv --data data/customers.csv --trace
 ```
 
+**PowerShell equivalent:**
+
+```powershell
+$env:BYTEANALYST_API_KEY="sk-..."
+$env:BYTEANALYST_MODEL="gpt-4o-mini"
+byteanalyst ask "which region is growing fastest and is the gap significant?" `
+  --data data/ecommerce_orders.csv --data data/customers.csv --trace
+```
+
 Any OpenAI-compatible endpoint works — OpenRouter, Groq, Together, vLLM, LM Studio,
 Ollama:
 
 ```bash
-# local Ollama, no key needed
+# local Ollama, no key needed (bash / Git Bash / WSL)
 export BYTEANALYST_BASE_URL=http://localhost:11434/v1
 export BYTEANALYST_MODEL=llama3.1
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
 
-Anthropic is supported natively (`BYTEANALYST_PROVIDER=anthropic`,
-`ANTHROPIC_API_KEY=sk-ant-...`).
+**PowerShell equivalent:**
+
+```powershell
+$env:BYTEANALYST_BASE_URL="http://localhost:11434/v1"
+$env:BYTEANALYST_MODEL="llama3.1"
+byteanalyst ask "profile the data" --data data/weather_daily.csv
+```
+
+When `BYTEANALYST_BASE_URL` is set, the agent sends OpenAI-format requests to that
+server — Ollama, vLLM, LM Studio, llama.cpp serve, etc. — so no API key is needed
+for a local model.
+
+Anthropic is supported natively. Environment variables: `BYTEANALYST_PROVIDER=anthropic`
+and `ANTHROPIC_API_KEY=sk-ant-...` (PowerShell: `$env:ANTHROPIC_API_KEY="..."`).
 
 | Environment variable | Purpose |
 |---|---|

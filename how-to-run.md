@@ -56,21 +56,62 @@ does not talk to any model; it is the "what is in this file" command.
 
 ### With a real model
 
-```bash
-set BYTEANALYST_API_KEY=sk-...        # Windows cmd (PowerShell: $env:BYTEANALYST_API_KEY=...)
-set BYTEANALYST_MODEL=gpt-4o-mini     # optional: picks a model
+Environment variables beat CLI flags for secrets. The syntax differs by shell — use the one matching your terminal.
+
+**Windows PowerShell (most likely on this machine):**
+
+```powershell
+$env:BYTEANALYST_API_KEY="sk-..."
+$env:BYTEANALYST_MODEL="gpt-4o-mini"    # optional
+
+byteanalyst ask "which region is growing fastest and is the gap significant?" `
+  --data data/ecommerce_orders.csv --data data/customers.csv
+```
+
+**Windows cmd:**
+
+```cmd
+set BYTEANALYST_API_KEY=sk-...
+set BYTEANALYST_MODEL=gpt-4o-mini
 
 byteanalyst ask "which region is growing fastest and is the gap significant?" ^
   --data data/ecommerce_orders.csv --data data/customers.csv
 ```
 
-Any OpenAI-compatible endpoint works:
+**bash / zsh / Git Bash / WSL:**
 
 ```bash
-set BYTEANALYST_BASE_URL=http://localhost:11434/v1   # Ollama, vLLM, LM Studio, etc.
-set BYTEANALYST_MODEL=llama3.1
+export BYTEANALYST_API_KEY=sk-...
+export BYTEANALYST_MODEL=gpt-4o-mini
+
+byteanalyst ask "which region is growing fastest and is the gap significant?" \
+  --data data/ecommerce_orders.csv --data data/customers.csv
+```
+
+#### Local model server (no API key at all)
+
+Any OpenAI-compatible server works: Ollama, vLLM, LM Studio, llama.cpp server.
+Example with Ollama (`http://localhost:11434/v1`, model `llama3.1`):
+
+**PowerShell:**
+
+```powershell
+$env:BYTEANALYST_BASE_URL="http://localhost:11434/v1"
+$env:BYTEANALYST_MODEL="llama3.1"
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
+
+**bash / Git Bash / WSL:**
+
+```bash
+export BYTEANALYST_BASE_URL=http://localhost:11434/v1
+export BYTEANALYST_MODEL=llama3.1
+byteanalyst ask "profile the data" --data data/weather_daily.csv
+```
+
+When `BYTEANALYST_BASE_URL` is set, the agent hunts down the model server at that
+base URL and sends OpenAI-format requests to it — the `openai_compatible` provider
+behind the scenes.
 
 Environment variables (preferred over CLI flags for secrets):
 
