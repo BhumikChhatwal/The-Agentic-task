@@ -76,6 +76,7 @@ class Config:
     timeout: float = 120.0
     max_tool_output_chars: int = 6000
     max_preview_rows: int = 50
+    tool_allowlist: tuple[str, ...] = ()
     memory_enabled: bool = True
     auto_memory: bool = True
     root: Path = field(default_factory=lambda: Path.cwd())
@@ -154,6 +155,9 @@ class Config:
             timeout=_env_float("BYTEANALYST_TIMEOUT", 120.0),
             max_tool_output_chars=_env_int("BYTEANALYST_MAX_TOOL_OUTPUT_CHARS", 6000),
             max_preview_rows=_env_int("BYTEANALYST_MAX_PREVIEW_ROWS", 50),
+            tool_allowlist=tuple(
+                name.strip() for name in (_env("BYTEANALYST_TOOLS") or "").split(",") if name.strip()
+            ),
             memory_enabled=_env_flag("BYTEANALYST_MEMORY", default=True),
             auto_memory=_env_flag("BYTEANALYST_AUTO_MEMORY", default=True),
             root=root_dir,

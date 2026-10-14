@@ -52,7 +52,7 @@ def _connection_hint(url: str) -> str:
         return (
             "The local model server is not running. Start it (for Ollama: `ollama serve`, "
             "or launch the Ollama/LM Studio app) and confirm the model is pulled, "
-            "e.g. `ollama pull llama3.1`. If you meant to run without a model, "
+            "e.g. `ollama pull qwen2.5:7b`. If you meant to run without a model, "
             "add `--provider offline`."
         )
     return "Check BYTEANALYST_BASE_URL and your network."

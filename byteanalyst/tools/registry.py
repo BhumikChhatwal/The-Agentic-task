@@ -45,6 +45,22 @@ class ToolRegistry:
     def get(self, name: str) -> Tool | None:
         return self._tools.get(name)
 
+    def restrict(self, names: Iterable[str]) -> "ToolRegistry":
+        """Keep only ``names`` (in that order) so the model sees a smaller toolbox.
+
+        Smaller toolsets measurably improve tool-calling reliability on small
+        local models. Unknown names raise so a typo fails loudly.
+        """
+        wanted = list(names)
+        unknown = [name for name in wanted if name not in self._tools]
+        if unknown:
+            raise ValueError(
+                f"unknown tool(s) {', '.join(repr(n) for n in unknown)}; "
+                f"available: {', '.join(self._tools)}"
+            )
+        self._tools = {name: self._tools[name] for name in wanted}
+        return self
+
     def names(self) -> list[str]:
         return list(self._tools)
 

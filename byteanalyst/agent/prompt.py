@@ -40,7 +40,11 @@ def build_system_prompt(
     tools_catalogue: str = "",
     provider: str = "",
     extra: str = "",
+    tool_names: Sequence[str] = (),
 ) -> str:
+    # With a scoped toolset (BYTEANALYST_TOOLS) the memory tools may be absent;
+    # never advertise tools the model cannot actually call.
+    has_memory_tools = not tool_names or "remember" in tool_names
     blocks = [
         "You are Byte Analyst, a data analysis agent. You analyse tabular datasets by "
         "calling tools, and you answer strictly from what those tools return.",
@@ -62,13 +66,33 @@ Ground rules — these are not negotiable:
         registry.describe_for_prompt(),
         "## Tools",
         tools_catalogue,
-        MEMORY_POLICY,
-        ANSWER_FORMAT,
     ]
+
+    if has_memory_tools:
+        blocks.append(MEMORY_POLICY)
+    blocks.append(ANSWER_FORMAT)
 
     memory_block = _render_memories(memories)
     if memory_block:
         blocks.insert(4, memory_block)
+
+    if provider != "offline":
+        # Small local models fixate on whatever sits at the end of the prompt;
+        # this block stops them from describing tools instead of calling them.
+        recall_line = (
+            " Start with the data itself (`profile_dataset` or `run_sql`); reach for "
+            "`recall` only when the question uses a term you have not been given."
+            if has_memory_tools
+            else " Start with the data itself (`profile_dataset` or `run_sql`)."
+        )
+        blocks.append(
+            "## Act now\n\n"
+            "This is a live turn: the user's question is waiting for an answer that is "
+            "already in your hands as a tool call. Produce the actual call — never a "
+            "description of the call, never example JSON, never an offer to help. If you "
+            "were about to write instructions about calling a tool, call it instead."
+            + recall_line
+        )
 
     if provider == "offline":
         blocks.append(

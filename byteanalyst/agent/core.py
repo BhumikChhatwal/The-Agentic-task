@@ -31,7 +31,7 @@ from typing import Any, Callable, Sequence
 
 from ..config import Config
 from ..datasets import DatasetRegistry
-from ..errors import ByteAnalystError, LLMError
+from ..errors import ByteAnalystError, ConfigError, LLMError
 from ..formatting import numbers_equivalent, ToolResult
 from ..llm import AssistantTurn, Message, build_client
 from ..llm.base import ToolCall, parse_memory_json
@@ -46,6 +46,37 @@ MAX_REPAIRS = 1
 # years, and anything that appeared as a bare digit in a tool summary.
 _IGNORABLE_NUMBERS = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "12", "24"}
 _NUMBER_RE = re.compile(r"(?<![\w.])-?\d[\d,]*(?:\.\d+)?(?:[eE][+-]?\d+)?")
+def _text_shaped_tool_call(content: str, tool_names: Sequence[str]) -> ToolCall | None:
+    """Rescue a tool call the model wrote as plain text.
+
+    Small local models often emit ``run_sql: SELECT ...``, ``run_sql {"query":
+    ...}`` or a bare ``SELECT ...`` as the message body instead of a structured
+    tool call. Conservatively: the call must name a real tool and the payload
+    must be a JSON object of arguments or a SELECT statement for ``run_sql``.
+    """
+    text = (content or "").strip().strip("`").strip()
+    if not text:
+        return None
+    match = re.match(r"^([a-z][a-z0-9_]*)\b(.*)$", text, re.DOTALL)
+    name, rest = (match.group(1), match.group(2).strip()) if match else ("", "")
+    if name and name in tool_names:
+        payload = (rest[1:].strip() if rest[:1] in ("(", ":") else rest)
+        payload = payload.strip("`").rstrip(";").strip()
+        if payload.startswith("{"):
+            try:
+                arguments = json.loads(payload.rstrip("`"))
+            except ValueError:
+                return None
+            if isinstance(arguments, dict):
+                return ToolCall(id=f"rescue_{uuid.uuid4().hex[:8]}", name=name, arguments=arguments)
+            return None
+        if name == "run_sql" and re.match(r"(?i)^(select|with)\b", payload):
+            return ToolCall(id=f"rescue_{uuid.uuid4().hex[:8]}", name=name, arguments={"query": payload})
+        return None
+    # No leading tool name: allow a bare SQL statement when run_sql exists.
+    if "run_sql" in tool_names and re.match(r"(?i)^(select|with)\b", text) and " from " in text.lower():
+        return ToolCall(id=f"rescue_{uuid.uuid4().hex[:8]}", name="run_sql", arguments={"query": text})
+    return None
 
 
 @dataclass
@@ -151,6 +182,11 @@ class Agent:
         self.registry = registry
         self.memory = memory if (memory is not None and config.memory_enabled) else None
         self.tools = tools or build_default_registry(include_memory=self.memory is not None)
+        if config.tool_allowlist:
+            try:
+                self.tools.restrict(config.tool_allowlist)
+            except ValueError as exc:
+                raise ConfigError(str(exc)) from exc
         self.ctx = ToolContext(registry=registry, config=config, memory=self.memory)
         self.session_id = uuid.uuid4().hex[:8]
         self.history: list[Message] = []
@@ -378,6 +414,7 @@ class Agent:
             memories,
             tools_catalogue=self.tools.catalogue(),
             provider="offline" if not self.uses_llm else self.config.provider,
+            tool_names=self.tools.names(),
         )
         messages: list[Message] = [Message(role="system", content=system), *self.history,
                                    Message(role="user", content=question)]
@@ -385,6 +422,7 @@ class Agent:
         iterations = 0
         repairs = 0
         answer = ""
+        last_call_signature: tuple[str, ...] | None = None
 
         while iterations < self.config.max_iterations:
             iterations += 1
@@ -392,12 +430,49 @@ class Agent:
             if turn.usage:
                 self._emit(on_event, AgentEvent("thinking", {"usage": turn.usage, "iteration": iterations}))
 
+            if not turn.wants_tools:
+                rescued = _text_shaped_tool_call(turn.content, self.tools.names())
+                if rescued is not None:
+                    turn = AssistantTurn(content=turn.content, tool_calls=[rescued], usage=turn.usage)
+
             if turn.wants_tools:
                 messages.append(
                     Message(role="assistant", content=turn.content, tool_calls=turn.tool_calls)
                 )
+                signature = tuple(
+                    f"{call.name}:{json.dumps(call.arguments, sort_keys=True, default=str)}"
+                    for call in turn.tool_calls
+                )
+                # Deterministic models (temperature 0) can repeat the identical
+                # tool call forever. Re-running it is pure latency, so the call
+                # is answered with a corrective message instead of an execution.
+                repeating = signature != () and signature == last_call_signature
+                last_call_signature = signature
                 for call in turn.tool_calls:
-                    result_text = self._execute_call(call, executions, on_event)
+                    if repeating:
+                        result_text = (
+                            f"`{call.name}` was already called with these exact arguments and "
+                            "the result is in the conversation above. Calling it again will not "
+                            "help. Do something different: call a different tool (for example "
+                            "`run_sql` to compute the answer) or answer the user directly."
+                        )
+                        self._emit(
+                            on_event,
+                            AgentEvent(
+                                "tool_result",
+                                {
+                                    "name": call.name,
+                                    "ok": False,
+                                    "duration_ms": 0,
+                                    "summary": "duplicate call suppressed - not executed",
+                                    "error": "duplicate call",
+                                    "table": None,
+                                    "artifacts": [],
+                                },
+                            ),
+                        )
+                    else:
+                        result_text = self._execute_call(call, executions, on_event)
                     messages.append(
                         Message(role="tool", content=result_text, tool_call_id=call.id, name=call.name)
                     )
@@ -405,6 +480,28 @@ class Agent:
 
             answer = turn.content or ""
             messages.append(Message(role="assistant", content=answer))
+
+            # A blank turn is not an answer. Local models occasionally emit one;
+            # ask again instead of reporting silence to the user.
+            if not answer.strip():
+                if repairs >= MAX_REPAIRS:
+                    return (
+                        iterations,
+                        "The model returned an empty response. Try asking again, use a narrower "
+                        "question, or check that the local model is running (`ollama ps`).",
+                        [],
+                    )
+                repairs += 1
+                messages.append(
+                    Message(
+                        role="user",
+                        content=(
+                            "Your reply was empty. Either call a tool to get what you need, or "
+                            "answer the question directly."
+                        ),
+                    )
+                )
+                continue
 
             unsupported = find_unsupported_numbers(answer, executions)
             if not unsupported:

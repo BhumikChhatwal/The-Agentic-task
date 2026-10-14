@@ -361,7 +361,7 @@ def test_refused_connection_fails_fast_with_actionable_hint() -> None:
     assert len(attempts) == 1, "a refused connection must not be retried"
     message = str(excinfo.value)
     assert "local model server is not running" in message
-    assert "ollama pull llama3.1" in message
+    assert "ollama pull qwen2.5:7b" in message
     assert "--provider offline" in message
 
 
@@ -380,6 +380,13 @@ def test_config_overrides_and_derived_paths(tmp_path) -> None:
 def test_config_rejects_unknown_provider(tmp_path) -> None:
     with pytest.raises(ConfigError):
         Config.from_env(root=tmp_path, provider="telepathy")
+
+
+def test_config_parses_tool_allowlist(tmp_path, monkeypatch) -> None:
+    monkeypatch.setenv("BYTEANALYST_TOOLS", "run_sql, profile_dataset")
+    assert Config.from_env(root=tmp_path).tool_allowlist == ("run_sql", "profile_dataset")
+    monkeypatch.delenv("BYTEANALYST_TOOLS")
+    assert Config.from_env(root=tmp_path).tool_allowlist == ()
 
 
 def test_build_client_rules(tmp_path) -> None:

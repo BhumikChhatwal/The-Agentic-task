@@ -6,6 +6,7 @@ and no dependence on the developer's environment.
 
 from __future__ import annotations
 
+import os
 from pathlib import Path
 
 import numpy as np
@@ -19,6 +20,19 @@ from byteanalyst.tools import ToolContext, build_default_registry
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_DIR = REPO_ROOT / "data"
+
+
+@pytest.fixture(autouse=True)
+def _scrub_ambient_llm_config(monkeypatch: pytest.MonkeyPatch) -> None:
+    """Keep a developer's ``.env`` / shell exports out of the tests.
+
+    ``Config.from_env`` loads ``.env`` via python-dotenv, which puts values into
+    ``os.environ``; without this, a local ``.env`` (e.g. one pointing at Ollama)
+    would silently change what later tests see.
+    """
+    for name in list(os.environ):
+        if name.startswith("BYTEANALYST_") or name in {"OPENAI_API_KEY", "ANTHROPIC_API_KEY"}:
+            monkeypatch.delenv(name, raising=False)
 
 
 @pytest.fixture

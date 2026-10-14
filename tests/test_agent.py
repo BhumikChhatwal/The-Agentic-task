@@ -16,7 +16,7 @@ from byteanalyst.agent import Agent, find_unsupported_numbers
 from byteanalyst.agent.core import _regex_memory_candidates
 from byteanalyst.config import Config
 from byteanalyst.datasets import DatasetRegistry
-from byteanalyst.errors import ByteAnalystError
+from byteanalyst.errors import ByteAnalystError, ConfigError
 from byteanalyst.llm.offline import RuleBasedPlanner
 from byteanalyst.llm.scripted import ScriptedClient
 from byteanalyst.memory import MemoryStore
@@ -215,14 +215,132 @@ def test_llm_loop_stops_at_the_iteration_budget(config, registry) -> None:
     config.max_iterations = 2
     client = ScriptedClient([
         {"tool": "run_sql", "arguments": {"query": "select 1"}},
-        {"tool": "run_sql", "arguments": {"query": "select 1"}},
-        {"tool": "run_sql", "arguments": {"query": "select 1"}},
+        {"tool": "run_sql", "arguments": {"query": "select 2"}},
+        {"tool": "run_sql", "arguments": {"query": "select 3"}},
     ])
     agent = Agent(config, registry, memory=None, client=client)
     answer = agent.ask("loop forever")
     assert answer.iterations == 2
     assert "limit" in answer.answer
     assert len(answer.tool_executions) == 2
+
+
+def test_llm_loop_suppresses_identical_repeated_calls(config, registry) -> None:
+    """A deterministic model repeating the same call must not re-run the tool."""
+    client = ScriptedClient([
+        {"tool": "run_sql", "arguments": {"query": "select count(*) as n from orders"}},
+        {"tool": "run_sql", "arguments": {"query": "select count(*) as n from orders"}},
+        {"content": "There are 240 orders.\n\nEvidence:\n- run_sql: n = 240"},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert answer.ok
+    # The identical second call is answered without executing the tool again.
+    assert len(answer.tool_executions) == 1
+    assert answer.iterations == 3
+    # The model is told why, in the tool result of the repeated call.
+    followup_tool = [m for m in client.calls[2] if m.role == "tool"]
+    assert followup_tool and "already called" in followup_tool[-1].content
+
+
+def test_llm_loop_reprompts_after_an_empty_turn(config, registry) -> None:
+    """An empty assistant turn is nudged, not reported as the answer."""
+    client = ScriptedClient([
+        {"content": ""},
+        {"tool": "run_sql", "arguments": {"query": "select count(*) as n from orders"}},
+        {"content": "There are 240 orders.\n\nEvidence:\n- run_sql: n = 240"},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert answer.ok
+    assert "240" in answer.answer
+    nudge = [m for m in client.calls[1] if m.role == "user"][-1].content
+    assert "empty" in nudge.lower()
+
+
+def test_llm_loop_reports_persistent_empty_turns(config, registry) -> None:
+    """If the model keeps returning silence, say so instead of answering blank."""
+    client = ScriptedClient([{"content": ""}, {"content": ""}])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert "empty response" in answer.answer
+
+
+def test_llm_loop_rescues_text_shaped_tool_calls(config, registry) -> None:
+    """Small models write calls like ``run_sql: SELECT ...`` as the body."""
+    client = ScriptedClient([
+        {"content": "run_sql: select count(*) as n from orders"},
+        {"content": "There are 240 orders.\n\nEvidence:\n- run_sql: n = 240"},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert answer.ok
+    assert answer.tools_used == ["run_sql"]
+    assert answer.iterations == 2
+    assert "240" in answer.answer
+
+
+def test_llm_loop_rescues_braced_json_tool_calls(config, registry) -> None:
+    client = ScriptedClient([
+        {"content": 'run_sql {"query": "select count(*) as n from orders"}'},
+        {"content": "There are 240 orders.\n\nEvidence:\n- run_sql: n = 240"},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert answer.tools_used == ["run_sql"]
+    assert answer.tool_executions[0].arguments == {"query": "select count(*) as n from orders"}
+    assert "240" in answer.answer
+
+
+def test_llm_loop_rescues_bare_sql(config, registry) -> None:
+    client = ScriptedClient([
+        {"content": "select count(*) as n from orders"},
+        {"content": "There are 240 orders.\n\nEvidence:\n- run_sql: n = 240"},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert answer.tools_used == ["run_sql"]
+    assert "240" in answer.answer
+
+
+def test_llm_loop_does_not_rescue_prose_mentioning_tools(config, registry) -> None:
+    client = ScriptedClient([
+        {"content": "run_sql is the tool you would use here: it runs queries."},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    answer = agent.ask("how many orders?")
+    assert answer.tool_executions == []
+
+
+# ---------------------------------------------------------------------------
+# tool allowlist (smaller toolboxes for local models)
+# ---------------------------------------------------------------------------
+
+
+def test_tool_allowlist_scopes_registry_specs_and_prompt(config, registry) -> None:
+    config.tool_allowlist = ("run_sql", "profile_dataset")
+    client = ScriptedClient([
+        {"tool": "run_sql", "arguments": {"query": "select count(*) as n from orders"}},
+        {"content": "There are 240 orders.\n\nEvidence:\n- run_sql: n = 240"},
+    ])
+    agent = Agent(config, registry, memory=None, client=client)
+    assert agent.tools.names() == ["run_sql", "profile_dataset"]
+    spec_names = [spec["function"]["name"] for spec in agent.tools.specs()]
+    assert spec_names == ["run_sql", "profile_dataset"]
+    answer = agent.ask("how many orders?")
+    assert answer.ok and "240" in answer.answer
+    system = [m for m in client.calls[0] if m.role == "system"][0].content
+    assert "run_sql" in system and "profile_dataset" in system
+    # Tools the model cannot call must not be advertised, not even in prose.
+    assert "manage_memory" not in system
+    assert "Memory policy" not in system
+    assert "`recall`" not in system
+
+
+def test_tool_allowlist_rejects_unknown_tools(config, registry) -> None:
+    config.tool_allowlist = ("run_sql", "telepathy")
+    with pytest.raises(ConfigError, match="telepathy"):
+        Agent(config, registry, memory=None)
 
 
 def test_llm_writes_memory_from_the_extraction_pass(config, registry, memory) -> None:

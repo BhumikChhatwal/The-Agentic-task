@@ -128,10 +128,21 @@ byteanalyst ask "which region is growing fastest and is the gap significant?" `
 Any OpenAI-compatible endpoint works — OpenRouter, Groq, Together, vLLM, LM Studio,
 Ollama:
 
+**Ollama in one command (recommended)** — installs Ollama if missing, starts the
+server, pulls the model, writes `.env` so future sessions need no flags, and
+verifies the whole chain:
+
+```powershell
+.\scripts\setup_local_model.ps1     # Windows
+./scripts/setup_local_model.sh       # Git Bash / WSL / macOS / Linux
+```
+
+Or point the agent at an Ollama server you already run:
+
 ```bash
 # local Ollama, no key needed (bash / Git Bash / WSL)
 export BYTEANALYST_BASE_URL=http://localhost:11434/v1
-export BYTEANALYST_MODEL=llama3.1
+export BYTEANALYST_MODEL=qwen2.5:7b
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
 
@@ -139,13 +150,17 @@ byteanalyst ask "profile the data" --data data/weather_daily.csv
 
 ```powershell
 $env:BYTEANALYST_BASE_URL="http://localhost:11434/v1"
-$env:BYTEANALYST_MODEL="llama3.1"
+$env:BYTEANALYST_MODEL="qwen2.5:7b"
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
 
 When `BYTEANALYST_BASE_URL` is set, the agent sends OpenAI-format requests to that
 server — Ollama, vLLM, LM Studio, llama.cpp serve, etc. — so no API key is needed
-for a local model.
+for a local model. Two knobs help on CPU-only machines (the setup script sets
+both): `BYTEANALYST_TIMEOUT=600` for the first-load time, and
+`BYTEANALYST_TOOLS=profile_dataset,run_sql,run_python,statistical_test,detect_anomalies`
+— a scoped toolbox, which 7-8B local models use far more reliably than the full
+10-tool set.
 
 Anthropic is supported natively. Environment variables: `BYTEANALYST_PROVIDER=anthropic`
 and `ANTHROPIC_API_KEY=sk-ant-...` (PowerShell: `$env:ANTHROPIC_API_KEY="..."`).
@@ -156,6 +171,7 @@ and `ANTHROPIC_API_KEY=sk-ant-...` (PowerShell: `$env:ANTHROPIC_API_KEY="..."`).
 | `BYTEANALYST_API_KEY` | Model API key (falls back to `OPENAI_API_KEY` / `ANTHROPIC_API_KEY`) |
 | `BYTEANALYST_BASE_URL` | Base URL for any OpenAI-compatible server |
 | `BYTEANALYST_MODEL` | Model name |
+| `BYTEANALYST_TOOLS` | Comma-separated tool allowlist; unset means the full set |
 | `BYTEANALYST_MAX_ITERATIONS` | Tool-call budget per question (default 12) |
 | `BYTEANALYST_STATE_DIR` | Where memory, artifacts and transcripts live (default `./.byteanalyst`) |
 | `BYTEANALYST_MEMORY` / `BYTEANALYST_AUTO_MEMORY` | Turn memory off entirely / only turn off automatic writes |

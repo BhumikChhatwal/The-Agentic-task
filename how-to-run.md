@@ -94,12 +94,32 @@ Any OpenAI-compatible server works: Ollama, vLLM, LM Studio, llama.cpp server.
 A `WinError 10061 … actively refused` error means nothing is listening on that
 port — the server is not running (or not installed).
 
-**One-time setup on Windows (Ollama):**
+**One command (recommended):**
 
-1. Install: download and run `OllamaSetup.exe` from
-   <https://ollama.com/download/windows> (per-user, no admin needed), or
-   `winget install Ollama.Ollama`.
-2. Pull a model (a few GB the first time): `ollama pull llama3.1`
+```powershell
+# Windows
+.\scripts\setup_local_model.ps1
+```
+
+```bash
+# Git Bash / WSL / macOS / Linux
+./scripts/setup_local_model.sh
+```
+
+The script installs Ollama (if missing), starts the server, pulls the model,
+writes `.env` so every future session needs no flags, and verifies the whole
+chain end to end. Options: `-Model llama3.1` / `MODEL=llama3.1` for a
+different model; `-SkipInstall` / `SKIP_INSTALL=1` if Ollama is already present.
+
+The default model is **qwen2.5:7b** — measured to drive this agent's tool loop
+far more reliably than llama3.1 on a CPU-only machine (llama3.1 8B frequently
+ignores the tool schemas and answers from memory).
+
+**Manual setup on Windows:**
+
+1. Install: `winget install Ollama.Ollama`, or download `OllamaSetup.exe` from
+   <https://ollama.com/download/windows> (per-user, no admin needed).
+2. Pull a model (a few GB the first time): `ollama pull qwen2.5:7b`
 3. Confirm it works: `ollama list`. The Windows app keeps the server running in
    the background; with the standalone CLI, start it yourself: `ollama serve`.
 
@@ -107,7 +127,7 @@ port — the server is not running (or not installed).
 
 ```powershell
 $env:BYTEANALYST_BASE_URL="http://localhost:11434/v1"
-$env:BYTEANALYST_MODEL="llama3.1"
+$env:BYTEANALYST_MODEL="qwen2.5:7b"
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
 
@@ -115,14 +135,23 @@ byteanalyst ask "profile the data" --data data/weather_daily.csv
 
 ```bash
 export BYTEANALYST_BASE_URL=http://localhost:11434/v1
-export BYTEANALYST_MODEL=llama3.1
+export BYTEANALYST_MODEL=qwen2.5:7b
 byteanalyst ask "profile the data" --data data/weather_daily.csv
 ```
 
 Setting `BYTEANALYST_BASE_URL` alone selects the local server — no key and no
 `BYTEANALYST_PROVIDER` needed. Use an exact model name from `ollama list` (tags
-included, e.g. `llama3.1:8b`); a wrong name returns HTTP 404. If you just want
+included, e.g. `qwen2.5:7b`); a wrong name returns HTTP 404. If you just want
 it to work with no server at all, add `--provider offline`.
+
+Two knobs matter for local models on CPU (the setup script sets both):
+
+- `BYTEANALYST_TIMEOUT=600` — loading a multi-GB model into RAM can exceed the
+  120 s default on first use.
+- `BYTEANALYST_TOOLS=profile_dataset,run_sql,run_python,statistical_test,detect_anomalies`
+  — a scoped toolbox. 7-8B models call tools far more reliably with ~5 tools
+  than with the full 10; the three memory tools, which small models fixate on,
+  are the ones left out. Delete the line to get the full set.
 
 Environment variables (preferred over CLI flags for secrets):
 
@@ -132,6 +161,7 @@ Environment variables (preferred over CLI flags for secrets):
 | `BYTEANALYST_PROVIDER` | `openai_compatible` \| `anthropic` \| `offline` (auto-detected if unset) |
 | `BYTEANALYST_BASE_URL` | Base URL for any OpenAI-compatible server |
 | `BYTEANALYST_MODEL` | Model name |
+| `BYTEANALYST_TOOLS` | Comma-separated tool allowlist; unset means the full set |
 | `BYTEANALYST_MAX_ITERATIONS` | Tool-call budget per question (default 12) |
 | `BYTEANALYST_STATE_DIR` | Where memory, artifacts and transcripts live (default `./.byteanalyst`) |
 | `BYTEANALYST_MEMORY` / `BYTEANALYST_AUTO_MEMORY` | Turn memory off entirely / only turn off automatic writes |
